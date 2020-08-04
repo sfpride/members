@@ -8,20 +8,24 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style>
-        header>h1 {font-size: 2.5vw;}
-        footer>h1 {font-size: 2.5vw;}
+        header>h1.mobile {font-size: 2.5vw;}
+        header>h1.d-md-block {font-size: 2vw;}
+        footer>h1.mobile {font-size: 2.5vw;}
 
-        #title {font-size: 5vw;}
+        h2.d-sm-none {font-size: 5vw;}
+        h2.d-sm-block {font-size: 3vw;}
     </style>
 </head>
 
 <body>
     <header class="header">
-        <h1 class="text-center mt-1">SAN FRANCISCO LGBT PRIDE PARADE AND CELEBRATION COMMITTEE, INC</h1>
+        <h1 class="text-center mt-1 mobile d-md-none">SAN FRANCISCO LGBT PRIDE PARADE AND CELEBRATION COMMITTEE, INC</h1>
+        <h1 class="text-center mt-1 d-none d-md-block">SAN FRANCISCO LGBT PRIDE PARADE AND CELEBRATION COMMITTEE, INC</h1>
     </header>
 
     <div class="container">
-        <h2 id="title">2020 BOARD OF DIRECTORS ELECTION</h2>
+        <h2 class="d-sm-none text-center">2020 BOARD OF DIRECTORS ELECTION</h2>
+        <h2 class="d-none d-sm-block">2020 BOARD OF DIRECTORS ELECTION</h2>
 
         <section id="procedure">
             <div class="row">
