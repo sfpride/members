@@ -8,27 +8,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-
     <style>
-        header>h1.mobile {
-            font-size: 2.5vw;
-        }
-
-        header>h1.d-md-block {
-            font-size: 2vw;
-        }
-
-        footer>h1 {
-            font-size: 2.5vw;
-        }
-
-        h2.d-sm-none {
-            font-size: 5vw;
-        }
-
-        h2.d-sm-block {
-            font-size: 3vw;
-        }
+        header>h1.mobile {font-size: 2.5vw;}
+        header>h1.d-md-block {font-size: 2vw;}
+        footer>h1 {font-size: 2.5vw;}
+        h2.d-sm-none {font-size: 5vw;}
+        h2.d-sm-block {font-size: 3vw;}
     </style>
 </head>
 
@@ -49,14 +34,15 @@
 
         <h2 class="d-sm-none text-center">2020 BOARD OF DIRECTORS ELECTION</h2>
         <h2 class="d-none d-sm-block text-center">2020 BOARD OF DIRECTORS ELECTION</h2>
-        <p class="small text-center"><a href="#candidate-list">jump to candidates</a></p>
+        <div class="alert alert-primary text-center p-1">
+            <h3 class="alert-header text-uppercase">The voting period has ended</h3>
+            <p>Once the ballots have been counted on the evening of September 23rd by the election officials, results will be announced on <a href="..">members.sfpride.org</a> and by email.</p>
+        </div>
 
         <section id="procedure">
 
             <div class="row">
-                <div class="col">
-                    <p>In order to accomplish the election of directors during this time when we cannot meet in person, in 2020 we will separate the election of directors from the rest of the AGM proceedings. Voting by secret ballot, which is critical to the board elections, is not feasible in an online meeting. </p>
-                </div>
+                <div class="col"><p>In order to accomplish the election of directors during this time when we cannot meet in person, in 2020 we will separate the election of directors from the rest of the AGM proceedings. Voting by secret ballot, which is critical to the board elections, is not feasible in an online meeting. </p></div>
             </div>
 
             <div id="timeline" class="row">
@@ -94,13 +80,13 @@
                                     <p>Staff mail out written ballots</p>
                                 </td>
                             </tr>
-                            <tr class="">
+                            <tr class="text-muted">
                                 <td>Aug 21st to Sep 18th</td>
                                 <td>
                                     <p><b>Voting Period</b><br>Ballots may be returned by self-addressed stamped enveloped provided in mailing</p>
                                 </td>
                             </tr>
-                            <tr>
+                            <tr class="text-muted">
                                 <td>Sept 12th</td>
                                 <td>Annual General Meeting (online, noon-4pm)</td>
                             </tr>
@@ -108,23 +94,42 @@
                     </table>
                 </div>
                 <div class="col-12 col-sm-5">
-                    <h4 class="border-bottom">Mail-in Alternates, In-Person Voting</h4>
-                    <p>Pride staff will be available at the Pride offices during the times listed below, to facilitate in-person voting or to receive already completed ballots. Offices are located at 1663 Mission Street.</p>
-                    <ul>
-                        <li>Wednesday Sept. 2, 5-7pm</li>
-                        <li>Tuesday Sept. 8, 5-7pm</li>
-                        <li>Thursday Sept. 10, 8-10am</li>
-                        <li>Sunday Sept. 13, noon-2pm</li>
-                        <li>Friday Sept. 18, 9am-6pm</li>
-                    </ul>
+                    <div class="row">
+                        <div class="col">
+                            <h4 class="border-bottom">Mail-in Alternates, In-Person Voting</h4>
+                            <p>Pride staff will be available at the Pride offices during the times listed below, to facilitate in-person voting or to receive already completed ballots. Offices are located at 1663 Mission Street.</p>
+                            <ul>
+                                <li class="text-muted">Wednesday Sept. 2, 5-7pm</li>
+                                <li class="text-muted">Tuesday Sept. 8, 5-7pm</li>
+                                <li class="text-muted">Thursday Sept. 10, 8-10am</li>
+                                <li class="text-muted">Sunday Sept. 13, noon-2pm</li>
+                                <li class="text-muted">Friday Sept. 18, 9am-6pm</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h4 class="border-bottom">Election Officials:</h4>
+                            <ul>
+                                <li>Election Inspectors
+                                    <ol>
+                                        <li>Fred Lopez, <em>Executive Director</em></li>
+                                        <li>Billy Lemon, <em>Castro Country Club</em></li>
+                                        <li>Janelle Luster, <em>The Transgender District</em></li>
+                                    </ol>
+                                </li>
+                                <li>Election Observers
+                                    <ol>
+                                        <li>Jokie Wilson, <em>Member</em></li>
+                                        <li>Kim-Shree Maufas, <em>Member</em></li>
+                                        <li>Dana Hopkins, <em>Member</em></li>
+                                    </ol>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <section class="row">
-                <div class="col">
-                    <p class="alert alert-primary lead text-center">Members are encouraged to attend the online <b>Annual General Meeting on September 12th</b>, where candidates will be invited to deliver statements and avail themselves for questions/answers.</p>
-                </div>
-            </section>
 
             <div class="jumbotron row d-none">
 
@@ -189,28 +194,27 @@
                 </ol>
                 <p><strong>Each member in good standing is allowed to vote once. Duplicate ballots received will be disqualified.</strong></p>
             </div>
+            <div class="col-12 col-sm-3 border-left m-0 mt-5">
+                <div id="candidate-list">
+                    <h3>Candidates:</h3>
+                    <ol>
+                        <li><a href="#maxie-bee">Bee, Maxie</a></li>
+                        <li><a href="#laurence-berland">Berland, Laurence</a></li>
+                        <li><a href="#bivett-brackett">Brackett, Bivett</a></li>
+                        <li><a href="#tyler-breisacher">Breisacher, Tyler</a></li>
+                        <li><a href="#peter-gamez">Gamez, Peter</a></li>
+                        <li><a href="#tuquan-harrison">Harrison, Tuquan</a></li>
+                        <li><a href="#j-jha">Jha, J</a></li>
+                        <li><a href="#elizabeth-lanyon">Lanyon, Elizabeth</a> (incumbent)</li>
+                        <li><a href="#diana-oliva">Oliva, Diana</a></li>
+                        <li><a href="#aliza-paz">Paz, Aliza</a></li>
+                        <li><a href="#george-smith">Smith III, George</a></li>
+                        <li><a href="#joshua-smith">Smith, Joshua</a>
+                    </ol>
+                </div>
+            </div>
         </section>
-
         <hr>
-
-        <div id="candidate-list">
-            <h2>Candidates:</h2>
-            <ol>
-                <li><a href="#maxie-bee">Bee, Maxie</a></li>
-                <li><a href="#laurence-berland">Berland, Laurence</a></li>
-                <li><a href="#bivett-brackett">Brackett, Bivett</a></li>
-                <li><a href="#tyler-breisacher">Breisacher, Tyler</a></li>
-                <li><a href="#peter-gamez">Gamez, Peter</a></li>
-                <li><a href="#tuquan-harrison">Harrison, Tuquan</a></li>
-                <li><a href="#j-jha">Jha, J</a></li>
-                <li><a href="#elizabeth-lanyon">Lanyon, Elizabeth</a> (incumbent)</li>
-                <li><a href="#diana-oliva">Oliva, Diana</a></li>
-                <li><a href="#aliza-paz">Paz, Aliza</a></li>
-                <li><a href="#george-smith">Smith III, George</a></li>
-                <li><a href="#joshua-smith">Smith, Joshua</a>
-            </ol>
-        </div>
-
     </div>
 
     <div class="container-fluid">
@@ -322,7 +326,7 @@
                         <img class="card-img-top img-fluid" src="2020/tuquanharrison.jpg" alt="">
                         <div class="card-header">
                             <h5 class="card-title">Tuquan Harrison</h5>
-                            <h6 class="card-subtitle text-muted"></h6>
+                            <h6 class="card-subtitle text-muted">pronouns flexible</h6>
                         </div>
                         <div class="card-body">
                             <p class="card-text">Tuquan Harrison is a Black, Queer and Nonbinary advocate who’s work focuses on the advancement of public safety, violence prevention and wellness for diverse LGBTQ communities of color in San Francisco. Tuquan leads his community-based advocacy through a racial equity and anti-oppression lens working to address Anti-Black racism in government and nonprofits organizations. Since early in his career, he has championed capacity building efforts, training frontline providers on working with LGBTQ community members living HIV/AIDS, and who are marginally housed. Additionally, providing anti-oppression workshops to nonprofit organizations throughout the country support Black and Brown LGBTQ youth. Tuquan currently serves in a Mayoral appointed position at the San Francisco Human Rights Commission, where he directs, coordinates and implements citywide LGBTQI+ initiatives centering diverse LGBQ, Transgender and Nonbinary communities. Tuquan is also the Founder of the Queer and Trans Youth United in Power Fellowship- the City’s first Queer and Trans youth specific workforce development program in partnership with the Mayor’s Office.</p>
@@ -381,17 +385,11 @@
                             <h6 class="card-subtitle text-muted">she/her/hers</h6>
                         </div>
                         <div class="card-body">
-                            <p class="card-text">Diana Feliz Oliva has worked in the field of social services and public health for over 25 years. Her work began in 1994 with the County of Fresno – Department of Social Services to her position as HIV Community Liaison at Gilead Sciences in 2017, making her the first openly Transgender person hired by Gilead. Because of her unique and valuable expertise on Transgender and HIV issues, Diana has recently been promoted to Senior Manager in Public Affairs in 2019, in which, she has been developing the first-ever global Transgender Community Engagement Strategy by any biopharmaceutical company in history.</p>
-                            <p class="card-text">A graduate of Columbia University with a Master’s Degree in Social Work in 2005, her particular interest has been advancing the development of public policy that addresses community-level health and social problems. Turning her daunting personal challenges and barriers into the very basis of her activism, Ms. Oliva has become an effective social advocate and role model. Her work is shown giving voice and visibility to not only the HIV + positive communities, but also to the multiple, overlapping communities her life has touched.</p>
-                            <div class="d-none">
-                                <hr>
-                                <p class="card-text font-italic">I am writing to you all to express my interest in becoming a member of the Board of Directors for SF Pride. Currently, I serve as a board member for Openhouse LGBT Senior Housing, Community & Services Center and as an advisory member of the Oakland Pride Creative Arts & Film Fest.</p>
-                                <p class="card-text font-italic">As a first-generation Mexican-American Transgender woman who is openly HIV+postive, I’ve been a longtime community member and advocate for LGBTQIA2S communities. I’ve participated in social justice and human rights causes since I was in grade school. First, as a farm worker with my family and picketing with the United Farm Workers movement and lastly as a newly elected board member for Openhouse. I can assure you that I hope to bring a fair and open-minded perspective to the board to help serve the membership collectively.</p>
-                                <p class="card-text font-italic">Earlier this year, I relocated and purchased my first home in Oakland CA and recently celebrated my 48th birthday, a huge milestone that many Trans women of color do not get to experience because of the hate and violence that perpetrates our Transgender communities. As a member of the board, I hope to continue to help shape and develop ideas and discussions that promote strong inclusive/diverse principles not only for the Transgender community but all communities that need a strong voice at the table.</p>
-                                <p class="card-text font-italic">Educating the world, honoring our heritage, celebrating our culture, and liberating our people is due in large part to the Board of Directors of SF Pride and I truly hope to continue with the legacy you all have created over the last 50 years.</p>
-                                <p class="card-text font-italic">I appreciate your consideration.</p>
-                            </div>
-
+                            <p class="card-text">I am writing to you all to express my interest in becoming a member of the Board of Directors for SF Pride. Currently, I serve as a board member for Openhouse LGBT Senior Housing, Community & Services Center and as an advisory member of the Oakland Pride Creative Arts & Film Fest.</p>
+                            <p class="card-text">As a first-generation Mexican-American Transgender woman who is openly HIV+postive, I’ve been a longtime community member and advocate for LGBTQIA2S communities. I’ve participated in social justice and human rights causes since I was in grade school. First, as a farm worker with my family and picketing with the United Farm Workers movement and lastly as a newly elected board member for Openhouse. I can assure you that I hope to bring a fair and open-minded perspective to the board to help serve the membership collectively.</p>
+                            <p class="card-text">Earlier this year, I relocated and purchased my first home in Oakland CA and recently celebrated my 48th birthday, a huge milestone that many Trans women of color do not get to experience because of the hate and violence that perpetrates our Transgender communities. As a member of the board, I hope to continue to help shape and develop ideas and discussions that promote strong inclusive/diverse principles not only for the Transgender community but all communities that need a strong voice at the table.</p>
+                            <p class="card-text">Educating the world, honoring our heritage, celebrating our culture, and liberating our people is due in large part to the Board of Directors of SF Pride and I truly hope to continue with the legacy you all have created over the last 50 years.</p>
+                            <p class="card-text">I appreciate your consideration.</p>
                         </div>
                     </div>
                 </div>
@@ -457,7 +455,6 @@
             </div>
         </section>
     </div>
-
 
     <footer class="footer d-none">
         <h1 class="text-center mt-1">SAN FRANCISCO LGBT PRIDE PARADE AND CELEBRATION COMMITTEE, INC</h1>
