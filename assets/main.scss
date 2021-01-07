@@ -1,3 +1,8 @@
+---
+---
+
+@import 'bootstrap';
+
 @font-face {
     font-family: 'Atkinson-Hyperlegible';
     src: url('fonts/Atkinson-Hyperlegible-Regular-102.eot');
@@ -9,7 +14,7 @@
 @font-face {
     font-family: 'Atkinson-Hyperlegible';
     src: url('fonts/Atkinson-Hyperlegible-Italic-102.eot');
-    src: url('fonts/Atkinson-Hyperlegible-Italic-102.eot#iefix') format('embedded-opentype'), url('fonts/Atkinson-Hyperlegible-Italic-102a.woff2') format('woff2'), url('fonts/Atkinson-Hyperlegible-Italic-102.woff') format('woff'), url('fonts/Atkinson-Hyperlegible-Italic-102.ttf') format('truetype'), url('fonts/Atkinson-Hyperlegible-Italic-102.svg') format('svg');
+        src: url('fonts/Atkinson-Hyperlegible-Italic-102.eot#iefix') format('embedded-opentype'), url('fonts/Atkinson-Hyperlegible-Italic-102a.woff2') format('woff2'), url('fonts/Atkinson-Hyperlegible-Italic-102.woff') format('woff'), url('fonts/Atkinson-Hyperlegible-Italic-102.ttf') format('truetype'), url('fonts/Atkinson-Hyperlegible-Italic-102.svg') format('svg');
     font-weight: 400;
     font-style: italic;
 }

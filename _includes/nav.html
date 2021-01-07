@@ -1,0 +1,12 @@
+<nav>
+    <ul class="nav nav-fill d-none d-sm-flex">
+    {% for link in site.data.navigation %}
+        <li class="nav-item"><a href="{{ link.url }}">{{ link.title }}</a></li>
+    {% endfor %}
+    </ul>
+    <ul class="nav nav-fill d-sm-none">
+        {% for link in site.data.navigation %}
+        <li class="nav-item"><a href="{{ link.url }}">{{ link.shortname }}</a></li>
+        {% endfor %}
+    </ul>
+</nav>

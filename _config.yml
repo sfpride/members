@@ -1,0 +1,15 @@
+name: San Francisco LGBT Pride Parade and Celebration Committee, Inc.
+url: https://members.sfpride.org
+decription: a temporary resource site for SF Pride members
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - github-pages
+
+sass:
+  load_paths:
+    - _sass
+    - vendor/bundle/ruby/2.6.0/gems/bootstrap-5.0.0.beta1/assets/stylesheets/
+  style: compressed
