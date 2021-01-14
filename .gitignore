@@ -1,7 +1,6 @@
 .DS_Store
 _site/
 node_modules/
-vendor/
 .bundle/
 .sass-cache/
 .jekyll-cache/

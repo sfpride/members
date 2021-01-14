@@ -1,8 +1,6 @@
 ---
 ---
 
-
-
 @font-face {
     font-family: 'Atkinson-Hyperlegible';
     src: url('fonts/Atkinson-Hyperlegible-Regular-102.eot');
@@ -35,9 +33,16 @@
     font-style: italic;
 }
 
-body {
-    font-family: "Atkinson-Hyperlegible", sans-serif;
-}
+// body {
+//     font-family: "Atkinson-Hyperlegible", sans-serif;
+// }
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{font-family: 'Montserrat', sans-serif;}
+h1,h2,h3,h4,h5{font-family: 'Lato', sans-serif; font-weight: 700;}
+.lato-bold{font-family: 'Lato', sans-serif; font-weight: 700;}
+.montserrat{font-family: 'Montserrat', sans-serif;}
 
 .copy-me span {
     -webkit-user-select: all;
@@ -46,137 +51,10 @@ body {
     user-select: all;
 }
 
-.second-meeting {
-    filter: grayscale(99%);
-}
+$primary: #A54399;
+$secondary: #939597;
+$info: #439AA5;
+$success: #43A54F;
+$danger: #A54F43;
 
-.second-meeting:hover {
-    filter: blur(0px);
-}
-
-.btn-special {
-    text-align: center;
-    background-size: 200% auto;
-    color: whitesmoke;
-    box-shadow: 0 8px 10px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
-    background-image: linear-gradient(to right, #895cf2 0%, #ffabf4 50%, #895cf2 100%);
-}
-
-.rainbow {
-    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2), color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22));
-    background-image: gradient(linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2), color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22));
-}
-
-.rainbow-text {
-    -webkit-animation: rainbow 25s infinite;
-    -ms-animation: rainbow 25s infinite;
-    animation: rainbow 25s infinite;
-}
-
-@-webkit-keyframes rainbow {
-    0% {
-        color: orange;
-    }
-    10% {
-        color: purple;
-    }
-    20% {
-        color: red;
-    }
-    30% {
-        color: CadetBlue;
-    }
-    40% {
-        color: yellow;
-    }
-    50% {
-        color: coral;
-    }
-    60% {
-        color: green;
-    }
-    70% {
-        color: cyan;
-    }
-    80% {
-        color: DeepPink;
-    }
-    90% {
-        color: DodgerBlue;
-    }
-    100% {
-        color: orange;
-    }
-}
-
-@-ms-keyframes rainbow {
-    0% {
-        color: orange;
-    }
-    10% {
-        color: purple;
-    }
-    20% {
-        color: red;
-    }
-    30% {
-        color: CadetBlue;
-    }
-    40% {
-        color: yellow;
-    }
-    50% {
-        color: coral;
-    }
-    60% {
-        color: green;
-    }
-    70% {
-        color: cyan;
-    }
-    80% {
-        color: DeepPink;
-    }
-    90% {
-        color: DodgerBlue;
-    }
-    100% {
-        color: orange;
-    }
-}
-
-@keyframes rainbow {
-    0% {
-        color: orange;
-    }
-    10% {
-        color: purple;
-    }
-    20% {
-        color: red;
-    }
-    30% {
-        color: CadetBlue;
-    }
-    40% {
-        color: yellow;
-    }
-    50% {
-        color: coral;
-    }
-    60% {
-        color: green;
-    }
-    70% {
-        color: cyan;
-    }
-    80% {
-        color: DeepPink;
-    }
-    90% {
-        color: DodgerBlue;
-    }
-    100% {
-        color: orange;
-    }
-}
+@import "bootstrap";
