@@ -1,12 +1,38 @@
-<nav class="mb-3">
-    <ul class="nav nav-fill d-none d-lg-flex">
-    {% for link in site.data.navigation %}
-        <li class="nav-item"><a href="{{ link.url }}">{{ link.title }}</a></li>
-    {% endfor %}
-    </ul>
-    <ul class="nav nav-fill d-lg-none">
-        {% for link in site.data.navigation %}
-        <li class="nav-item"><a href="{{ link.url }}">{{ link.shortname }}</a></li>
-        {% endfor %}
-    </ul>
+<nav class="navbar navbar-expand-xl navbar-light">
+  <div class="container-fluid">
+    <div class="row">
+
+      <div class="col-7 col-sm-5">
+        <a class="navbar-brand" href="/"
+          ><img class="img-fluid" src="/assets/images/logo-HoT.png" alt=""
+        /></a>
+      </div>
+
+      <div class="col">
+        <button
+          class="navbar-toggler float-end"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main-menu"
+          aria-controls="main-menu"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse float-end" id="main-menu">
+          <ul class="navbar-nav nav-fill mx-auto">
+            {% for link in site.data.navigation %}
+            <li class="nav-item mx-auto">
+              <a class="nav-link {{link.text-class}}" aria-current="page" href="{{ link.url }}"
+                >{{ link.title }}</a>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
 </nav>

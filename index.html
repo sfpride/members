@@ -29,13 +29,13 @@ layout: default
         </div>
         <nav>
             <div class="nav nav-pills nav-justified mb-2" id="meeting-dates-tabs" role="tablist">
-                <a class="nav-item nav-link" id="nav-home-tab" data-toggle="tab" href="#cal-2020" role="tab"
-                    aria-controls="cal-2020" aria-selected="true">Previous Meetings</a>
-                <a class="nav-item nav-link active" id="nav-profile-tab" data-toggle="tab" href="#cal-2021" role="tab"
-                    aria-controls="cal-2021" aria-selected="false">2021 </a>
+                <a class="nav-item nav-link" data-toggle="tab" href="#cal-2020" role="tab"
+                    aria-controls="cal-2020" aria-selected="true" data-bs-toggle="tab">Previous Meetings</a>
+                <a class="nav-item nav-link active" data-toggle="tab" href="#cal-2021" role="tab"
+                    aria-controls="cal-2021" aria-selected="false" data-bs-toggle="tab">2021 </a>
             </div>
         </nav>
-        <div class="tab-content" id="nav-tabContent">
+        <div class="tab-content">
             <div class="tab-pane fade" id="cal-2020" role="tabpanel" aria-labelledby="cal2020-tab">
                 <table class="table table-sm table-striped table-borderless">
                         <thead class="table-dark">
@@ -383,16 +383,3 @@ layout: default
     </div>
 </section>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-    crossorigin="anonymous"></script>
-<script>
-    var triggerTabList = [].slice.call(document.querySelectorAll('#meeting-dates-tabs a'))
-    triggerTabList.forEach(function (triggerEl) {
-        var tabTrigger = new bootstrap.Tab(triggerEl)
-        triggerEl.addEventListener('click', function (event) {
-            event.preventDefault()
-            tabTrigger.show()
-        })
-    })
-</script>
