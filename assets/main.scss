@@ -51,6 +51,7 @@ h1,h2,h3,h4,h5{font-family: 'Lato', sans-serif; font-weight: 700;}
     user-select: all;
 }
 
+
 $primary: #A54399;
 $secondary: #939597;
 $info: #439AA5;
@@ -58,3 +59,5 @@ $success: #43A54F;
 $danger: #A54F43;
 
 @import "bootstrap";
+
+.text-purple-700{color:$purple-700;}

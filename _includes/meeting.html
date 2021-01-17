@@ -1,43 +1,26 @@
+{% for meeting in site.data.meetings %}
 <section id="meeting-banner">
     <div class="row my-2">
-        <div class="d-none text-center col-11 col-md-10 mx-auto border rounded border-primary bg-light p-5">
-            <h2>Board of Directors Meeting</h2>
-            <p class="lead">Wednesday, Jan. 6th 2021 at 7:00pm</p>
-            <div class="text-center btn-group mb-1">
-                <a class="btn btn-primary btn-lg" href="https://us02web.zoom.us/j/84248927494" target="_blank"
-                    rel="noopener noreferrer nofollow" role="button">Join Meeting</a>
-                <a class="btn btn-outline-primary btn-lg"
-                    href="https://docs.sfpride.org/files/meetings/20210106-sfpride-boardmeeting-packet.pdf"
-                    target="_blank" rel="noopener noreferrer nofollow" role="button">View Agenda</a>
-            </div>
-            <div id="meeting-info" class="text-muted small mb-n4">
-                <p class="m-0">
-                    Dial by your location:<br>
-                    <a href="tel:+16699009128">US: +1 669 900 9128</a>
-                    <br>Webinar ID: 817 0522 9953<br>
-                    <a href="https://us02web.zoom.us/u/kdtRnmC2g8">Find your local number</a>
-                </p>
-            </div>
-        </div>
         <div class="text-center col-11 col-md-10 mx-auto border rounded border-primary bg-light p-5">
-            <h2>Membership Meeting</h2>
-            <p class="lead">Wednesday, January 13th 2020 at 7:00pm</p>
+            <h2>{{meeting.title}}</h2>
+            <p class="lead">Wednesday, {{meeting.date}} at {{meeting.time}}m</p>
             <div class="text-center btn-group mb-1">
-                <a class="btn btn-primary btn-lg"
-                    href=" https://us02web.zoom.us/j/89042602848" target="_blank"
+                <a class="btn btn-primary btn-lg {% if meeting.zoom-link == blank? %}disabled{% endif %}"
+                    href="{{meeting.zoom-link}}" target="_blank"
                     rel="noopener noreferrer nofollow" role="button">Join Meeting</a>
-                <a class="btn btn-outline-secondary btn-lg"
-                    href="https://docs.sfpride.org/files/meetings/20210113-sfpride-membershipmeeting-agenda.pdf"
+                <a class="btn btn-outline-secondary btn-lg {% if meeting.agenda == blank? %}disabled{% endif %}"
+                    href="{{meeting.agenda}}"
                     target="_blank" rel="noopener noreferrer nofollow" role="button">View Agenda</a>
             </div>
             <div id="meeting-info" class="text-muted small mb-n4">
                 <p class="m-0">
                     Dial by your location:<br>
                     <a href="tel:+16699009128">US: +1 669 900 9128</a>
-                    <br><span class="copy-me">Meeting ID: <span>890 4260 2848</span></span><br>
+                    <br><span class="copy-me">Meeting ID: <span>{{meeting.zoom-id}}</span></span><br>
                     <a href="https://us02web.zoom.us/u/kDu9nHMe">Find your local number</a>
                 </p>
             </div>
         </div>
     </div>
 </section>
+{% endfor %}

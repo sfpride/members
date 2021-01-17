@@ -1,19 +1,19 @@
 - title: Board of Directors
   shortname: Board
   url: /board/
-  text-class: text-primary
+  # text-class: text-primary
 - title: 2020 Annual General Meeting
   shortname: 2020 AGM
   url: /agm/
-  text-class: text-primary
+  # text-class: text-primary
 - title: 2020 Director Election
   shortname: 2020 Board Election
   url: /election/
-  text-class: text-primary
+  # text-class: text-primary
 - title: Policies and Procedures Committee
   shortname: P&P Committee
   url: /policies-and-procedures
-  text-class: text-primary
+  # text-class: text-primary
 - title: Bylaws+
   shortname: Bylaws+
   url: https://www.sfpride.org/wp-content/uploads/2020/07/BYLAWS-POLICIES_SFPride_010220-1.pdf
