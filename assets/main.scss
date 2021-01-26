@@ -1,41 +1,13 @@
 ---
 ---
 
-@font-face {
-    font-family: 'Atkinson-Hyperlegible';
-    src: url('fonts/Atkinson-Hyperlegible-Regular-102.eot');
-    src: url('fonts/Atkinson-Hyperlegible-Regular-102.eot#iefix') format('embedded-opentype'), url('fonts/Atkinson-Hyperlegible-Regular-102a.woff2') format('woff2'), url('fonts/Atkinson-Hyperlegible-Regular-102.woff') format('woff'), url('fonts/Atkinson-Hyperlegible-Regular-102.ttf') format('truetype'), url('fonts/Atkinson-Hyperlegible-Regular-102.svg') format('svg');
-    font-weight: 400;
-    font-style: normal;
-}
+$primary: #A54399;
+$secondary: #939597;
+$info: #439AA5;
+$success: #43A54F;
+$danger: #A54F43;
 
-@font-face {
-    font-family: 'Atkinson-Hyperlegible';
-    src: url('fonts/Atkinson-Hyperlegible-Italic-102.eot');
-        src: url('fonts/Atkinson-Hyperlegible-Italic-102.eot#iefix') format('embedded-opentype'), url('fonts/Atkinson-Hyperlegible-Italic-102a.woff2') format('woff2'), url('fonts/Atkinson-Hyperlegible-Italic-102.woff') format('woff'), url('fonts/Atkinson-Hyperlegible-Italic-102.ttf') format('truetype'), url('fonts/Atkinson-Hyperlegible-Italic-102.svg') format('svg');
-    font-weight: 400;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Atkinson-Hyperlegible';
-    src: url('fonts/Atkinson-Hyperlegible-Bold-102.eot');
-    src: url('fonts/Atkinson-Hyperlegible-Bold-102.eot#iefix') format('embedded-opentype'), url('fonts/Atkinson-Hyperlegible-Bold-102a.woff2') format('woff2'), url('fonts/Atkinson-Hyperlegible-Bold-102.woff') format('woff'), url('fonts/Atkinson-Hyperlegible-Bold-102.ttf') format('truetype'), url('fonts/Atkinson-Hyperlegible-Bold-102.svg') format('svg');
-    font-weight: 700;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Atkinson-Hyperlegible';
-    src: url('fonts/Atkinson-Hyperlegible-BoldItalic-102.eot');
-    src: url('fonts/Atkinson-Hyperlegible-BoldItalic-102.eot#iefix') format('embedded-opentype'), url('fonts/Atkinson-Hyperlegible-BoldItalic-102a.woff2') format('woff2'), url('fonts/Atkinson-Hyperlegible-BoldItalic-102.woff') format('woff'), url('fonts/Atkinson-Hyperlegible-BoldItalic-102.ttf') format('truetype'), url('fonts/Atkinson-Hyperlegible-BoldItalic-102.svg') format('svg');
-    font-weight: bold;
-    font-style: italic;
-}
-
-// body {
-//     font-family: "Atkinson-Hyperlegible", sans-serif;
-// }
+@import "bootstrap";
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
@@ -50,14 +22,5 @@ h1,h2,h3,h4,h5{font-family: 'Lato', sans-serif; font-weight: 700;}
     -ms-user-select: all;
     user-select: all;
 }
-
-
-$primary: #A54399;
-$secondary: #939597;
-$info: #439AA5;
-$success: #43A54F;
-$danger: #A54F43;
-
-@import "bootstrap";
 
 .text-purple-700{color:$purple-700;}

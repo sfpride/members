@@ -3,42 +3,27 @@
     <div class="row">
       <div class="col-7 col-xl-5">
         <a class="navbar-brand" href="/">
-          <img
-            class="img-fluid pt-1"
-            src="/assets/images/logo-HoT.png"
-            alt="San Francisco Pride"
-          />
+          <img class="img-fluid pt-1" src="/assets/images/logo-HoT.png" alt="San Francisco Pride" />
         </a>
       </div>
       <div class="col d-xl-none my-auto pb-2">
-        <button
-          class="navbar-toggler float-end"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#main-menu"
-          aria-controls="main-menu"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <button class="navbar-toggler float-end" type="button" data-bs-toggle="collapse" data-bs-target="#main-menu"
+          aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
       </div>
-        <div class="col-12 col-xl-7 my-auto">
-          <div class="collapse navbar-collapse" id="main-menu">
-            <ul class="nav nav-pills nav-fill">
-              {% for link in site.data.navigation %}
-              <li class="nav-item text-end">
-                <a
-                class="nav-link {% if page.shortname == link.shortname %} active {% endif%} {{link.text-class}}"
-                aria-current="page"
-                href="{{ link.url }}"
-                >{{ link.title }}</a
-                >
-              </li>
-              {% endfor %}
-            </ul>
-          </div>
+      <div class="col-12 col-xl-7 my-auto">
+        <div class="collapse navbar-collapse" id="main-menu">
+          <ul class="nav nav-pills nav-fill">
+            {% for link in site.data.navigation %}
+            <li class="nav-item text-end">
+              <a class="nav-link {% if page.shortname == link.shortname %} active {% endif%} {{link.text-class}}"
+                aria-current="page" href="{{ link.url }}">{{ link.title }}</a>
+            </li>
+            {% endfor %}
+          </ul>
         </div>
       </div>
+    </div>
   </div>
 </nav>
