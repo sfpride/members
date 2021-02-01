@@ -1,14 +1,14 @@
 - title: "Board of Directors Meeting"
-   type: "board"
-   date: "February 3rd 2021"
-   time: "7:00pm"
-   zoom-link: "https://us02web.zoom.us/j/88917889520"
-   zoom-id: "889 1788 9520"
-   agenda: "https://cdn.sfpride.org/docs/meetings/20210203-sfpride-boardmeeting-agenda.pdf"
-# - title: Membership Meeting
-#   type: membership
-#   date: February 3rd 2021
-#   time: 7:00pm
-#   zoom-link: https://us02web.zoom.us/j/83844327167
-#   zoom-id: 838 4432 7167
-#   agenda: https://cdn.sfpride.org/docs/meetings/20210113-sfpride-membershipmeeting-agenda.pdf
+  type: "board"
+  date: "February 3rd 2021"
+  time: "7:00pm"
+  zoom-link: "https://us02web.zoom.us/j/88917889520"
+  zoom-id: "889 1788 9520"
+  agenda: "https://cdn.sfpride.org/docs/meetings/20210203-sfpride-boardmeeting-agenda.pdf"
+#- title: Membership Meeting
+#  type: membership
+#  date: February 3rd 2021
+#  time: 7:00pm
+#  zoom-link: https://us02web.zoom.us/j/83844327167
+#  zoom-id: 838 4432 7167
+#  agenda: https://cdn.sfpride.org/docs/meetings/20210113-sfpride-membershipmeeting-agenda.pdf
