@@ -1,0 +1,11 @@
+- title: "2021 Membership Survey"
+  body: Part of an ongoing effort to increase membership advocacy, involvement, and partnership with Pride.
+  alert: alert-primary
+  btn: btn-primary
+  cta: Submit a Response
+- title: "2021 Community Grand Marshal Suggestions"
+  body: "Submissions accepted until February 10th Membership Meeting"
+  alert: alert-secondary
+  btn: btn-secondary
+  cta-link: https://sfpride.wufoo.com/forms/z1w2i36k14clcls/
+  cta: Suggest a Grand Marshal

@@ -1,10 +1,13 @@
 <section id="announcements">
-    <div class="col text-center">
-        <div class="alert alert-danger">
-            <h4 class="card-title text-uppercase">2021 Community Grand Marshal Suggestions are Open</h4>
-            <p class="card-text">Submissions accepted until February 10th Membership Meeting</p>
-            <a class="mx-5 mb-2 btn btn-lg btn-danger" href="https://sfpride.wufoo.com/forms/z1w2i36k14clcls/"
-                role="button">Suggest a Grand Marshal</a>
+    <div class="row row-cols-1 row-cols-sm-2">
+        {% for announcement in site.data.announcements %}
+        <div class="col d-flex align-items-stretch text-center">
+            <div class="alert {{ announcement.alert }}">
+                <h4 class="alert-heading text-uppercase">{{ announcement.title }}</h4>
+                <p class="card-text">{{ announcement.body }}</p>
+                <a href="{{ announcement.cta-link }}" class="b-0 btn btn-lg {{ announcement.btn }}" role="button">{{ announcement.cta }}</a>
+            </div>
         </div>
+        {% endfor %}
     </div>
 </section>
