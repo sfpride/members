@@ -1,11 +1,11 @@
-<section id="announcements">
-    <div class="row row-cols-1 row-cols-sm-2">
+<section id="announcements" class="">
+    <div class="row row-cols-1 row-cols-sm-2 g-3">
         {% for announcement in site.data.announcements %}
-        <div class="col d-flex align-items-stretch text-center">
-            <div class="alert {{ announcement.alert }}">
+        <div class="col text-center" role="alert">
+            <div class="d-flex flex-column justify-content-end alert {{ announcement.alert }} h-100">
                 <h4 class="alert-heading text-uppercase">{{ announcement.title }}</h4>
                 <p class="card-text">{{ announcement.body }}</p>
-                <a href="{{ announcement.cta-link }}" class="b-0 btn btn-lg {{ announcement.btn }}" role="button">{{ announcement.cta }}</a>
+                <a href="{{ announcement.cta-link }}" class="mt-auto btn btn-lg {{ announcement.btn }}" role="button">{{ announcement.cta }}</a>
             </div>
         </div>
         {% endfor %}
