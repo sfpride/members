@@ -3,6 +3,7 @@
   alert: alert-primary
   btn: btn-primary
   cta: Submit a Response
+  cta-link: https://docs.google.com/forms/d/e/1FAIpQLSdhHPDEz1IKqrOu2UqanakzC0ryknBZogO7tu6Ij6k4W7GiFg
 - title: "2021 Community Grand Marshal Suggestions"
   body: "Submissions accepted until February 10th Membership Meeting"
   alert: alert-secondary
