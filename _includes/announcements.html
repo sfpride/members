@@ -8,7 +8,7 @@
                     <span>{{ announcement.body }}</span>
                     {% if announcement.context != blank? %}
                     <br>
-                    <a class="alert-link" href="{{ context-link }}"><span class="text-capitalize">{{ announcement.context }}</span> {{ announcement.context-type }}</a>
+                    <a class="alert-link" href="{{ announcement.context-link }}"><span class="text-capitalize">{{ announcement.context }}</span> {{ announcement.context-type }}</a>
                     {% endif %}
                     </p>
                 <a href="{{ announcement.cta-link }}" class="mt-auto btn btn-lg {{ announcement.btn }}" role="button">{{ announcement.cta }}</a>
