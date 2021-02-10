@@ -8,9 +8,16 @@
                 <a class="btn btn-primary btn-lg {% if meeting.zoom-link == blank? %}disabled{% endif %}"
                     href="{{meeting.zoom-link}}" target="_blank"
                     rel="noopener noreferrer nofollow" role="button">Join Meeting</a>
+                    {% if meeting.packet == blank? %}
                 <a class="btn btn-outline-secondary btn-lg {% if meeting.agenda == blank? %}disabled{% endif %}"
                     href="{{meeting.agenda}}"
                     target="_blank" rel="noopener noreferrer nofollow" role="button">View Agenda</a>
+                    {% endif %}
+                    {% if meeting.packet != blank? %}
+                <a class="btn btn-outline-secondary btn-lg"
+                    href="{{meeting.packet}}"
+                    target="_blank" rel="noopener noreferrer nofollow" role="button">View Agenda</a>
+                    {% endif %}
             </div>
             <div id="meeting-info" class="text-muted small mb-n4">
                 <p class="m-0">
