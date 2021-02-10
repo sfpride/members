@@ -4,7 +4,13 @@
         <div class="col text-center" role="alert">
             <div class="d-flex flex-column justify-content-end alert {{ announcement.alert }} h-100">
                 <h4 class="alert-heading text-uppercase">{{ announcement.title }}</h4>
-                <p class="card-text">{{ announcement.body }}</p>
+                <p class="card-text">
+                    <span>{{ announcement.body }}</span>
+                    {% if announcement.context != blank? %}
+                    <br>
+                    <a class="alert-link" href="{{ context-link }}"><span class="text-capitalize">{{ announcement.context }}</span> {{ announcement.context-type }}</a>
+                    {% endif %}
+                    </p>
                 <a href="{{ announcement.cta-link }}" class="mt-auto btn btn-lg {{ announcement.btn }}" role="button">{{ announcement.cta }}</a>
             </div>
         </div>
