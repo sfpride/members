@@ -4,7 +4,8 @@
 #   time: "7:00pm"
 #   zoom-link: "https://us02web.zoom.us/j/88917889520"
 #   zoom-id: "889 1788 9520"
-#   agenda: "https://cdn.sfpride.org/docs/meetings/20210203-sfpride-boardmeeting-packet.pdf"
+#   agenda: "https://cdn.sfpride.org/docs/meetings/20210203-sfpride-boardmeeting-agenda.pdf"
+#   packet: "https://cdn.sfpride.org/docs/meetings/20210203-sfpride-boardmeeting-packet.pdf"
 - title: Membership Meeting
   type: membership
   date: February 10th 2021
@@ -12,3 +13,4 @@
   zoom-link: https://us02web.zoom.us/j/83844327167
   zoom-id: 838 4432 7167
   agenda: https://cdn.sfpride.org/docs/meetings/20210210-sfpride-membershipmeeting-agenda.pdf
+  packet: https://cdn.sfpride.org/docs/meetings/20210210-sfpride-membershipmeeting-packet.pdf
