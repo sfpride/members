@@ -4,7 +4,6 @@ url: https://members.sfpride.org
 description: a temporary resource site for SF Pride members
 
 plugins:
-  - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
   - github-pages
