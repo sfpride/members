@@ -8,8 +8,18 @@
   <meta name="description" content="membership information for san francisco lgbt pride parade and celebration committee" />
   <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.xml" title="{{ site.title }}" />
   <link rel="stylesheet" href="{{ 'assets/css/bootstrap-icons.css' | relative_url }}" />
-  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}" />
+  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}" />  
   {% seo %}
+  {% if jekyll.environment == "production" %}
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CK7YRVCWDJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-CK7YRVCWDJ');
+  </script>
+  {% endif %}
 </head>
 
 <body>
