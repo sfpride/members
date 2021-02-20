@@ -10,12 +10,3 @@
   btn: btn-danger
   cta: Envíe una Respuesta
   cta-link: https://docs.google.com/forms/d/e/1FAIpQLSd1Wya74SboG287YaSSXAGRYYS9Ktgo8KNMo9-ducBpnj5lJw/viewform?usp=sf_link
-- title: "2021 Community Grand Marshal Suggestions"
-  body: "Submissions accepted until February 10th Membership Meeting"
-  context: historical grand marshal and honoree list
-  context-link: https://cdn.sfpride.org/docs/2020-sfpride-grandMarshalList-tabloid.pdf
-  context-type: (pdf)
-  alert: alert-secondary
-  btn: btn-secondary
-  cta-link: https://sfpride.wufoo.com/forms/z1w2i36k14clcls/
-  cta: Suggest a Grand Marshal
