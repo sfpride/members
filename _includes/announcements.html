@@ -1,8 +1,7 @@
-
 <section id="announcements" class="">
-    <div class="row row-cols-1 row-cols-sm-2 g-3">
+    <div class="row row-cols-1 row-cols-md-2 g-3">
         {% for announcement in site.data.announcements %}
-        <div class="col text-center" role="alert">
+        <div class="col text-center mx-auto" role="alert">
             <div class="d-flex flex-column justify-content-end alert {{ announcement.alert }} h-100">
                 <h4 class="alert-heading text-uppercase">{{ announcement.title }}</h4>
                 <p class="card-text">

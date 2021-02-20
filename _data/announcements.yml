@@ -4,6 +4,12 @@
   btn: btn-primary
   cta: Submit a Response
   cta-link: https://docs.google.com/forms/d/e/1FAIpQLSdhHPDEz1IKqrOu2UqanakzC0ryknBZogO7tu6Ij6k4W7GiFg/viewform
+- title: "Encuesta de Membresía 2021"
+  body: Parte de un esfuerzo continuo para aumentar la promoción, participación y asociación de los miembros con Pride.
+  alert: alert-danger
+  btn: btn-danger
+  cta: Envíe una Respuesta
+  cta-link: https://docs.google.com/forms/d/e/1FAIpQLSd1Wya74SboG287YaSSXAGRYYS9Ktgo8KNMo9-ducBpnj5lJw/viewform?usp=sf_link
 - title: "2021 Community Grand Marshal Suggestions"
   body: "Submissions accepted until February 10th Membership Meeting"
   context: historical grand marshal and honoree list
