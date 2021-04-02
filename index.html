@@ -238,7 +238,7 @@ title: SF LGBT Pride Members
                         <tr>
                             <td scope="row">{{meeting.date}}</td>
                             <td>{{ meeting.type }}</td>
-                            <td><a href="{{ meeting.materials-url}}">{{ meeting.materials-link }}</a> ({{meeting.materials-type}})</td>
+                            <td><a href="{{ meeting.materials-url}}">{{ meeting.materials-link }}</a> {% if meeting.materials-type != blank? %}({{meeting.materials-type}}){% endif %}</td>
                         </tr>
                         {% endfor %}
                     </tbody>
