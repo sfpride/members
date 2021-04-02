@@ -236,7 +236,7 @@ title: SF LGBT Pride Members
                     <tbody>
                         {% for meeting in site.data.calendar %}
                         <tr>
-                            <td scope="row">{{meeting.date | date_to_string}}</td>
+                            <td scope="row">{{meeting.date}}</td>
                             <td>{{ meeting.type }}</td>
                             <td><a href="{{ meeting.materials-url}}">{{ meeting.materials-link }}</a> ({{meeting.materials-type}})</td>
                         </tr>
