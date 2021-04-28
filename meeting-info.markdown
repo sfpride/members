@@ -1,5 +1,7 @@
 ---
 layout: default
+title: READ AT MEETINGS
+description: Important meeting info often read at the start of meetings. 
 ---
 
 ## Mission Statement
