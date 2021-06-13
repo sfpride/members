@@ -1,16 +1,18 @@
-#- title: "Board of Directors Meeting"
-#  type: "board"
-#  date: "June 2nd 2021"
-#  time: "7:00pm"
-#  zoom-link: "https://us02web.zoom.us/j/88917889520"
-#  zoom-id: "889 1788 9520"
-#  #agenda: "https://cdn.sfpride.org/docs/meetings/20210505-sfpride-boardmeeting-agenda.pdf"
-#  packet: "https://cdn.sfpride.org/docs/meetings/20210602-sfpride-boardmeeting-packet.pdf"
+- title: "Board of Directors Meeting"
+  active: false
+  type: "board"
+  date: "June 2nd 2021"
+  time: "7:00pm"
+  zoom-link: "https://us02web.zoom.us/j/88917889520"
+  zoom-id: "889 1788 9520"
+  agenda: "https://cdn.sfpride.org/docs/meetings/20210505-sfpride-boardmeeting-agenda.pdf"
+  packet: "https://cdn.sfpride.org/docs/meetings/20210602-sfpride-boardmeeting-packet.pdf"
 - title: Membership Meeting
+  active: false
   type: membership
   date: Jun 9th 2021
   time: 7:00pm
   zoom-link: https://us02web.zoom.us/j/89042602848
   zoom-id: 890 4260 2848
   agenda: https://cdn.sfpride.org/docs/meetings/20210609-sfpride-membershipmeeting-agenda.pdf
-  #packet: https://cdn.sfpride.org/docs/meetings/20210310-sfpride-membershipmeeting-packet.pdf
+  packet: https://cdn.sfpride.org/docs/meetings/20210310-sfpride-membershipmeeting-packet.pdf
