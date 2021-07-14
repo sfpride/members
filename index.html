@@ -235,8 +235,10 @@ title: SF LGBT Pride Members
 					</thead>
 					<tbody>
 						{% for meeting in site.data.calendar %}
-						<tr>
-							<td class="text-nowrap" scope="row">{{meeting.date}}</td>
+						{% assign today_date = 'today' | date: '%b %d, %Y' %}
+						{% assign meeting_today = meeting.date | date: '%b %d, %Y' %}
+						<tr {% if meeting_today == today_date %} class="fw-bold border border-primary" {% endif %}>
+							<td class="text-nowrap" scope="row">{{ meeting.date | date: '%b %d, %Y' }}</td>
 							<td>{{ meeting.type }}</td>
 							<td><a href="{{ meeting.materials-url}}">{{ meeting.materials-link }}</a>
 								{% if meeting.materials-type != blank? %}({{meeting.materials-type}}){% endif %}</td>
@@ -351,14 +353,6 @@ title: SF LGBT Pride Members
 	
 	<p class="m-0 p-0 text-center text-muted">Joining and renewal are the same process.<br>Click the link below and fill out the form to join or renew your membership.</p>
 
-	<div class="row m-0">
-		<div class="col">
-			<div class="alert alert-warning">
-				<h5 class="alert-heading text-center">Joining and Renewal are the same process. Click the link below and
-					fill out the form to join or renew your membership.</h5>
-				</div>
-		</div>
-	</div>
 
 	<div class="row m-0">
 		<div class="col col-md-8 mx-auto">
