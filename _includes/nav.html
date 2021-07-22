@@ -1,29 +1,49 @@
-<nav class="navbar navbar-expand-xl navbar-light">
+
+<nav class="navbar navbar-expand-xl navbar-light mb-2">
+
   <div class="container-fluid">
-    <div class="row">
-      <div class="col-9 col-xl-5">
+
+    <div class="row align-items-center">
+
+      <div class="col col-10 col-xl-5">
         <a class="navbar-brand" href="/">
           <img class="img-fluid pt-1" src="https://cdn.sfpride.org/images/logo-HoT.png" alt="San Francisco Pride" />
         </a>
       </div>
-      <div class="col d-xl-none my-auto pb-2">
+
+      <div class="col col-2 d-xl-none">
         <button class="navbar-toggler float-end" type="button" data-bs-toggle="collapse" data-bs-target="#main-menu"
           aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
       </div>
-      <div class="col-12 col-xl-7 my-auto">
+
+      <div class="col col-12 col-xl-7">
         <div class="collapse navbar-collapse" id="main-menu">
           <ul class="nav nav-pills nav-fill">
-            {% for link in site.data.navigation %}
-            <li class="nav-item text-end">
-              <a class="nav-link {% if page.shortname == link.shortname %} active {% endif%} {{link.text-class}}"
-                aria-current="page" href="{{ link.url }}">{{ link.title }}</a>
+            <li class="nav-item text-end"><a href="/board" class="nav-link {% if page.shortname == "Board" %} active {% endif%}">Board of Directors</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Committees</a>
+              <ul class="dropdown-menu">
+                <li class="nav-item"><a href="/policies-and-procedures" class="nav-link">Policies &amp; Procedures</a></li>
+              </ul>
             </li>
-            {% endfor %}
+            <li class="nav-item text-end"><a href="/agm" class="nav-link {% if page.shortname == "AGM" %} active {% endif%}">Annual General Meeting</a></li>
+            <li class="nav-item text-end"><a href="/election" class="nav-link {% if page.shortname == "Election" %} active {% endif%}">Board of Directors Election</a></li>
+            <li class="nav item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Archive</a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-item"><a href="/2020/agm" class="nav-link">2020 AGM</a></li>
+                <li class="dropdown-item"><a href="/2020/election" class="nav-link">2020 Board Election</a></li>
+              </ul>
+            </li>
+            <li class="nav-item text-end"><a href="" class="nav-link text-info">Governing Documents</a></li>
           </ul>
         </div>
       </div>
+
     </div>
+
   </div>
+
 </nav>
