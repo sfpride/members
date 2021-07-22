@@ -2,7 +2,7 @@
   active: true
   type: "board"
   date: "July 28th 2021"
-  time: "7:00pm"
+  time: "7:00 p.m."
   #zoom-link: "https://us02web.zoom.us/j/88917889520"
   zoom-link: "https://us02web.zoom.us/j/81769631285?pwd=Zzc0Z1cvS25waTZMYmJGdVA0bDVLUT09"
   #zoom-id: "889 1788 9520"
@@ -12,8 +12,8 @@
 - title: Membership Meeting
   active: false
   type: membership
-  date: July 14, 2021
-  time: 7:00pm
+  date: "July 14, 2021"
+  time: "7:00 p.m."
   zoom-link: https://us02web.zoom.us/j/89042602848
   zoom-id: 890 4260 2848
   agenda: https://cdn.sfpride.org/docs/meetings/20210714-sfpride-membershipmeeting-agenda.pdf
