@@ -1,5 +1,5 @@
-- title: "Special Board of Directors Meeting"
-  active: true
+- title: " Board of Directors Meeting"
+  active: false
   type: "board"
   date: "July 28th 2021"
   time: "7:00 p.m."
