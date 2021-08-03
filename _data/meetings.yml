@@ -1,13 +1,11 @@
-- title: " Board of Directors Meeting"
-  active: false
+- title: "Board of Directors Meeting"
+  active: true
   type: "board"
-  date: "July 28th 2021"
+  date: "Aug 4th 2021"
   time: "7:00 p.m."
-  #zoom-link: "https://us02web.zoom.us/j/88917889520"
-  zoom-link: "https://us02web.zoom.us/j/81769631285?pwd=Zzc0Z1cvS25waTZMYmJGdVA0bDVLUT09"
-  #zoom-id: "889 1788 9520"
-  zoom-id: "817 6963 1285"
-  #agenda: "https://cdn.sfpride.org/docs/meetings/20210505-sfpride-boardmeeting-agenda.pdf"
+  zoom-link: "https://us02web.zoom.us/j/88917889520"
+  zoom-id: "889 1788 9520"
+  agenda: "https://cdn.sfpride.org/docs/meetings/20210804-sfpride-boardmeeting-agenda.pdf"
   #packet: "https://cdn.sfpride.org/docs/meetings/20210707-sfpride-boardmeeting-packet.pdf"
 - title: Membership Meeting
   active: false
