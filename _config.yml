@@ -2,6 +2,7 @@ name: San Francisco LGBT Pride Parade and Celebration Committee, Inc.
 title: San Francisco Pride
 url: https://members.sfpride.org
 description: a resource site for SF Pride members
+timezone: America/Los_Angeles
 
 
 plugins:
