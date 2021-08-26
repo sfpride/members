@@ -3,7 +3,7 @@ title: San Francisco Pride
 url: https://members.sfpride.org
 description: a resource site for SF Pride members
 timezone: America/Los_Angeles
-
+port: 4001
 
 plugins:
   - jekyll-sitemap
