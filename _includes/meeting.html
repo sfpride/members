@@ -23,9 +23,11 @@
             <div id="meeting-info" class="text-muted small mb-n4">
                 <p class="m-0">
                     {% if meeting.agenda == blank? %}<em style="font-size: 0.85rem;">agenda is not ready</em><br>{% endif %}
+                    {% if meeting.zoom-id != blank? %}
                     Meeting ID: <span class="copy-me">{{meeting.zoom-id}}</span><br>
                     Join by phone: <a href="tel:+16699009128">US: +1 669 900 9128</a><br>
                     <span> <a href="https://us02web.zoom.us/u/kcttTaTUI1">Find</a> your local number</span><br>
+                    {% endif %}
                 </p>
                 <!-- <p class="m-0"><a class="btn btn-sm btn-danger m-1 p-2" href="">Add to your Calendar (.ics)</a><a class="btn btn-sm btn-info text-white m-1 p-2" href="">Add to your Google Calendar</a></p> -->
             </div>

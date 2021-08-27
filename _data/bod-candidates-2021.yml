@@ -1,24 +1,45 @@
 - name: Spring Collins
-  pronouns:
-  inc: 
-  bio:
-- name: Suzanne Ford
-  image: https://cdn.sfpride.org/m/board/2020/sf.jpg
+  id: springcollins
+  image: https://storage.googleapis.com/sfpride/m/election/2021/candidates/spring-collins.jpg
   pronouns: she / they
+  inc: 
+  bio: >-
+    <p>Spring Collins is a queer and trans artist, advocate, and community organizer. She was most recently a lead organizer for the community-led Trans History March for Inclusion. Marching from Dolores Park to the Castro, it celebrated the rich history of trans people, honored the legacy of Gwen Araujo and the recent passing of Felicia Flames, and to took up/held space for Black and Brown TGNC folks.</p>
+    <p>Spring is the founder and program director for TRANScend Retreat, an annual retreat for trans and genderqueer folks. She has also been a part of the organizing teams for TDOV, TDOR, Trans March SF, and Oakland Trans March. Spring has a long history as a youth worker and extensive experience with farm and environmental justice work through their career at Hidden Villa, an educational nonprofit stretching across 1,600 acres of open space in the foothills of the Santa Cruz Mountains.</p>
+    <p>Spring is also a performer and curator who uses the drag name Sprung T Black. She has curated a variety of open mics and live poetry shows over the years, highlighting trans and non-binary artists in the Bay Area and abroad.</p>
+    <p>A seat on the SF Pride board would be an opportunity for Spring to bring their unique perspectives as a trans femme genderqueer artist, community organizer, and youth worker.</p>
+
+- name: Suzanne Ford
+  id: suzanneford
+  image: https://storage.googleapis.com/sfpride/m/election/2021/candidates/suzanne-ford.png
+  pronouns: 
   inc: (incumbent)
-  bio:
+  bio: >-
+    <p>Suzanne Ford currently serves as Vice President of the San Francisco Pride Board of Directors.  Previously, she was Treasurer for two years.  Suzanne is a fierce trans woman working to advance her community's rights. She lives in the Bay Area with her family and is the West Coast Regional Sales Manager for Revere Packaging.</p>
+    <p>Originally from Kentucky, she struggled with her identity for many years before coming out at 48-years-old. Her primary goal is to work to create a world where no one struggles to live their best authentic life. Community service is her passion. She serves as President of the Board for the Spahr Center and also sits on the Board of Trans Heartline.</p>
+    <p>Suzanne wants to continue serving the SF Pride community. Great strides have been made to ensure equity for everyone, however there is still much to do. She will work hard to make sure San Francisco throws the biggest Pride event ever in 2022 and asks that you please support her with your vote!</p>
+    <p>Suzanne, along with Nguyen Pham, was one of the founders of the SF Pride annual pro-am golf tournament.  In the last 2 years, the event has raised over $35k. SF Pride has been integral in expanding inclusion in golf for the LGBTQ community. This year will be the biggest event ever with already over $40k in pledged sponsorships.</p>
+
 - name: Manuel Peréz
-  image: https://cdn.sfpride.org/m/board/2020/mp.jpg
+  id: manuelperez
+  image: https://storage.googleapis.com/sfpride/m/election/2021/candidates/manuel-perez.jpg
   pronouns: he / him / his / él
   inc: (incumbent)
-  bio:
+  bio: >-
+    <p>In his time on the Board, Manuel is proudest of two long-term projects. In 2019, he organized “Orgullo y Tesoro,” SF Pride’s first-ever bilingual and bicultural fundraising event, complete with performances and partnerships with Latinx LGBTQIA+ organizations from the San Francisco, Oakland, and San Jose areas. Fully sponsored, with all goods and services donated, the event generated $5,067 in profit for SF Pride while incurring no costs. During the last year, Manuel has also served as chair of SF Pride’s Policies & Procedures Committee. With the support of the Board, the committee has successfully conducted a full review of the organization’s policies and procedures, including an in-depth review of the bylaws, which are up for member vote at the 2021 Annual General Members meeting. This review cycle includes updates to some sections of the organization’s governing documents that had not been updated since 2016.</p>
+    <p>Manuel has 18 years of experience in higher education in California. He is currently the Vice President of Student Services at Cañada College as part of the San Mateo County Community College District. He is also part-time faculty at the University of San Francisco in the Performing Arts & Social Justice Program and the School of Education, where he received his doctorate in 2017.</p>
+    <p>Manuel first joined the SF Pride Board in Spring 2018 with the goal of supporting initiatives that connect more communities to the SF Pride family. He hopes to continue these efforts to build deeper relationships with other organizations in the community and further activate what it means for SF Pride to commit to liberation.</p>
+
 - name: Maceo Persson
-  image: https://storage.googleapis.com/sfpride/m/election/2021/candidates/maceo-persson.jpg
-  pronouns:
+  id: maceopersson
+  image: https://storage.googleapis.com/sfpride/m/election/2021/candidates/maceo-persson-2.jpg
+  pronouns: he / him / his
   inc: 
   bio: Maceo Persson is a queer, Latinx, trans man with a Swedish-Chilean background. He began organizing in Oregon where he served on the board for the state immigrant rights organization CAUSA, worked on local issues impacting students of color, and organized with trans communities at a local level. From there he joined Basic Rights Oregon to pass LGBT inclusive nondiscrimination and domestic partnership laws. After spending eight years in Oregon, Maceo moved to California and joined the Transgender Law Center (TLC). At TLC, Maceo mobilized trans, gender nonconforming, and allied communities to secure trans-inclusive healthcare policies, and strengthen California nondiscrimination laws. Maceo then served as the Director of Communications and External Affairs for San Francisco’s Office of Transgender Initiatives, working to bring the leadership and experiences of TGNC communities to the City. Currently, Maceo serves as a Deputy Director for the Community Branch at the San Francisco COVID Task Force to prevent the spread of COVID and towards recovery. In his off-time Maceo serves as a board member for the San Francisco LGBT Center and the Grant Making Panel of the International Trans Fund.
+  
 - name: Nguyen Pham
-  image: https://storage.googleapis.com/sfpride/m/election/2021/candidates/nguyen-pham.jpg
+  id: nguyenpham
+  image: https://storage.googleapis.com/sfpride/m/election/2021/candidates/nugyen-pham-2.jpg
   pronouns: he / him / his
   inc: (incumbent)
   bio: >-
@@ -28,8 +49,9 @@
     <p class="card-text">This journey has been challenging and uncomfortable; and it has been necessary and nourishing. It is with this abundant energy and constructive outlook that Nguyen pledges to honor SF Pride, our stakeholders, and our communities as we navigate through the next wave of uncertainty, COVID or otherwise. With your support, and with your vote, it will be his humble privilege to champion SF Pride’s important work as we continue to educate, commemorate, celebrate, and liberate.</p>
 
 - name: Di'ara Reid
-  image: https://storage.googleapis.com/sfpride/m/election/2021/candidates/diara-reid.jpg
-  pronouns:
+  id: diarareid
+  image: https://storage.googleapis.com/sfpride/m/election/2021/candidates/diara-reid-2.jpg
+  pronouns: she / her / hers 
   inc: 
   bio: >-
     <p class="card-text">Di'ara Melite Reid is running for a seat at the table on the Board of Directors for San Francisco Pride, to represent the members. Di'ara is a fifth generation Californian, born at Kaiser hospital Oakland, and an East Bay resident their entire life.</p>
@@ -39,15 +61,25 @@
     <p class="card-text">Di’ara hopes that after their three-year term, if elected, they will have fulfilled your expectations and delivered to SF Pride the excellence it deserves.</p>
 
 - name: George Smith III
-  pronouns:
+  id: georgesmith
+  image:
+  pronouns: 
   inc: 
   bio:
 - name: Janelle Vinson
-  pronouns:
+  id: janellevinson
+  image: https://storage.googleapis.com/sfpride/m/election/2021/candidates/janelle-vinson.png
+  pronouns: she / her / they
   inc: 
-  bio:
+  bio: >-
+    <p>Janelle Luster is 29 years old and an award-winning community organizer and transgender activist native of the San Francisco Bay Area. Janelle has been organizing and advocating for the rights of transgender people, PLWHIV, and Sex workers locally and nationally. She currently serves as Program Supervisor of Trans Vision a specialty clinic within Bay Area Community Health-BACH located in Fremont, Ca. She is currently running to sit on the SF Pride Board, to bring diversity to a historically white org.</p>
+    <p>Janelle has organized with the Decriminalize Sex Work California Coalition (DecrimSWCA), in addition to policy advocacy we believe that we must respond to our community’s immediate need and help sustain SW’s out of work due tdo the COVID-19 pandemic. Mutual Aid is a critical tool to ensuring that our community has access to getting their essentials, Janelle was involved in the Mutual Aid Fund geared towards supporting California based Sex Workers.</p>
+    <p>Janelle identifies as a formerly incarcerated black transwomen who has been impacted by the system due to the intersections of her identities and because of that she is dedicated to empowering those communities through access to services, resources and social empowerment. Janelle has been coordinating Black Trans Lives Matter Protest & Rallies as well as virtual social spaces of empowerment throughout this pandemic and hosted a Virtual Vigil honoring those lost to hate violence. She attended the 2020 Creating Change Conference where she was able to expand her network and build national solidarity.</p>
+    <p>Janelle served as Program Associate and Director of Community Engagement for The Transgender District (San Francisco). In addition, she co-leads an annual transgender empowerment retreat, TRANScend Retreat. In 2019 TRANScend Retreat facilitated the Malaysia Booker Travel Fund, bringing black trans women from the south and mid-west to join the gathering hosted at a retreat center in Northern California. TRANScend  Retreat was able to book airflights and in partnership with Homobiles get folks from the airport to the retreat center 2.5hrs outside of the Bay Area. TRANScend Retreat is moving to a virtual platform for 2020. Janelle served as ambassador for the 2019 National Transgender March on Washington D.C. and under her leadership as President of FLUX Bay Area Chapter organized Oakland’s first Trans March in 2019. In her work, she strives for the advancement of transgender folks of color, specifically black transgender women and men.</p>
+
 - name: Carolyn Wysinger
-  image: https://storage.googleapis.com/sfpride/m/election/2021/candidates/carolyn-wysinger.jpg
+  id: carolynwysinger
+  image: https://storage.googleapis.com/sfpride/m/election/2021/candidates/carolyn-wysinger-3.jpg
   pronouns:  she / her / hers
   inc: (incumbent)
   bio: >-
