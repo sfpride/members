@@ -14,7 +14,12 @@
   image: https://storage.googleapis.com/sfpride/m/election/2021/candidates/suzanne-ford.png
   pronouns: 
   inc: (incumbent)
-  bio:
+  bio: >-
+    <p>Suzanne Ford currently serves as Vice President of the San Francisco Pride Board of Directors.  Previously, she was Treasurer for two years.  Suzanne is a fierce trans woman working to advance her community's rights. She lives in the Bay Area with her family and is the West Coast Regional Sales Manager for Revere Packaging.</p>
+    <p>Originally from Kentucky, she struggled with her identity for many years before coming out at 48-years-old. Her primary goal is to work to create a world where no one struggles to live their best authentic life. Community service is her passion. She serves as President of the Board for the Spahr Center and also sits on the Board of Trans Heartline.</p>
+    <p>Suzanne wants to continue serving the SF Pride community. Great strides have been made to ensure equity for everyone, however there is still much to do. She will work hard to make sure San Francisco throws the biggest Pride event ever in 2022 and asks that you please support her with your vote!</p>
+    <p>Suzanne, along with Nguyen Pham, was one of the founders of the SF Pride annual pro-am golf tournament.  In the last 2 years, the event has raised over $35k. SF Pride has been integral in expanding inclusion in golf for the LGBTQ community. This year will be the biggest event ever with already over $40k in pledged sponsorships.</p>
+
 - name: Manuel Peréz
   id: manuelperez
   image: https://storage.googleapis.com/sfpride/m/election/2021/candidates/manuel-perez.jpg
@@ -57,8 +62,8 @@
 
 - name: George Smith III
   id: georgesmith
-  image: https://storage.googleapis.com/sfpride/m/election/2021/candidates/george-smith.jpg
-  pronouns: he / him / his
+  image:
+  pronouns: 
   inc: 
   bio:
 - name: Janelle Vinson
@@ -66,10 +71,15 @@
   image: https://storage.googleapis.com/sfpride/m/election/2021/candidates/janelle-vinson.png
   pronouns: she / her / they
   inc: 
-  bio:
+  bio: >-
+    <p>Janelle Luster is 29 years old and an award-winning community organizer and transgender activist native of the San Francisco Bay Area. Janelle has been organizing and advocating for the rights of transgender people, PLWHIV, and Sex workers locally and nationally. She currently serves as Program Supervisor of Trans Vision a specialty clinic within Bay Area Community Health-BACH located in Fremont, Ca. She is currently running to sit on the SF Pride Board, to bring diversity to a historically white org.</p>
+    <p>Janelle has organized with the Decriminalize Sex Work California Coalition (DecrimSWCA), in addition to policy advocacy we believe that we must respond to our community’s immediate need and help sustain SW’s out of work due tdo the COVID-19 pandemic. Mutual Aid is a critical tool to ensuring that our community has access to getting their essentials, Janelle was involved in the Mutual Aid Fund geared towards supporting California based Sex Workers.</p>
+    <p>Janelle identifies as a formerly incarcerated black transwomen who has been impacted by the system due to the intersections of her identities and because of that she is dedicated to empowering those communities through access to services, resources and social empowerment. Janelle has been coordinating Black Trans Lives Matter Protest & Rallies as well as virtual social spaces of empowerment throughout this pandemic and hosted a Virtual Vigil honoring those lost to hate violence. She attended the 2020 Creating Change Conference where she was able to expand her network and build national solidarity.</p>
+    <p>Janelle served as Program Associate and Director of Community Engagement for The Transgender District (San Francisco). In addition, she co-leads an annual transgender empowerment retreat, TRANScend Retreat. In 2019 TRANScend Retreat facilitated the Malaysia Booker Travel Fund, bringing black trans women from the south and mid-west to join the gathering hosted at a retreat center in Northern California. TRANScend  Retreat was able to book airflights and in partnership with Homobiles get folks from the airport to the retreat center 2.5hrs outside of the Bay Area. TRANScend Retreat is moving to a virtual platform for 2020. Janelle served as ambassador for the 2019 National Transgender March on Washington D.C. and under her leadership as President of FLUX Bay Area Chapter organized Oakland’s first Trans March in 2019. In her work, she strives for the advancement of transgender folks of color, specifically black transgender women and men.</p>
+
 - name: Carolyn Wysinger
   id: carolynwysinger
-  image: https://storage.googleapis.com/sfpride/m/election/2021/candidates/carolyn-wysinger-2.png
+  image: https://storage.googleapis.com/sfpride/m/election/2021/candidates/carolyn-wysinger-3.jpg
   pronouns:  she / her / hers
   inc: (incumbent)
   bio: >-

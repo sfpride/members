@@ -63,11 +63,7 @@ title: 2021 Board Election
         <div class="col">
             <h3>Voter Eligibility</h3>
             <p>To vote, you must be a member in good standing of SF Pride and have registered no later than July 12,
-                2021.</p>
-                <dl class="bg-light rounded p-2 d-inline-block">
-                    <dt class="fst-italic">"member in good standing"</dt>
-                    <dl>having joined before june 12th 2021, and membership dues current</dl>
-                </dl>
+                2021. A <em>member in good standing</em> is one who has paid current dues and whose membership has not been suspended for any reason.</p>
         </div>
     </div>
 
@@ -87,9 +83,6 @@ title: 2021 Board Election
             <p>The election will be valid only if the number of ballots cast is equal to or greater than a quorum
                 (one-third of SF Pride’s total active membership as of the election date.) The number of ballots
                 required will be noted on the ballot itself.</p>
-            <p class="proof-remove">A ballot on which a voter’s choice is unintelligible to the election officers and/or
-                the election
-                inspectors shall be disqualified.</p>
             <p>A voting member must: </p>
             <ul>
                 <li>Receive their voting code and voter key via email.</li>
@@ -97,27 +90,17 @@ title: 2021 Board Election
                 <li>Select their choices on the electronic ballot.</li>
                 <li>Check and confirm their votes, then send the ballot in.</li>
             </ul>
-            <p class="proof-add">Only a voting member in good standing may cast their vote.</p>
-            <p class="proof-remove"><em>Only the voting member should cast their vote, as the code and voter key will
-                    only allow ONE
-                    vote to be cast. Please do not share your login information, as it will invalidate your vote. </em>
-            </p>
+            <p>Only a voting member in good standing may cast their vote.</p>
         </div>
         <div class="col">
             <h3>Candidate Statements</h3>
             <p>Candidates for the Board are encouraged, but not required, to submit a written statement in support of
                 their candidacy. Statements and opinions expressed by the candidates do not necessarily reflect the
-                views of SF Pride. Statements will be available at members.sfpride.org/election.</p>
-            <h3>Lost Ballot Information, Need Voting Access</h3>
+                views of SF Pride.</p>
+            <h3>Lost Ballot Information</h3>
             <p>If you did not get a voter ID or voter key, or did not receive a link to the ballot, you may email us at
-                membership@sfpride.org or call us at +1 (415) 864-0831 x 4 to request a new one. <span
-                    class="text-danger">As stated above, only one voter code and key will be issued per eligible member,
-                    and the staff team will verify each request for reissue.</span></p>
-            <p>If you do not have regular internet access, <b>please make an appointment</b> to come into the SF Pride
-                office during limited hours on Monday, Sept. 13 or Tuesday, Sept. 14. The voting period closes on
-                Tuesday, Sept. 14 at approximately 12 PM Noon. Any members who vote at the office will need to properly
-                wear a mask while indoors. Pride staff will provide sanitizer and a computer for voting. The member will
-                need to log in to their email to access the election website and unique voting code. </p>
+                membership@sfpride.org or call us at +1 (415) 864-0831 x 4 to request a new one. As stated above, only one voter code and key will be issued per eligible member,
+                    and the staff team will verify each request for reissue.</p>
         </div>
     </div>
 
@@ -303,7 +286,7 @@ title: 2021 Board Election
                 {% if candidate.image != blank?%}<img class="card-img-top" src="{{candidate.image}}"
                     alt="photo of {{candidate.name}}">{% endif %}
                 {% if candidate.image == blank?%}<img
-                    src="https://storage.googleapis.com/sfpride/m/election/2021/awaiting-image.png" alt=""
+                    src="https://storage.googleapis.com/sfpride/m/election/nophotoprovided.png" alt=""
                     class="card-img-top">{% endif %}
                 <div class="card-header">
                     <h5 class="card-title">{{candidate.name}}</h5>
@@ -312,7 +295,7 @@ title: 2021 Board Election
                 <div class="card-body">
                     {{candidate.bio}}
                     {% if candidate.bio == blank? %}
-                    <p class="card-text text-center"><em>More Information on this Candidate Coming Soon</em></p>
+                    <p class="card-text text-center"><em>No Candidate Information Provided</em></p>
                     {% endif %}
                 </div>
             </div>
@@ -329,7 +312,7 @@ title: 2021 Board Election
             <img class="w-100" src="{{candidate.image}}" alt="photo of {{candidate.name}}">
         {% endif %}
         {% if candidate.image == blank?%}
-            <img src="https://storage.googleapis.com/sfpride/m/election/2021/awaiting-image.png" alt="" class="img-fluid">
+            <img src="https://storage.googleapis.com/sfpride/m/election/nophotoprovided.png" alt="" class="img-fluid">
         {% endif %}
         </div>
         <div class="col col-9">
@@ -337,7 +320,7 @@ title: 2021 Board Election
             <h6 class="text-muted">{{candidate.pronouns}}</h6>
             {{candidate.bio}}
             {% if candidate.bio == blank? %}
-            <p class="card-text text-center fs-4"><em>More Information on this Candidate Coming Soon</em></p>
+            <p class="card-text text-center"><em>No Candidate Information Provided</em></p>
             {% endif %}
         </div>
     </div>
