@@ -8,8 +8,9 @@ title: 2021 Board Election
     <div class="col">
         <h1>2021 Board of Directors Election</h1>
     </div>
-    <div class="col col-2 ml-auto text-right">
-        <a href="#candidate-statements">go to candidate statements</a>
+    <div class="col col-4 text-right">
+        <a href="#candidate-list-2" class="btn btn-sm btn-outline-primary d-none d-lg-inline-block">go to candidate statements</a>
+        <a href="#candidate-list" class="btn btn-sm btn-outline-primary d-lg-none">go to candidate statements</a>
     </div>
 </div>
 
@@ -43,7 +44,11 @@ title: 2021 Board Election
     <div class="row">
         <div class="col">
             <p>As we did in 2020, SF Pride will conduct the Board Election separately from the Annual General Meeting,
-                but this year the voting will be online instead of through the postal mail. (This process is outlined in the by-laws under "<a href="https://cdn.sfpride.org/docs/BYLAWS-POLICIES_SFPride_010220-1.pdf#page=9">written action by ballot without a meeting</a>.") Voting online saves money and enables SF Pride to better support members who
+                but this year the voting will be online instead of through the postal mail. (This process is outlined in
+                the by-laws under "<a
+                    href="https://cdn.sfpride.org/docs/BYLAWS-POLICIES_SFPride_010220-1.pdf#page=9">written action by
+                    ballot without a meeting</a>.") Voting online saves money and enables SF Pride to better support
+                members who
                 require accommodations to participate.</p>
         </div>
     </div>
@@ -78,7 +83,8 @@ title: 2021 Board Election
             <p>The election will be valid only if the number of ballots cast is equal to or greater than a quorum
                 (one-third of SF Pride’s total active membership as of the election date.) The number of ballots
                 required will be noted on the ballot itself.</p>
-            <p>A ballot on which a voter’s choice is unintelligible to the election officers and/or the election
+            <p class="proof-remove">A ballot on which a voter’s choice is unintelligible to the election officers and/or
+                the election
                 inspectors shall be disqualified.</p>
             <p>A voting member must: </p>
             <ul>
@@ -87,9 +93,11 @@ title: 2021 Board Election
                 <li>Select their choices on the electronic ballot.</li>
                 <li>Check and confirm their votes, then send the ballot in.</li>
             </ul>
-            <p class="text-info">Only a voting member in good standing may cast their vote.</p>
-            <p><em>Only the voting member should cast their vote, as the code and voter key will only allow ONE
-                vote to be cast. Please do not share your login information, as it will invalidate your vote. </em></p>
+            <p class="proof-add">Only a voting member in good standing may cast their vote.</p>
+            <p class="proof-remove"><em>Only the voting member should cast their vote, as the code and voter key will
+                    only allow ONE
+                    vote to be cast. Please do not share your login information, as it will invalidate your vote. </em>
+            </p>
         </div>
         <div class="col">
             <h3>Candidate Statements</h3>
@@ -219,17 +227,19 @@ title: 2021 Board Election
 
 </section>
 
-<section id="how-to-vote" class="row row-cols-md-3 justify-content-evenly">
+<section id="how-to-vote" class="row row-cols-1 row-cols-md-3 justify-content-evenly">
 
     <div class="col">
         <h1>How to Vote:</h1>
         <p>You will receive an email invitation to vote that includes:</p>
         <ul>
-            <li>your "Voter ID"</li>
-            <li>your "Voter Key"</li>
-            <li>a link to click to take you to the election page</li>
+            <li>a Voter ID</li>
+            <li>a Voter Key</li>
+            <li>a link to the election page</li>
         </ul>
-        <p>Once you have received your invitation, the voting procedure is as follows:</p>
+        <p>See the example image provided.</p>
+        <!-- <p>You will receive an email invitation to vote that includes a <b>Voter ID</b>, <b>Voter Key</b>, and a link to click to take you to the election page.</p> -->
+        <p>Once you have received your invitation to vote:</p>
         <ol>
             <li>Click the link in your invitation email.</li>
             <li>Review the candidate statements.</li>
@@ -240,31 +250,50 @@ title: 2021 Board Election
     </div>
     <div class="col">
         <img class="img-thumbnail"
-            src="https://storage.googleapis.com/sfpride/m/election/2021/electionrunner-invite.png" alt="" onclick="img_box(this)">
+            src="https://storage.googleapis.com/sfpride/m/election/2021/electionrunner-invite.png" alt=""
+            onclick="img_box(this)">
         <p class="text-danger text-center">EXAMPLE EMAIL INVITATION TO VOTE</p>
     </div>
 </section>
 
 <hr>
 
-<div class="row my-3">
+<div class="row my-3 d-none d-lg-flex">
     <div class="col col-md-7">
-        <div id="candidate-list">
+        <div id="candidate-list-2">
             <h3>Candidates:</h3>
             <ol>
                 {% for candidate in site.data.bod-candidates-2021 %}
-                <li>{{candidate.name}} <em>{{candidate.inc}}</em></li>
+                <li> <a href="#{{candidate.id}}-2">{{candidate.name}}</a> <em>{{candidate.inc}}</em></li>
                 {% endfor %}
             </ol>
         </div>
     </div>
     <div class="col col-12 col-md-5">
-        <img class="img-fluid" src="https://storage.googleapis.com/sfpride/m/election/2021/board-attendance.png" alt="a chart showing board member attendance at boardmeetings for the past year" onclick="img_box(this)">
+        <img class="img-fluid" src="https://storage.googleapis.com/sfpride/m/election/2021/board-attendance.png"
+            alt="a chart showing board member attendance at boardmeetings for the past year" onclick="img_box(this)">
     </div>
 </div>
 
-<section id="candidate-statements">
-    <div class="row row-cols-1 row-cols-md-3 g-3">
+<div class="row my-3 d-lg-none">
+    <div class="col col-md-7">
+        <div id="candidate-list">
+            <h3>Candidates:</h3>
+            <ol>
+                {% for candidate in site.data.bod-candidates-2021 %}
+                <li> <a href="#{{candidate.id}}">{{candidate.name}}</a> <em>{{candidate.inc}}</em></li>
+                {% endfor %}
+            </ol>
+        </div>
+    </div>
+    <div class="col col-12 col-md-5">
+        <img class="img-fluid" src="https://storage.googleapis.com/sfpride/m/election/2021/board-attendance.png"
+            alt="a chart showing board member attendance at boardmeetings for the past year" onclick="img_box(this)">
+    </div>
+</div>
+
+<section id="candidate-statements" class="d-lg-none">
+    <div class="row row-cols-1 g-3">
         {% for candidate in site.data.bod-candidates-2021 %}
         <div class="col">
             <div id="{{candidate.id}}" class="card">
@@ -287,4 +316,27 @@ title: 2021 Board Election
         </div>
         {% endfor %}
     </div>
+</section>
+
+<section id="candidate-statements" class="d-none d-lg-grid">
+    {% for candidate in site.data.bod-candidates-2021 %}
+    <div id="{{candidate.id}}-2" class="row my-2">
+        <div class="col col-2 align-content-center">
+        {% if candidate.image != blank? %}
+            <img class="w-100" src="{{candidate.image}}" alt="photo of {{candidate.name}}">
+        {% endif %}
+        {% if candidate.image == blank?%}
+            <img src="https://storage.googleapis.com/sfpride/m/election/2021/awaiting-image.png" alt="" class="img-fluid">
+        {% endif %}
+        </div>
+        <div class="col col-9">
+            <h5>{{candidate.name}}</h5>
+            <h6 class="text-muted">{{candidate.pronouns}}</h6>
+            {{candidate.bio}}
+            {% if candidate.bio == blank? %}
+            <p class="card-text text-center fs-4"><em>More Information on this Candidate Coming Soon</em></p>
+            {% endif %}
+        </div>
+    </div>
+    {% endfor %}
 </section>

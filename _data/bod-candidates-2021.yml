@@ -1,4 +1,5 @@
 - name: Spring Collins
+  id: springcollins
   image: https://storage.googleapis.com/sfpride/m/election/2021/candidates/spring-collins.jpg
   pronouns: she / they
   inc: 
@@ -9,11 +10,13 @@
     <p>A seat on the SF Pride board would be an opportunity for Spring to bring their unique perspectives as a trans femme genderqueer artist, community organizer, and youth worker.</p>
 
 - name: Suzanne Ford
+  id: suzanneford
   image: https://storage.googleapis.com/sfpride/m/election/2021/candidates/suzanne-ford.png
-  pronouns: she / they
+  pronouns: 
   inc: (incumbent)
   bio:
 - name: Manuel Peréz
+  id: manuelperez
   image: https://storage.googleapis.com/sfpride/m/election/2021/candidates/manuel-perez.jpg
   pronouns: he / him / his / él
   inc: (incumbent)
@@ -23,12 +26,14 @@
     <p>Manuel first joined the SF Pride Board in Spring 2018 with the goal of supporting initiatives that connect more communities to the SF Pride family. He hopes to continue these efforts to build deeper relationships with other organizations in the community and further activate what it means for SF Pride to commit to liberation.</p>
 
 - name: Maceo Persson
+  id: maceopersson
   image: https://storage.googleapis.com/sfpride/m/election/2021/candidates/maceo-persson-2.jpg
   pronouns: he / him / his
   inc: 
   bio: Maceo Persson is a queer, Latinx, trans man with a Swedish-Chilean background. He began organizing in Oregon where he served on the board for the state immigrant rights organization CAUSA, worked on local issues impacting students of color, and organized with trans communities at a local level. From there he joined Basic Rights Oregon to pass LGBT inclusive nondiscrimination and domestic partnership laws. After spending eight years in Oregon, Maceo moved to California and joined the Transgender Law Center (TLC). At TLC, Maceo mobilized trans, gender nonconforming, and allied communities to secure trans-inclusive healthcare policies, and strengthen California nondiscrimination laws. Maceo then served as the Director of Communications and External Affairs for San Francisco’s Office of Transgender Initiatives, working to bring the leadership and experiences of TGNC communities to the City. Currently, Maceo serves as a Deputy Director for the Community Branch at the San Francisco COVID Task Force to prevent the spread of COVID and towards recovery. In his off-time Maceo serves as a board member for the San Francisco LGBT Center and the Grant Making Panel of the International Trans Fund.
   
 - name: Nguyen Pham
+  id: nguyenpham
   image: https://storage.googleapis.com/sfpride/m/election/2021/candidates/nugyen-pham-2.jpg
   pronouns: he / him / his
   inc: (incumbent)
@@ -39,6 +44,7 @@
     <p class="card-text">This journey has been challenging and uncomfortable; and it has been necessary and nourishing. It is with this abundant energy and constructive outlook that Nguyen pledges to honor SF Pride, our stakeholders, and our communities as we navigate through the next wave of uncertainty, COVID or otherwise. With your support, and with your vote, it will be his humble privilege to champion SF Pride’s important work as we continue to educate, commemorate, celebrate, and liberate.</p>
 
 - name: Di'ara Reid
+  id: diarareid
   image: https://storage.googleapis.com/sfpride/m/election/2021/candidates/diara-reid-2.jpg
   pronouns: she / her / hers 
   inc: 
@@ -50,16 +56,19 @@
     <p class="card-text">Di’ara hopes that after their three-year term, if elected, they will have fulfilled your expectations and delivered to SF Pride the excellence it deserves.</p>
 
 - name: George Smith III
+  id: georgesmith
   image: https://storage.googleapis.com/sfpride/m/election/2021/candidates/george-smith.jpg
   pronouns: he / him / his
   inc: 
   bio:
 - name: Janelle Vinson
+  id: janellevinson
   image: https://storage.googleapis.com/sfpride/m/election/2021/candidates/janelle-vinson.png
   pronouns: she / her / they
   inc: 
   bio:
 - name: Carolyn Wysinger
+  id: carolynwysinger
   image: https://storage.googleapis.com/sfpride/m/election/2021/candidates/carolyn-wysinger-2.png
   pronouns:  she / her / hers
   inc: (incumbent)
