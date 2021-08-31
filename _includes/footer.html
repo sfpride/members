@@ -6,6 +6,11 @@
     </div>
     <div class="row">
         <div class="col text-start"><a href="mailto:support@sfpride.org">support@sfpride.org</a></div>
+        <div class="col">
+            <strong>members:</strong>
+            {% assign members = site.data.membership-data[1] %}
+            <span>{{members.number}}</span>
+        </div>
         <div class="col text-end">office: <a href="tel:+14158640831">(415) 864-0831</a></div>
     </div>
 </footer>
