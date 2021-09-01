@@ -22,7 +22,9 @@
             </div>
             <div id="meeting-info" class="text-muted small mb-n4">
                 <p class="m-0">
-                    {% if meeting.agenda == blank? %}<em style="font-size: 0.85rem;">agenda is not ready</em><br>{% endif %}
+                    {% if meeting.agenda == blank? and meeting.packet == blank? %}
+                    <em style="font-size: 0.85rem;">agenda is not ready</em><br>
+                    {% endif %}
                     {% if meeting.zoom-id != blank? %}
                     Meeting ID: <span class="copy-me">{{meeting.zoom-id}}</span><br>
                     Join by phone: <a href="tel:+16699009128">US: +1 669 900 9128</a><br>
