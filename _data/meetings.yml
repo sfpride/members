@@ -17,7 +17,7 @@
   agenda: https://cdn.sfpride.org/docs/meetings/20210810-sfpride-membermeeting-agenda.pdf
   # packet: https://cdn.sfpride.org/docs/meetings/20210310-sfpride-membershipmeeting-packet.pdf
 - title: Annual General Meeting
-  active: true
+  active: false
   type: membership
   date: "Sept 11, 2021"
   time-special: "Zoom Opens at 11:30am, Called to Order at Noon"
