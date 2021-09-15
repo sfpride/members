@@ -1,66 +1,51 @@
 ---
 layout: default
 shortname: board
+title: Board of Directors
 ---
-
-<h1 id="san-francisco-lgbt-pride-board-of-directors">Board of Directors</h1>
+<h1 id="san-francisco-lgbt-pride-board-of-directors">{{page.title}}</h1>
 
 <section id="board-of-directors" class="bg-light rounded">
-    <div class="row m-0 p-5">
-        <div class="col col-3 mx-auto">
-            <figure class="figure">
-                <img src="https://cdn.sfpride.org/m/board/2020/cw.jpg" class="figure-img img-fluid rounded-circle">
-                <figcaption class="figure-caption text-center"><strong class="text-danger">Carolyn
-                        Wysinger</strong><br>President; she/her/hers</figcaption>
+
+    <h3 class="text-center">2021 Board Members</h3>
+    <div class="row ">
+        {% assign 2021-directors = site.data.board.twenty-twenty-one %}
+        {% for director in 2021-directors %}
+
+        <div id="{{director.id}}" class="col col-4 col-lg-3 mx-auto">
+                <img src="{{director.photo}}" alt="{{director.photo-alt}}" class="w-100 rounded rounded-circle">
+                <p class="text-center">
+                    <strong class="text-danger">{{director.name}}<br>{{director.title}}; {{director.pronouns}}</strong>
+                </p>
             </figure>
         </div>
-        <div class="col col-3 mx-auto">
+
+        {% endfor %}
+    </div>
+
+    <hr class="bg-danger p-2 w-75 mx-auto rounded">
+
+    <h3 class="text-center">2022 Incoming Board</h3>
+    <div class="row">
+
+        {% assign 2022-directors = site.data.board.twenty-twenty-two | sort: 'name' %}
+        {% for director in 2022-directors %}
+
+        <div id="{{director.id}}" class="col col-4 col-lg-3 mx-auto">
             <figure class="figure">
-                <img src="https://cdn.sfpride.org/m/board/2020/sf.jpg" class="figure-img img-fluid rounded-circle">
-                <figcaption class="figure-caption text-center"><strong class="text-danger">Suzanne Ford</strong><br>Vice
-                    President; she/her/hers</figcaption>
+                <img src="{{director.photo}}" alt="{{director.photo-alt}}" class="figure-img img-fluid rounded-circle">
+                <figcaption class="figure-caption text-center">
+                    <strong class="text-danger">{{director.name}}<br>{% if director.title != blank? %}{{director.title}}; {%endif%}{{director.pronouns}}</strong>
+                </figcaption>
             </figure>
         </div>
-        <div class="col col-3 mx-auto">
-            <figure class="figure">
-                <img src="https://cdn.sfpride.org/m/board/2020/np.jpg" class="figure-img img-fluid rounded-circle">
-                <figcaption class="figure-caption text-center"><strong class="text-danger">Nguyen
-                        Pham</strong><br>Secretary; he/him/his</figcaption>
-            </figure>
-        </div>
-        <div class="col col-3 mx-auto">
-            <figure class="figure">
-                <img src="https://cdn.sfpride.org/m/board/2020/ar.jpg" class="figure-img img-fluid rounded-circle">
-                <figcaption class="figure-caption text-center"><strong class="text-danger">Anjali
-                        Rimi</strong><br>Treasurer; she/her/hers</figcaption>
-            </figure>
-        </div>
-        <div class="col col-3 mx-auto">
-            <figure class="figure">
-                <img src="https://cdn.sfpride.org/m/board/2020/el.jpg" class="figure-img img-fluid rounded-circle">
-                <figcaption class="figure-caption text-center"><strong class="text-danger">Elizabeth
-                        Lanyon</strong><br>she/her/hers</figcaption>
-            </figure>
-        </div>
-        <div class="col col-3 mx-auto">
-            <figure class="figure">
-                <img src="https://cdn.sfpride.org/m/board/2020/mp.jpg" class="figure-img img-fluid rounded-circle">
-                <figcaption class="figure-caption text-center"><strong class="text-danger">Manuel
-                        Perez</strong><br>he/him/his</figcaption>
-            </figure>
-        </div>
-        <div class="col col-3 mx-auto">
-            <figure class="figure">
-                <img src="https://cdn.sfpride.org/m/board/2020/js.jpg" class="figure-img img-fluid rounded-circle">
-                <figcaption class="figure-caption text-center"><strong class="text-danger">Joshua
-                        Smith</strong><br>he/him/his</figcaption>
-            </figure>
-        </div>
+
+        {% endfor %}
     </div>
 </section>
 
 <section class="p-2">
-    <h3>Board Committees</h3>
+    <h3>2021 Board Committees</h3>
     <div class="row">
         <div class="col-12 col-md-4">
             <h4>Budget and Finance</h4>
@@ -377,7 +362,8 @@ shortname: board
                 <td>Suzanne Ford</td>
                 <td>Nguyen Pham</td>
                 <td>Anjali Rimi</td>
-                <td>Bivett Brackett, Elizabeth Lanyon, Manuel Perez, Joshua Smith, Kerby Lynch (resigned), Tuquan Harrison (resigned), Lady Diana Oliva (resigned)</td>
+                <td>Bivett Brackett, Elizabeth Lanyon, Manuel Perez, Joshua Smith, Kerby Lynch (resigned), Tuquan
+                    Harrison (resigned), Lady Diana Oliva (resigned)</td>
             </tr>
         </tbody>
     </table>

@@ -1,0 +1,42 @@
+- name: Carolyn Wysinger
+  title: President 
+  pronouns: she/her/hers
+  id: carolyn-wysinger
+  email: carolyn.wysinger@sfpride.org
+  photo: https://cdn.sfpride.org/m/board/2020/cw.jpg
+- name: Suzanne Ford
+  title: Vice President
+  pronouns: she/her/hers
+  id: suzanne-ford
+  email: suzanne.ford@sfpride.org
+  photo: https://cdn.sfpride.org/m/board/2020/sf.jpg
+- name: Nguyen Pham
+  title: Secretary
+  pronouns: he/him/his
+  id: nguyen-pham
+  email: nguyen.pham@sfpride.org
+  photo: https://cdn.sfpride.org/m/board/2020/np.jpg
+- name: Anjali Rimi
+  title: Treasurer
+  pronouns: she/her/hers
+  id: anjali-rimi
+  email: anjali.rimi@sfpride.org
+  photo: https://cdn.sfpride.org/m/board/2020/ar.jpg
+- name: Manuel Alejandro Pérez
+  title: Board Member
+  pronouns: he/him/his/él
+  id: manuel-perez
+  email: manuel.perez@sfpride.org
+  photo: https://cdn.sfpride.org/m/board/2020/mp.jpg
+- name: Elizabeth Lanyon
+  title: Board Member
+  pronouns: she/her/hers
+  id: elizabeth-lanyon
+  email: elizabeth.lanyon@sfpride.org
+  photo: https://cdn.sfpride.org/m/board/2020/el.jpg
+- name: Joshua Smith
+  title: Board Member
+  pronouns: he/him/his
+  id: joshua-smith
+  email: joshua.smith@sfpride.org
+  photo: https://cdn.sfpride.org/m/board/2020/js.jpg
