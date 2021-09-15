@@ -48,11 +48,11 @@ image: https://storage.googleapis.com/sfpride/tmp/og-members.png
 							<td>{{ meeting.type }}</td>
 							<td>
 								{% if meeting.materials-url != blank? %}
-								<a href="{{ meeting.materials-url}}">{{ meeting.materials-link }}</a> (pdf)
+								<a href="{{ meeting.materials-url}}" target="_blank">{{ meeting.materials-link }}</a>
 								{% endif %}
 								{% if meeting.minutes != blank? %}
 								<br>
-								<a href="meeting.minutes">Minutes</a> (pdf)
+								<a href="meeting.minutes" target="_blank">Minutes</a> (pdf)
 								{% endif %}
 							</td>
 						</tr>
