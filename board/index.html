@@ -4,46 +4,67 @@ shortname: board
 title: Board of Directors
 ---
 <h1 id="san-francisco-lgbt-pride-board-of-directors">{{page.title}}</h1>
-
 <section id="board-of-directors" class="bg-light rounded">
-
     <h3 class="text-center">2021 Board Members</h3>
-    <div class="row ">
-        {% assign 2021-directors = site.data.board.twenty-twenty-one %}
-        {% for director in 2021-directors %}
-
-        <div id="{{director.id}}" class="col col-4 col-lg-3 mx-auto">
-                <img src="{{director.photo}}" alt="{{director.photo-alt}}" class="w-100 rounded rounded-circle">
-                <p class="text-center">
-                    <strong class="text-danger">{{director.name}}<br>{{director.title}}; {{director.pronouns}}</strong>
+    <div class="d-md-none">
+        {% assign todirectors = site.data.board.twenty_twenty_one %}
+        {% for director in todirectors %}
+        <div class="row mb-2">
+            <div id="{{director.id}}" class="col col-4">
+                <img src="{{director.photo}}" alt="{{director.photo-alt}}" class="img-fluid rounded">
+            </div>
+            <div class="col">
+                <p class="">
+                    <strong class="text-danger">{{director.name}} <span
+                            class="text-muted small">{{director.pronouns}}</span><br>{{director.title}}</strong>
                 </p>
-            </figure>
+            </div>
         </div>
-
         {% endfor %}
     </div>
-
+    <div class="row row-cols-3 d-none d-md-flex">
+        {% assign todirectors = site.data.board.twenty_twenty_one %}
+        {% for director in todirectors %}
+        <div id="{{director.id}}" class="col mx-auto">
+            <img src="{{director.photo}}" alt="{{director.photo-alt}}" class="w-100 rounded rounded-circle">
+            <p class="text-center"><strong class="text-danger">{{director.name}}</strong> <span class="text-muted small">{{director.pronouns}}</span><br>{{director.title}}</p>
+        </div>
+        {% endfor %}
+    </div>
     <hr class="bg-danger p-2 w-75 mx-auto rounded">
-
-    <h3 class="text-center">2022 Incoming Board</h3>
-    <div class="row">
-
-        {% assign 2022-directors = site.data.board.twenty-twenty-two | sort: 'name' %}
-        {% for director in 2022-directors %}
-
+    <h3 class="text-center">2022 Board Members</h3>
+    <div class="d-lg-none">
+        {% assign ttdirectors = site.data.board.twenty_twenty_two %}
+        {% for director in ttdirectors %}
+        <div class="row mb-2">
+            <div id="{{director.id}}" class="col col-4">
+                <img src="{{director.photo}}" alt="{{director.photo-alt}}" class="img-fluid rounded">
+            </div>
+            <div class="col">
+                <p class="">
+                    <strong class="text-danger">{{director.name}} <span
+                            class="text-muted small">{{director.pronouns}}</span><br>{{director.title}}</strong>
+                </p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="row d-none d-lg-flex">
+        {% assign ttdirectors = site.data.board.twenty_twenty_two | sort: 'name' %}
+        {% for director in ttdirectors %}
         <div id="{{director.id}}" class="col col-4 col-lg-3 mx-auto">
             <figure class="figure">
                 <img src="{{director.photo}}" alt="{{director.photo-alt}}" class="figure-img img-fluid rounded-circle">
                 <figcaption class="figure-caption text-center">
-                    <strong class="text-danger">{{director.name}}<br>{% if director.title != blank? %}{{director.title}}; {%endif%}{{director.pronouns}}</strong>
+                    <strong
+                        class="text-danger">{{director.name}}<br>{% if director.title != blank? %}{{director.title}};
+                        {%endif%}{{director.pronouns}}</strong>
                 </figcaption>
             </figure>
         </div>
-
         {% endfor %}
     </div>
 </section>
-
 <section class="p-2">
     <h3>2021 Board Committees</h3>
     <div class="row">
@@ -129,9 +150,7 @@ title: Board of Directors
         </div>
     </div>
 </section>
-
 <hr>
-
 <section class="d-none">
     <h2 id="previous-directors">Previous Boards of Directors</h2>
     <table>
