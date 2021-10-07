@@ -1,17 +1,23 @@
 - name: Carolyn Wysinger
-  title:
+  title: President
   pronouns: she/her/hers
   guid: carolyn-wysinger
   email: carolyn.wysinger@sfpride.org
   photo: https://cdn.sfpride.org/m/board/2020/cw.jpg
 - name: Nguyen Pham
-  title:
+  title: Vice President
   pronouns: he/him/his
   guid: nguyen-pham
   email: nguyen.pham@sfpride.org
   photo: https://storage.googleapis.com/sfpride/m/election/2021/candidates/nugyen-pham-2.jpg
+- name: Elizabeth Lanyon
+  title: Secretary
+  pronouns: she/her/hers
+  guid: elizabeth-lanyon
+  email: elizabeth.lanyon@sfpride.org
+  photo: https://cdn.sfpride.org/m/board/2020/el.jpg
 - name: Suzanne Ford
-  title:
+  title: Treasurer
   pronouns: she/her/hers
   guid: suzanne-ford
   email: suzanne.ford@sfpride.org
@@ -46,12 +52,6 @@
   guid: spring-collins
   email: spring.collins@sfpride.org
   photo: https://storage.googleapis.com/sfpride/m/election/2021/candidates/spring-collins.jpg
-- name: Elizabeth Lanyon
-  title:
-  pronouns: she/her/hers
-  guid: elizabeth-lanyon
-  email: elizabeth.lanyon@sfpride.org
-  photo: https://cdn.sfpride.org/m/board/2020/el.jpg
 - name: Anjali Rimi
   title:
   pronouns: she/her/hers
