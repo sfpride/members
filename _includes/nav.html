@@ -14,6 +14,7 @@
       </button>
     </div>
 
+    <!-- {% if page.shortname == "AGM" %} active {% endif%} -->
     <div class="col col-xl-9">
       <div class="navbar-collapse collapse" id="main-menu">
         <ul class="navbar-nav w-100 nav-fill align-items-center">
@@ -24,11 +25,11 @@
               <li class="nav-item"><a href="/policies-and-procedures" class="nav-link text-primary">Policies &amp; Procedures</a></li>
             </ul>
           </li>
-          <li class="nav-item"><a href="/agm" class="nav-link text-primary {% if page.shortname == "AGM" %} active {% endif%}">Annual General Meeting</a></li>
-          <li class="nav-item "><a href="/election" class="nav-link text-primary {% if page.shortname == "Election" %} active {% endif%}">Board of Directors Election</a></li>
           <li class="nav-item dropdown">
             <a class="nav-link text-primary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Archive</a>
             <ul class="dropdown-menu">
+              <li class="dropdown-item"><a href="/agm" class="nav-link text-primary">2021 AGM</a></li>
+              <li class="dropdown-item"><a href="/election" class="nav-link text-primary">2021 Board Election</a></li>
               <li class="dropdown-item"><a href="/2020/agm" class="nav-link text-primary">2020 AGM</a></li>
               <li class="dropdown-item"><a href="/2020/election" class="nav-link text-primary">2020 Board Election</a></li>
             </ul>
