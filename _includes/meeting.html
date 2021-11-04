@@ -4,7 +4,7 @@
         {% if meeting.active == true %}
         <div class="col text-center rounded border border-primary bg-light p-3 m-2">
             <h2>{{meeting.title}}</h2>
-            <p class="lead">{{meeting.date |date: '%a, %d %B %Y'}} {% if meeting.time != blank? %}at {{meeting.time}} {% else %} <br>{{meeting.time-special}}{%endif%}</p>
+            <p class="lead">{{meeting.date |date: '%a, %d %B %Y'}} {% if meeting.time != blank? %}at {{meeting.time}} PDT {% else %} <br>{{meeting.time-special}}{%endif%}</p>
             <div class="text-center btn-group mb-1">
                 <a class="btn btn-primary btn-lg {% if meeting.zoom-link == blank? %}disabled{% endif %}"
                     href="{{meeting.zoom-link}}" target="_blank"
@@ -17,7 +17,7 @@
                     {% if meeting.packet != blank? %}
                 <a class="btn btn-outline-secondary btn-lg"
                     href="{{meeting.packet}}"
-                    target="_blank" rel="noopener noreferrer nofollow" role="button">View Agenda</a>
+                    target="_blank" rel="noopener noreferrer nofollow" role="button">View Packet</a>
                     {% endif %}
             </div>
             <div id="meeting-info" class="text-muted small mb-n4">
