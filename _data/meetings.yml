@@ -1,5 +1,5 @@
 - title: "Board of Directors Meeting"
-  active: true
+  active: false
   type: "board"
   date: "Nov 3, 2021"
   time: "7:00 p.m."
@@ -8,14 +8,14 @@
   agenda: "https://cdn.sfpride.org/docs/meetings/20211103-sfpride-board-agenda.pdf"
   packet: "https://cdn.sfpride.org/docs/meetings/20211103-sfpride-board-packet.pdf"
 - title: Membership Meeting
-  active: false
+  active: true
   type: membership
-  date: "Oct 13, 2021"
+  date: "Nov 10, 2021"
   time: "7:00 p.m."
   zoom-link: https://us02web.zoom.us/j/83156547025?pwd=S3JNd0FkN2hNS081RWYyc3l2UnVqUT09
   zoom-id: 890 4260 2848
-  agenda: https://cdn.sfpride.org/docs/meetings/20211013-sfpride-membermeeting-agenda.pdf
-  # packet: https://cdn.sfpride.org/docs/meetings/20210310-sfpride-membershipmeeting-packet.pdf
+  #agenda: https://cdn.sfpride.org/docs/meetings/20211013-sfpride-membermeeting-agenda.pdf
+  #packet: https://cdn.sfpride.org/docs/meetings/20210310-sfpride-membershipmeeting-packet.pdf
 - title: Annual General Meeting
   active: false
   type: membership
