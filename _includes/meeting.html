@@ -4,7 +4,7 @@
         {% if meeting.active == true %}
         <div class="col text-center rounded border border-primary bg-light p-3 m-2">
             <h2>{{meeting.title}}</h2>
-            <p class="lead">{{meeting.date |date: '%a, %d %B %Y'}} at {{meeting.time}}</p>
+            <p class="lead">{{meeting.date |date: '%a, %d %B %Y'}} {% if meeting.time != blank? %}at {{meeting.time}} {% else %} <br>{{meeting.time-special}}{%endif%}</p>
             <div class="text-center btn-group mb-1">
                 <a class="btn btn-primary btn-lg {% if meeting.zoom-link == blank? %}disabled{% endif %}"
                     href="{{meeting.zoom-link}}" target="_blank"
@@ -17,16 +17,20 @@
                     {% if meeting.packet != blank? %}
                 <a class="btn btn-outline-secondary btn-lg"
                     href="{{meeting.packet}}"
-                    target="_blank" rel="noopener noreferrer nofollow" role="button">View Agenda</a>
+                    target="_blank" rel="noopener noreferrer nofollow" role="button">View Packet</a>
                     {% endif %}
             </div>
             <div id="meeting-info" class="text-muted small mb-n4">
                 <p class="m-0">
-                    {% if meeting.agenda == blank? %}<em style="font-size: 0.85rem;">agenda is not ready</em><br>{% endif %}
+                    {% if meeting.agenda == blank? and meeting.packet == blank? %}
+                    <em style="font-size: 0.85rem;">agenda is not ready</em><br>
+                    {% endif %}
+                    {% if meeting.zoom-id != blank? %}
                     Meeting ID: <span class="copy-me">{{meeting.zoom-id}}</span><br>
                     {% if meeting.zoom-passcode != blank? %}Passcode: <span class="copy-my">{{meeting.zoom-passcode}}}</span><br>{% endif %}
                     Join by phone: <a href="tel:+16699009128">US: +1 669 900 9128</a><br>
                     <span> <a href="https://us02web.zoom.us/u/kcttTaTUI1">Find</a> your local number</span><br>
+                    {% endif %}
                 </p>
                 <!-- <p class="m-0"><a class="btn btn-sm btn-danger m-1 p-2" href="">Add to your Calendar (.ics)</a><a class="btn btn-sm btn-info text-white m-1 p-2" href="">Add to your Google Calendar</a></p> -->
             </div>
