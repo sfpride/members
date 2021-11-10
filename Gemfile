@@ -5,9 +5,10 @@ source "https://rubygems.org"
 git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
  gem "jekyll"
- gem "bootstrap", "5.0.0.beta1"
+ gem "bootstrap"
  gem "webrick"
  gem "kramdown", ">= 2.3.1"
+ gem "nokogiri", ">= 1.12.5"
 
  group :jekyll_plugins do
     gem 'jekyll-sitemap'
