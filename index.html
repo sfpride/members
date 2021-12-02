@@ -24,13 +24,44 @@ image: https://storage.googleapis.com/sfpride/tmp/og-members.png
 		</div>
 		<nav>
 			<div class="nav nav-pills nav-justified mb-2" id="meeting-dates-tabs" role="tablist">
-				<a class="nav-item nav-link" data-toggle="tab" href="#cal-2020" role="tab" aria-controls="cal-2020" aria-selected="true" data-bs-toggle="tab">Previous Meetings</a>
-				<a class="nav-item nav-link active" data-toggle="tab" href="#cal-2021" role="tab" aria-controls="cal-2021" aria-selected="false" data-bs-toggle="tab">2021 </a>
+				<a class="nav-item nav-link" data-toggle="tab" href="#cal-2020" role="tab" aria-controls="cal-2020" aria-selected="true" data-bs-toggle="tab">2020</a>
+				<a class="nav-item nav-link" data-toggle="tab" href="#cal-2021" role="tab" aria-controls="cal-2021" aria-selected="false" data-bs-toggle="tab">2021</a>
+				<a class="nav-item nav-link active" data-toggle="tab" href="#cal-2022" role="tab" aria-controls="cal-2022" aria-selected="false" data-bs-toggle="tab">2022</a>
 			</div>
 		</nav>
 		<div class="tab-content">
 			{% include 2020-meetings.html %}
-			<div class="tab-pane fade show active" id="cal-2021" role="tabpanel" aria-labelledby="cal-2021-tab">
+			<div class="tab-pane fade" id="cal-2021" role="tabpanel" aria-labelledby="cal-2021-tab">
+				<table class="table table-sm table-striped table-borderless align-middle">
+					<thead class="table-dark p-1">
+						<tr>
+							<th scope="col">Date</th>
+							<th scope="col">Type</th>
+							<th scope="col">Materials</th>
+						</tr>
+					</thead>
+					<tbody>
+						{% for meeting in site.data.calendar_2021 %}
+						{% assign today_date = 'today' | date: '%b %d, %Y' %}
+						{% assign meeting_today = meeting.date | date: '%b %d, %Y' %}
+						<tr {% if meeting_today == today_date %} class="fw-bold border border-primary" {% endif %}>
+							<td class="text-nowrap" scope="row">{{ meeting.date | date: '%a %b %d, %Y' }}</td>
+							<td>{{ meeting.type }}</td>
+							<td>
+								{% if meeting.materials-url != blank? %}
+								<a href="{{ meeting.materials-url}}" target="_blank">{{ meeting.materials-link }}</a>
+								{% endif %}
+								{% if meeting.minutes != blank? %}
+								<br>
+								<a href="meeting.minutes" target="_blank">Minutes</a> (pdf)
+								{% endif %}
+							</td>
+						</tr>
+						{% endfor %}
+					</tbody>
+				</table>
+			</div>
+			<div class="tab-pane fade show active" id="cal-2022" role="tabpanel" aria-labelledby="cal-2022-tab">
 				<table class="table table-sm table-striped table-borderless align-middle">
 					<thead class="table-dark p-1">
 						<tr>
