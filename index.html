@@ -75,6 +75,9 @@ image: https://storage.googleapis.com/sfpride/tmp/og-members.png
 						{% assign today_date = 'today' | date: '%b %d, %Y' %}
 						{% assign meeting_today = meeting.date | date: '%b %d, %Y' %}
 						<tr {% if meeting_today == today_date %} class="fw-bold border border-primary" {% endif %}>
+							{% if meeting.date == "c" %}
+							<td class="text-center" scope="row" colspan="4">{{ meeting.type }}</td>
+							{% else %}
 							<td class="text-nowrap" scope="row">{{ meeting.date | date: '%a %b %d, %Y' }}</td>
 							<td>{{ meeting.type }}</td>
 							<td>
@@ -86,6 +89,7 @@ image: https://storage.googleapis.com/sfpride/tmp/og-members.png
 								<a href="meeting.minutes" target="_blank">Minutes</a> (pdf)
 								{% endif %}
 							</td>
+							{% endif %}
 						</tr>
 						{% endfor %}
 					</tbody>
