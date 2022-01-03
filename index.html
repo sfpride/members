@@ -6,7 +6,7 @@ image: https://storage.googleapis.com/sfpride/tmp/og-members.png
 {% include meeting.html %}
 {% include announcements.html %}
 <div class="row">
-	<section id="meeting-dates" class="col-12 col-md-6">
+	<section id="meeting-dates" class="col col-12 col-md-6">
 		<div class="row align-items-center">
 			<div class="col col-4">
 				<h2 class="text-center">Meeting Dates</h2>
@@ -58,29 +58,29 @@ image: https://storage.googleapis.com/sfpride/tmp/og-members.png
 					</tbody>
 				</table>
 			</div>
-			<div class="tab-pane fade show active" id="cal-2022" role="tabpanel" aria-labelledby="cal-2022-tab">
-				<table class="table table-sm table-striped table-borderless align-middle">
-					<thead class="table-dark p-1">
+			<div class="tab-pane fade show active overflow-hidden" id="cal-2022" role="tabpanel" aria-labelledby="cal-2022-tab">
+				<table class="table table-sm table-borderless align-middle">
+					<thead class="table-dark">
 						<tr>
-							<th scope="col" width="20%">Date</th>
-							<th scope="col" width="30%">Type</th>
-							<th scope="col" width="50%">Materials</th>
+							<th scope="col" width="14%">Date</th>
+							<th scope="col" width="14%">Type</th>
+							<th scope="col" width="72%">Materials</th>
 						</tr>
 					</thead>
 					<tbody>
 						{% for meeting in site.data.calendar %}
 						{% assign today_date = 'today' | date: '%b %d, %Y' %}
 						{% assign meeting_today = meeting.date | date: '%b %d, %Y' %}
-						<tr {% if meeting_today == today_date %} class="fw-bold border border-primary" {% endif %}>
+						<tr  class="{% if meeting_today == today_date %}fw-bold border border-primary{% endif %} border-bottom" >
 							{% if meeting.date == "c" %}
 							<td class="text-center" scope="row" colspan="4">{{ meeting.type }}</td>
 							{% else %}
-							<td class="text-nowrap" scope="row">{{ meeting.date | date: '%a %b %d, %Y' }}</td>
+							<td class="text-nowrap" scope="row">{{ meeting.date | date: '%b %d, %Y' }}</td>
 							<td>{{ meeting.type }}</td>
-							<td class="text-center">
-								{% if meeting.agenda != blank? %}<a href="{{meeting.agenda}}" target="_blank" class="badge bg-secondary mx-auto">Agenda</a>{% endif %}
-								{% if meeting.packet != blank? %}<a href="{{meeting.packet}}" target="_blank" class="badge bg-primary mx-auto">Packet</a>{% endif %}
-								{% if meeting.minutes != blank? %}<a href="meeting.minutes" target="_blank" class="badge bg-info mx-auto">Minutes</a>{% endif %}
+							<td class="text-center p-1 w-100 btn-group">
+								{% if meeting.agenda != blank? %}<a href="{{meeting.agenda}}" target="_blank" class="btn btn-sm btn-outline-secondary">Agenda</a>{% endif %}
+								{% if meeting.packet != blank? %}<a href="{{meeting.packet}}" target="_blank" class="btn btn-sm btn-outline-primary">Packet</a>{% endif %}
+								{% if meeting.minutes != blank? %}<a href="meeting.minutes" target="_blank" class="btn btn-sm btn-outline-info">Minutes</a>{% endif %}
 							</td>
 							{% endif %}
 						</tr>
@@ -91,7 +91,7 @@ image: https://storage.googleapis.com/sfpride/tmp/og-members.png
 			</div>
 		</div>
 	</section>
-	<section id="become-a-member" class="col-12 col-md-6">
+	<section id="become-a-member" class="col col-12 col-md-6">
 		<div class="row">
 			<div class="col">
 				<h2>Become a Member Today!</h2>
