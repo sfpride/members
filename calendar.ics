@@ -1,0 +1,19 @@
+---
+layout: null
+---
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:https://members.sfpride.org/
+METHOD:PUBLISH
+{% for meeting in site.data.calendar %}{% if meeting.date != "c" %}BEGIN:VEVENT
+UID:{{ meeting.date | date: "%Y%m%d" }}@events.sfpride.org
+ORGANIZER;CN="San Francisco LGBT Pride":MAILTO:info@sfpride.org
+LOCATION:https://members.sfpride.org
+SUMMARY:{{ meeting.type }} Meeting
+CLASS:PUBLIC
+DTSTART:{{ meeting.date | date: "%Y%m%d" }}T19000Z
+DTEND:{{ meeting.date | date: "%Y%m%d" }}T200000Z
+DTSTAMP:{{ meeting.date | date: "%Y%m%d" }}T200000Z
+END:VEVENT
+{% endif %}{% endfor %}
+END:VCALENDAR
