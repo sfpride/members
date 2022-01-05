@@ -7,7 +7,7 @@
   zoom-id: "810 2209 1529"
   zoom-passcode: 022897
   agenda: "https://cdn.sfpride.org/docs/meetings/20220105-sfpride-board-agenda.pdf"
-  #packet: "https://cdn.sfpride.org/docs/meetings/20211208-sfpride-board-packet.pdf"
+  packet: "https://cdn.sfpride.org/docs/meetings/20220105-sfpride-board-packet.pdf"
 - title: Membership Meeting
   active: false
   type: membership
