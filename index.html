@@ -71,7 +71,7 @@ image: https://storage.googleapis.com/sfpride/tmp/og-members.png
 						{% for meeting in site.data.calendar %}
 						{% assign today_date = 'today' | date: '%b %d, %Y' %}
 						{% assign meeting_today = meeting.date | date: '%b %d, %Y' %}
-						<tr  class="{% if meeting_today == today_date %}fw-bold border border-primary{% endif %} border-bottom" >
+						<tr  class="{% if meeting_today == today_date %}fw-bold border border-2 border-primary{% endif %} border-bottom" >
 							{% if meeting.date == "c" %}
 							<td class="text-center" scope="row" colspan="4">{{ meeting.type }}</td>
 							{% else %}
