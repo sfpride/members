@@ -79,10 +79,10 @@ image: https://storage.googleapis.com/sfpride/tmp/og-members.png
 							{% else %}
 							<td class="text-nowrap" scope="row">{{ meeting.date | date: '%b %d, %Y' }}</td>
 							<td>{{ meeting.type }}</td>
-							<td class="text-center p-1 w-100 btn-group">
-								{% if meeting.agenda != blank? %}<a href="{{meeting.agenda}}" target="_blank" class="btn btn-sm btn-outline-secondary">Agenda</a>{% endif %}
-								{% if meeting.packet != blank? %}<a href="{{meeting.packet}}" target="_blank" class="btn btn-sm btn-outline-primary">Packet</a>{% endif %}
-								{% if meeting.minutes != blank? %}<a href="meeting.minutes" target="_blank" class="btn btn-sm btn-outline-info">Minutes</a>{% endif %}
+							<td class="row text-center">
+								{% if meeting.agenda != blank? %}<a href="{{meeting.agenda}}" target="_blank" class="col-4 mx-auto link-secondary">Agenda</a>{% endif %}
+								{% if meeting.packet != blank? %}<a href="{{meeting.packet}}" target="_blank" class="col-4 mx-auto link-primary">Packet</a>{% endif %}
+								{% if meeting.minutes != blank? %}<a href="{{meeting.minutes}}" target="_blank" class="col-4 mx-auto link-info">Minutes</a>{% endif %}
 							</td>
 							{% endif %}
 						</tr>
