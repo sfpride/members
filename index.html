@@ -29,7 +29,36 @@ image: https://storage.googleapis.com/sfpride/tmp/og-members.png
 			</div>
 		</nav>
 		<div class="tab-content">
-			{% include 2020-meetings.html %}
+			<div class="tab-pane fade" id="cal-2020" role="tabpanel" aria-labelledby="cal-2020-tab">
+				<table class="table table-sm table-borderless align-middle">
+					<thead class="table-dark">
+						<tr>
+							<th scope="col" width="14%">Date</th>
+							<th scope="col" width="14%">Type</th>
+							<th scope="col" width="72%">Materials</th>
+						</tr>
+					</thead>
+					<tbody>
+						{% for meeting in site.data.calendar_2020 %}
+						{% assign today_date = 'today' | date: '%b %d, %Y' %}
+						{% assign meeting_today = meeting.date | date: '%b %d, %Y' %}
+						<tr class="{% if meeting_today == today_date %}fw-bold border border-2 border-primary{% endif %} border-bottom">
+							{% if meeting.date == "c" %}
+							<td class="text-center" scope="row" colspan="4">{{ meeting.type }}</td>
+							{% else %}
+							<td class="text-nowrap" scope="row">{{ meeting.date | date: '%b %d, %Y' }}</td>
+							<td>{{ meeting.type }}</td>
+							<td class="row text-center">
+								{% if meeting.packet != blank? %}<a href="{{meeting.packet}}" target="_blank" class="col-4 mx-auto link-primary">Packet</a>
+								{% elsif meeting.agenda != blank? %}<a href="{{meeting.agenda}}" target="_blank" class="col-4 mx-auto link-secondary">Agenda</a>{% endif %}
+								{% if meeting.minutes != blank? %}<a href="{{meeting.minutes}}" target="_blank" class="col-4 mx-auto link-info">Minutes</a>{% endif %}
+							</td>
+							{% endif %}
+						</tr>
+						{% endfor %}
+					</tbody>
+				</table>
+			</div>
 
 			<div class="tab-pane fade" id="cal-2021" role="tabpanel" aria-labelledby="cal-2021-tab">
 				<table class="table table-sm table-borderless align-middle">
@@ -44,7 +73,7 @@ image: https://storage.googleapis.com/sfpride/tmp/og-members.png
 						{% for meeting in site.data.calendar_2021 %}
 						{% assign today_date = 'today' | date: '%b %d, %Y' %}
 						{% assign meeting_today = meeting.date | date: '%b %d, %Y' %}
-						<tr  class="{% if meeting_today == today_date %}fw-bold border border-2 border-primary{% endif %} border-bottom" >
+						<tr class="{% if meeting_today == today_date %}fw-bold border border-2 border-primary{% endif %} border-bottom">
 							{% if meeting.date == "c" %}
 							<td class="text-center" scope="row" colspan="4">{{ meeting.type }}</td>
 							{% else %}
@@ -75,7 +104,7 @@ image: https://storage.googleapis.com/sfpride/tmp/og-members.png
 						{% for meeting in site.data.calendar %}
 						{% assign today_date = 'today' | date: '%b %d, %Y' %}
 						{% assign meeting_today = meeting.date | date: '%b %d, %Y' %}
-						<tr  class="{% if meeting_today == today_date %}fw-bold border border-2 border-primary{% endif %} border-bottom" >
+						<tr class="{% if meeting_today == today_date %}fw-bold border border-2 border-primary{% endif %} border-bottom">
 							{% if meeting.date == "c" %}
 							<td class="text-center" scope="row" colspan="4">{{ meeting.type }}</td>
 							{% else %}
