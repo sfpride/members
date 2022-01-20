@@ -1,5 +1,5 @@
 ---
-resolution number: 0001
+layout: resolution
 date: August 5th, 2020
 title: 2020 AGM and Board of Directors Election
 ---
@@ -9,7 +9,7 @@ on September 12, 2020. Because we can’t meet in person, due to the ongoing pan
 because the secret ballot process is important to the election, we believe it is best to
 conduct the elections by mail, according to the process that the staff has developed.
 
-passed with no objections or abstentions by: 
+passed with no objections or abstentions by:
 1. Carolyn Wysinger, Board President
 2. Jake Little, Board Vice-President
 3. Ngyuen Pham, Board Secretary
@@ -18,4 +18,4 @@ passed with no objections or abstentions by:
 6. Elizabeth Lanyon, Board Member
 7. Manual Perez, Board Member
 
-Amy Sueyoshi, Kerby Lynch, and Nikki Calma absent. 
+Amy Sueyoshi, Kerby Lynch, and Nikki Calma absent.
