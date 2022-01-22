@@ -133,17 +133,46 @@ title: Board of Directors
     </div>
 </section>
 <hr>
-<section class="d-none">
+
+<section class="row row-cols-1 d-lg-none">
+    {% for board in site.data.boards-of-directors %}
+    <div class="col my-2 mx-1 border border-1 border-primary rounded">
+        <h3>Fiscal Year {{board.year}}</h3>
+        <div class="row">
+            <div class="col">
+                <dl>
+                    <dt># of Directors</dt>
+                    <dd>{{board.number}}</dd>
+                </dl>
+                <dl>
+                    <dt>Oficers</dt>
+                    <dd>{{board.president}}, <em>President</em></dd>
+                    <dd>{{board.vice}}, <em>Vice President</em></dd>
+                    <dd>{{board.secretary}}, <em>Secretary</em></dd>
+                    <dd>{{board.treasurer}}, <em>Treasurer</em></dd>
+                </dl>
+            </div>
+            <div class="col">
+                <dl>
+                    <dt>Other Directors</dt>
+                    <dd>{{board.other}}</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</section>
+<section class="d-none d-lg-block">
     <h2 id="previous-directors">Previous Boards of Directors</h2>
-    <table class="table table-sm">
+    <table class="table table-sm table-responsive align-middle">
         <colgroup>
             <col style="width: 5%" />
-            <col style="width: 10%" />
-            <col style="width: 12%" />
-            <col style="width: 12%" />
-            <col style="width: 12%" />
-            <col style="width: 12%" />
-            <col style="width: 26%" />
+            <col style="width: 8%" />
+            <col style="width: 8%" />
+            <col style="width: 8%" />
+            <col style="width: 8%" />
+            <col style="width: 8%" />
+            <col style="width: 54%" />
         </colgroup>
         <thead>
             <tr class="header">
@@ -157,224 +186,17 @@ title: Board of Directors
             </tr>
         </thead>
         <tbody>
-            <tr class="odd" style="filter: blur(8px);">
-                <td>1999</td>
-                <td># of Directors</td>
-                <td>President</td>
-                <td>Vice President</td>
-                <td>Secretary</td>
-                <td>Treasurer</td>
-                <td>Other Directors</td>
+            {% for board in site.data.boards-of-directors %}
+            <tr>
+                <td>{{board.year}}</td>
+                <td>{{board.number}}</td>
+                <td>{{board.president}}</td>
+                <td>{{board.vice}}</td>
+                <td>{{board.secretary}}</td>
+                <td>{{board.treasurer}}</td>
+                <td>{{board.other}}</td>
             </tr>
-            <tr class="even" style="filter: blur(8px);">
-                <td>2000</td>
-                <td># of Directors</td>
-                <td>President</td>
-                <td>Vice President</td>
-                <td>Secretary</td>
-                <td>Treasurer</td>
-                <td>Other Directors</td>
-            </tr>
-            <tr class="odd" style="filter: blur(8px);">
-                <td>2001</td>
-                <td># of Directors</td>
-                <td>President</td>
-                <td>Vice President</td>
-                <td>Secretary</td>
-                <td>Treasurer</td>
-                <td>Other Directors</td>
-            </tr>
-            <tr class="even" style="filter: blur(8px);">
-                <td>2002</td>
-                <td># of Directors</td>
-                <td>President</td>
-                <td>Vice President</td>
-                <td>Secretary</td>
-                <td>Treasurer</td>
-                <td>Other Directors</td>
-            </tr>
-            <tr class="odd" style="filter: blur(8px);">
-                <td>2003</td>
-                <td># of Directors</td>
-                <td>President</td>
-                <td>Vice President</td>
-                <td>Secretary</td>
-                <td>Treasurer</td>
-                <td>Other Directors</td>
-            </tr>
-            <tr class="even" style="filter: blur(8px);">
-                <td>2004</td>
-                <td># of Directors</td>
-                <td>President</td>
-                <td>Vice President</td>
-                <td>Secretary</td>
-                <td>Treasurer</td>
-                <td>Other Directors</td>
-            </tr>
-            <tr class="odd" style="filter: blur(8px);">
-                <td>2005</td>
-                <td># of Directors</td>
-                <td>President</td>
-                <td>Vice President</td>
-                <td>Secretary</td>
-                <td>Treasurer</td>
-                <td>Other Directors</td>
-            </tr>
-            <tr class="even" style="filter: blur(8px);">
-                <td>2006</td>
-                <td># of Directors</td>
-                <td>President</td>
-                <td>Vice President</td>
-                <td>Secretary</td>
-                <td>Treasurer</td>
-                <td>Other Directors</td>
-            </tr>
-            <tr class="odd" style="filter: blur(8px);">
-                <td>2007</td>
-                <td># of Directors</td>
-                <td>President</td>
-                <td>Vice President</td>
-                <td>Secretary</td>
-                <td>Treasurer</td>
-                <td>Other Directors</td>
-            </tr>
-            <tr class="even" style="filter: blur(8px);">
-                <td>2008</td>
-                <td># of Directors</td>
-                <td>President</td>
-                <td>Vice President</td>
-                <td>Secretary</td>
-                <td>Treasurer</td>
-                <td>Other Directors</td>
-            </tr>
-            <tr class="odd" style="filter: blur(8px);">
-                <td>2009</td>
-                <td># of Directors</td>
-                <td>President</td>
-                <td>Vice President</td>
-                <td>Secretary</td>
-                <td>Treasurer</td>
-                <td>Other Directors</td>
-            </tr>
-            <tr class="even" style="filter: blur(8px);">
-                <td>2010</td>
-                <td># of Directors</td>
-                <td>President</td>
-                <td>Vice President</td>
-                <td>Secretary</td>
-                <td>Treasurer</td>
-                <td>Other Directors</td>
-            </tr>
-            <tr class="odd" style="filter: blur(8px);">
-                <td>2011</td>
-                <td># of Directors</td>
-                <td>President</td>
-                <td>Vice President</td>
-                <td>Secretary</td>
-                <td>Treasurer</td>
-                <td>Other Directors</td>
-            </tr>
-            <tr class="even" style="filter: blur(8px);">
-                <td>2012</td>
-                <td># of Directors</td>
-                <td>President</td>
-                <td>Vice President</td>
-                <td>Secretary</td>
-                <td>Treasurer</td>
-                <td>Other Directors</td>
-            </tr>
-            <tr class="odd" style="filter: blur(8px);">
-                <td>2013</td>
-                <td># of Directors</td>
-                <td>President</td>
-                <td>Vice President</td>
-                <td>Secretary</td>
-                <td>Treasurer</td>
-                <td>Other Directors</td>
-            </tr>
-            <tr class="even" style="filter: blur(8px);">
-                <td>2014</td>
-                <td># of Directors</td>
-                <td>President</td>
-                <td>Vice President</td>
-                <td>Secretary</td>
-                <td>Treasurer</td>
-                <td>Other Directors</td>
-            </tr>
-            <tr class="odd" style="filter: blur(8px);">
-                <td>2015</td>
-                <td># of Directors</td>
-                <td>President</td>
-                <td>Vice President</td>
-                <td>Secretary</td>
-                <td>Treasurer</td>
-                <td>Other Directors</td>
-            </tr>
-            <tr class="even" style="filter: blur(8px);">
-                <td>2016</td>
-                <td># of Directors</td>
-                <td>President</td>
-                <td>Vice President</td>
-                <td>Secretary</td>
-                <td>Treasurer</td>
-                <td>Other Directors</td>
-            </tr>
-            <tr class="odd" style="filter: blur(8px);">
-                <td>2017</td>
-                <td># of Directors</td>
-                <td>President</td>
-                <td>Vice President</td>
-                <td>Secretary</td>
-                <td>Treasurer</td>
-                <td>Other Directors</td>
-            </tr>
-            <tr class="even" style="filter: blur(8px);">
-                <td>2018</td>
-                <td># of Directors</td>
-                <td>President</td>
-                <td>Vice President</td>
-                <td>Secretary</td>
-                <td>Treasurer</td>
-                <td>Other Directors</td>
-            </tr>
-            <tr class="odd" style="filter: blur(8px);">
-                <td>2019</td>
-                <td># of Directors</td>
-                <td>President</td>
-                <td>Vice President</td>
-                <td>Secretary</td>
-                <td>Treasurer</td>
-                <td>Other Directors</td>
-            </tr>
-            <tr class="even">
-                <td>2020</td>
-                <td>10 (2 resigned)</td>
-                <td>Carolyn Wysinger</td>
-                <td>Jacob Little</td>
-                <td>Nguyen Pham</td>
-                <td>Suzanne Ford</td>
-                <td>Nikki Calma, Elizabeth Lanyon, Kerby Lynch, Manuel Perez, Anjali Rimi, Amy Sueyoshi, Alex U. Inn
-                    (resigned), Bruce Beaudette (resigned)</td>
-            </tr>
-            <tr class="odd">
-                <td>2021</td>
-                <td>8 (3 resigned)</td>
-                <td>Carolyn Wysinger</td>
-                <td>Suzanne Ford</td>
-                <td>Nguyen Pham</td>
-                <td>Anjali Rimi</td>
-                <td>Bivett Brackett, Elizabeth Lanyon, Manuel Perez, Joshua Smith, Kerby Lynch (resigned), Tuquan
-                    Harrison (resigned), Lady Diana Oliva (resigned)</td>
-            </tr>
-            <tr class="even">
-                <td>2012</td>
-                <td>11</td>
-                <td>Carolyn Wysinger</td>
-                <td>Nguyen Pham</td>
-                <td>Elizabeth Lanyon</td>
-                <td>Suzanne Ford</td>
-                <td>Manuel A. Perez, Janelle Vinson, Maceo Persson, Di'ara Reid, Spring Collins, Anjali Rimi, Joshua Smith</td>
-            </tr>
+            {% endfor %}
         </tbody>
     </table>
 </section>
