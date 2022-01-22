@@ -1,9 +1,10 @@
 .DS_Store
+Gemfile.lock
 _site/
 node_modules/
 .bundle/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata/
-/vendor
-Gemfile.lock
+vendor/
+tmp/
