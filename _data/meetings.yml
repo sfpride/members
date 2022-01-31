@@ -1,7 +1,7 @@
 - title: "Board of Directors Meeting"
   active: true
   type: "board"
-  date: "Feb 4, 2022"
+  date: "Feb 2, 2022"
   time: "7:00 p.m."
   zoom-link: "https://us02web.zoom.us/j/81644867118?pwd=MWQ4QkhNL2JwZzMwRnQ3R2dFVzZkQT09"
   zoom-id: "816 4486 7118"
@@ -9,20 +9,20 @@
   # agenda: "https://cdn.sfpride.org/docs/meetings/20220204-sfpride-board-agenda.pdf"
   # packet: "https://cdn.sfpride.org/docs/meetings/20220204-sfpride-board-packet.pdf"
 - title: Membership Meeting
-  active: false
+  active: true
   type: membership
-  date: "Jan 12, 2022"
+  date: "Feb 9, 2022"
   time: "7:00 p.m."
   zoom-link: https://us02web.zoom.us/j/83801507870?pwd=aXZEYkViYk5jUW1hRTlNM2pzNUx0Zz09
   zoom-id: 838 0150 7870
   zoom-passcode: 854497
-  agenda: https://cdn.sfpride.org/docs/meetings/20220112-sfpride-membership-agenda.pdf
+  #agenda: https://cdn.sfpride.org/docs/meetings/20220112-sfpride-membership-agenda.pdf
   #packet: https://cdn.sfpride.org/docs/meetings/20210310-sfpride-membershipmeeting-packet.pdf
 - title: Annual General Meeting
   active: false
   type: membership
-  date: "Sept 11, 2021"
+  date: "Feb 9, 2021"
   time-special: "Zoom Opens at 11:30am, Called to Order at Noon"
   zoom-link: https://us02web.zoom.us/j/84566184193
   zoom-id: 845 6618 4193
-  packet: https://cdn.sfpride.org/docs/meetings/20210911-sfpride-annualGeneralMeeting-agenda.pdf
+  #packet: https://cdn.sfpride.org/docs/meetings/20210911-sfpride-annualGeneralMeeting-agenda.pdf
