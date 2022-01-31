@@ -1,6 +1,6 @@
         {% for meeting in site.data.meetings %}
         {% if meeting.active == true %}
-        <div class="col text-center rounded border border-primary bg-light p-3 m-2">
+        <div class="col col-12 col-md-5 text-center rounded border border-primary bg-light p-3 mx-auto">
             <h2>{{meeting.title}}</h2>
             <p class="lead">{{meeting.date |date: '%a, %d %B %Y'}} {% if meeting.time != blank? %}at {{meeting.time}} {% else %} <br>{{meeting.time-special}}{%endif%}</p>
             <div class="text-center btn-group mb-1">
