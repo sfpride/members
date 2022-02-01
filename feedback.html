@@ -1,0 +1,35 @@
+---
+layout: default
+title: Member Feedback Form
+description: members can use this form to give direct feedback to the organization. 
+---
+
+<div class="row">
+    <div class="col">
+        <h1>{{page.title}}</h1>
+        <p>{{page.description}}</p>
+    </div>
+</div>
+
+<div class="row mb-5">
+    <div class="col col-12 col-md-8 mx-auto">
+        <form action="https://formspree.io/f/mbjwgoyw" method="POST">
+            <div class="mb-3">
+                <label for="feedbackName" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="feedbackName" name="feedbackName" aria-describedby="nameHelp">
+                <div id="nameHelp" class="form-text">Leave blank if you wish to remain anonymous.</div>
+              </div>
+              <div class="mb-3">
+                <label for="feedbackEmail" class="form-label">Your Email</label>
+                <input type="email" class="form-control" id="feedbackEmail" name="feedbackEmail" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">Leave blank if you wish to remain anonymous. We won't share your email.</div>
+              </div>
+                <div class="mb-3">
+                    <label for="feedbackMessage" class="form-label">Your Message</label>
+                    <textarea class="form-control" id="feedbackMessage" name="feedbackMessage" rows="3" aria-describedby="messageHelp"></textarea>
+                    <div id="messageHelp" class="form-text">Leave blank if you wish to remain anonymous. We won't share your email.</div>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>
