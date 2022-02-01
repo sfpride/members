@@ -2,6 +2,7 @@
 layout: resolution
 date: August 5th, 2020
 title: 2020 AGM and Board of Directors Election
+category: resolution
 ---
 
 The Board is resolving to separate the board elections from the Annual General Meeting
