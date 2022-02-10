@@ -1,0 +1,27 @@
+---
+layout: default
+title: Members of San Francisco Pride
+---
+<style>
+    .member{color: aliceblue;}
+    .member:nth-of-type(2n){color:#BF0ABB;}
+    .member:nth-of-type(3n){color:#f41962;}
+    .member:nth-of-type(4n){color:#0071E2;}
+    .member:nth-of-type(6n){color:#FBB03B;}
+    .member:nth-of-type(7n){color:#00B592;}
+</style>
+
+<div class="row">
+    <div class="col text-center">
+        <h1>{{page.title}}</h1>
+    </div>
+</div>
+<div class="row bg-dark py-3 align-items-center">
+    {% assign n = site.data.members | size %}
+    {% assign members = site.data.members | sample: n %}
+    {% for member in members %}
+    <div class="col text-center text-uppercase member">
+        <p class="text-nowrap fw-bold fs-5">{{ member.name }}</p>
+    </div>
+    {% endfor %}
+</div>
