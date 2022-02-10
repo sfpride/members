@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<div class="row my-3">
+    <div class="col-12 col-md-10 mx-auto">
+        <div class="card shadow py-2 px-3">
+            <h2 class="card-title">{{page.title}}</h2>
+            <p class="card-subtitle">{{page.date | date: "%b %d, %Y"}}</p>
+            <div class="card-body">
+                {{content}}
+            </div>
+        </div>
+    </div>
+</div>
