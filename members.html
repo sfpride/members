@@ -1,0 +1,23 @@
+---
+layout: default
+title: Members of Pride
+---
+<style>
+    .member{color: aliceblue;}
+    .member:nth-of-type(8n){color: purple;}
+</style>
+
+<div class="row">
+    <div class="col text-center">
+        <h1>The Members of San Francisco Pride</h1>
+    </div>
+</div>
+<div class="row bg-dark py-3 align-items-center">
+    {% assign n = site.data.members | size %}
+    {% assign members = site.data.members | sample: n %}
+    {% for member in members %}
+    <div class="col text-center text-uppercase member">
+        <p class="text-nowrap fw-bold fs-5">{{ member.name }}</p>
+    </div>
+    {% endfor %}
+</div>
