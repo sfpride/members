@@ -16,12 +16,12 @@
   guid: elizabeth-lanyon
   email: elizabeth.lanyon@sfpride.org
   photo: https://cdn.sfpride.org/m/board/2020/el.jpg
-- name: Suzanne Ford
+- name: Position Vacant
   title: Treasurer
-  pronouns: she/her/hers
-  guid: suzanne-ford
-  email: suzanne.ford@sfpride.org
-  photo: https://cdn.sfpride.org/m/board/2020/sf.jpg
+  pronouns: 
+  guid: treasurer-empty
+  email: treasurer@sfpride.org
+  photo: https://cdn.sfpride.org/keyart/2022/heartbutton.png
 - name: Manuel Alejandro Pérez
   title:
   pronouns: he/him/his/él
