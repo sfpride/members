@@ -9,7 +9,7 @@
   agenda: "https://cdn.sfpride.org/docs/meetings/20220302-sfpride-board-agenda.pdf"
   packet: "https://cdn.sfpride.org/docs/meetings/20220302-sfpride-board-packet.pdf"
 - title: Membership Meeting
-  active: true
+  active: false
   type: membership
   date: "MArch 9, 2022"
   time: "7:00 p.m."
