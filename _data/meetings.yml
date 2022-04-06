@@ -1,4 +1,4 @@
-- title: "Board of Directors Meeting"
+- title: "Regular Board of Directors Meeting"
   active: true
   type: "board"
   date: "April 6, 2022"
@@ -8,7 +8,7 @@
   zoom-passcode: 140856
   #agenda: "https://cdn.sfpride.org/docs/meetings/20220302-sfpride-board-agenda.pdf"
   #packet: "https://cdn.sfpride.org/docs/meetings/20220302-sfpride-board-packet.pdf"
-- title: Membership Meeting
+- title: Regular Membership Meeting
   active: true
   type: membership
   date: "April 13, 2022"
