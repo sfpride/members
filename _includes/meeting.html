@@ -3,6 +3,7 @@
         <div class="col col-12 col-md-5 text-center rounded border border-primary bg-light p-3 mx-auto">
             <h2>{{meeting.title}}</h2>
             <p class="lead">{{meeting.date |date: '%a, %d %B %Y'}} {% if meeting.time != blank? %}at {{meeting.time}} {% else %} <br>{{meeting.time-special}}{%endif%}</p>
+            <!-- {% if meeting.location != blank? %}<p>{{meeting.location}}</p>{% endif %} -->
             <div class="text-center btn-group mb-1">
                 <a class="btn btn-primary btn-lg {% if meeting.zoom-link == blank? %}disabled{% endif %}" href="{{meeting.zoom-link}}" target="_blank" rel="noopener noreferrer nofollow" role="button">Join Meeting</a>
                 {% if meeting.packet == blank? %}

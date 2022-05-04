@@ -1,14 +1,14 @@
 - title: "Regular Board of Directors Meeting"
-  active: false
+  active: true
   type: "board"
   date: "May 4, 2022"
   time: "7:00 p.m."
-  location: "Folsom Street Community Center,145 9th St Suite 105, San Francisco, CA 94103"
+  location: "<b>Folsom Street Community Center</b><br>145 9th St Suite 105, San Francisco, CA 94103"
   zoom-link: "https://us02web.zoom.us/j/84317062909?pwd=TnJaMlROV1hZMlFUZi9UWEJIQWlrQT09"
   zoom-id: "843 1706 2909"
   zoom-passcode: 513851
-  #agenda: "https://cdn.sfpride.org/docs/meetings/20220507-sfpride-board-agenda.pdf"
-  #packet: "https://cdn.sfpride.org/docs/meetings/20220507-sfpride-board-packet.pdf"
+  agenda: "https://cdn.sfpride.org/docs/meetings/20220504-sfpride-board-agenda.pdf"
+  packet: "https://cdn.sfpride.org/docs/meetings/20220504-sfpride-board-packet.pdf"
 - title: Regular Membership Meeting
   active: false
   type: membership
