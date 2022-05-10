@@ -1,5 +1,5 @@
 - title: "Regular Board of Directors Meeting"
-  active: true
+  active: false
   type: "board"
   date: "May 4, 2022"
   time: "7:00 p.m."
@@ -10,14 +10,14 @@
   agenda: "https://cdn.sfpride.org/docs/meetings/20220504-sfpride-board-agenda.pdf"
   packet: "https://cdn.sfpride.org/docs/meetings/20220504-sfpride-board-packet.pdf"
 - title: Regular Membership Meeting
-  active: false
+  active: true
   type: membership
-  date: "April 13, 2022"
+  date: "May 11, 2022"
   time: "7:00 p.m."
   zoom-link: https://us02web.zoom.us/j/83801507870?pwd=aXZEYkViYk5jUW1hRTlNM2pzNUx0Zz09
   zoom-id: 838 0150 7870
   zoom-passcode: 854497
-  agenda: https://cdn.sfpride.org/docs/meetings/20220413-sfpride-membership-agenda.pdf
+  #agenda: https://cdn.sfpride.org/docs/meetings/20220413-sfpride-membership-agenda.pdf
   #packet: https://cdn.sfpride.org/docs/meetings/20210310-sfpride-membershipmeeting-packet.pdf
 - title: Annual General Meeting
   active: false
