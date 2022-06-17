@@ -9,7 +9,7 @@
   #agenda: "https://cdn.sfpride.org/docs/meetings/20220504-sfpride-board-agenda.pdf"
   packet: "https://cdn.sfpride.org/docs/meetings/20220608-sfpride-board-packet.pdf"
 - title: Membership Mixer
-  active: true
+  active: false
   type: membership
   date: "June 15th, 2022"
   time: "6:00 p.m."
