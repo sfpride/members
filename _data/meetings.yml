@@ -1,30 +1,30 @@
 - title: "Regular Board of Directors Meeting"
-  active: false
+  active: true
   type: "board"
-  date: "June 8, 2022"
+  date: "July 6, 2022"
   time: "7:00 p.m."
   zoom-link: "https://us02web.zoom.us/j/3329712487?pwd=YzZKc01aWmVuS09lMExDNEs0QXY3Zz09"
   zoom-id: "332 971 2487"
   zoom-passcode: 513851
   #agenda: "https://cdn.sfpride.org/docs/meetings/20220504-sfpride-board-agenda.pdf"
-  packet: "https://cdn.sfpride.org/docs/meetings/20220608-sfpride-board-packet.pdf"
-- title: Membership Mixer
-  active: false
+  # packet: "https://cdn.sfpride.org/docs/meetings/20220608-sfpride-board-packet.pdf"
+- title: Regular Membership Meeting
+  active: true
   type: membership
-  date: "June 15th, 2022"
-  time: "6:00 p.m."
+  date: "July 13th, 2022"
+  time: "7:00 p.m."
   #event-link:
-  #zoom-link: https://us02web.zoom.us/j/83801507870?pwd=aXZEYkViYk5jUW1hRTlNM2pzNUx0Zz09
-  location: "BEAUX, 2344 Market St, San Francisco, CA 94114"
-  #zoom-id: 838 0150 7870
-  #zoom-passcode: 854497
-  agenda: party
-  #packet: https://cdn.sfpride.org/docs/meetings/20210310-sfpride-membershipmeeting-packet.pdf
+  zoom-link: https://us02web.zoom.us/j/83801507870?pwd=aXZEYkViYk5jUW1hRTlNM2pzNUx0Zz09
+  #location: "BEAUX, 2344 Market St, San Francisco, CA 94114"
+  zoom-id: 838 0150 7870
+  zoom-passcode: 854497
+  #agenda: https://cdn.sfpride.org/docs/meetings/20220713-sfpride-membershipmeeting-packet.pdf
+  #packet: https://cdn.sfpride.org/docs/meetings/20220713-sfpride-membershipmeeting-packet.pdf
 - title: Annual General Meeting
   active: false
   type: membership
-  date: "Feb 9, 2021"
-  time-special: "Zoom Opens at 11:30am, Called to Order at Noon"
+  date: "Sept 10, 2022"
+  time-special: "Room Opens at 11:30am, Called to Order at Noon"
   zoom-link: https://us02web.zoom.us/j/84566184193
   zoom-id: 845 6618 4193
-  #packet: https://cdn.sfpride.org/docs/meetings/20210911-sfpride-annualGeneralMeeting-agenda.pdf
+  #packet: https://cdn.sfpride.org/docs/meetings/20220910-sfpride-annualGeneralMeeting-agenda.pdf
