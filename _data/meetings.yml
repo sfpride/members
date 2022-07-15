@@ -9,7 +9,7 @@
   #agenda: "https://cdn.sfpride.org/docs/meetings/20220504-sfpride-board-agenda.pdf"
   #packet: "https://cdn.sfpride.org/docs/meetings/20220706-sfpride-board-packet.pdf"
 - title: Regular Membership Meeting
-  active: true
+  active: false
   type: membership
   date: "July 13th, 2022"
   time: "7:00 p.m."
