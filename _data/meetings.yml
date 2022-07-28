@@ -1,7 +1,7 @@
 - title: "Regular Board of Directors Meeting"
-  active: false
+  active: true
   type: "board"
-  date: "July 6, 2022"
+  date: "August 3, 2022"
   time: "7:00 p.m."
   zoom-link: "https://us02web.zoom.us/j/83263360440?pwd=VXE3OG9IUzIvcmlYQVgvWWhnYTRMZz09"
   zoom-id: "832 6336 0440"
@@ -9,17 +9,17 @@
   #agenda: "https://cdn.sfpride.org/docs/meetings/20220504-sfpride-board-agenda.pdf"
   #packet: "https://cdn.sfpride.org/docs/meetings/20220706-sfpride-board-packet.pdf"
 - title: Regular Membership Meeting
-  active: false
+  active: true
   type: membership
-  date: "July 13th, 2022"
+  date: "August 10, 2022"
   time: "7:00 p.m."
   #event-link:
   zoom-link: https://us02web.zoom.us/j/83801507870?pwd=aXZEYkViYk5jUW1hRTlNM2pzNUx0Zz09
   #location: "BEAUX, 2344 Market St, San Francisco, CA 94114"
   zoom-id: 838 0150 7870
   zoom-passcode: 854497
-  agenda: https://cdn.sfpride.org/docs/meetings/20220713-sfpride-membership-agenda.pdf
-  packet: https://cdn.sfpride.org/docs/meetings/20220713-sfpride-membership-packet.pdf
+  # agenda: https://cdn.sfpride.org/docs/meetings/20220713-sfpride-membership-agenda.pdf
+  # packet: https://cdn.sfpride.org/docs/meetings/20220713-sfpride-membership-packet.pdf
 - title: Annual General Meeting
   active: false
   type: membership
