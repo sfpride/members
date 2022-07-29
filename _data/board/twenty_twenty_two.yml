@@ -1,60 +1,60 @@
 - name: Carolyn Wysinger
   title: President
-  pronouns: she/her/hers
+  pronouns: she/hers
   guid: carolyn-wysinger
   email: carolyn.wysinger@sfpride.org
   photo: https://cdn.sfpride.org/m/board/2020/cw.jpg
 - name: Nguyen Pham
   title: Vice President
-  pronouns: he/him/his
+  pronouns: he/his
   guid: nguyen-pham
   email: nguyen.pham@sfpride.org
-  photo: https://storage.googleapis.com/sfpride/m/election/2021/candidates/nugyen-pham-2.jpg
+  photo: https://cdn.sfpride.org/m/election/2021/candidates/nugyen-pham-2.jpg
 - name: Elizabeth Lanyon
   title: Secretary
-  pronouns: she/her/hers
+  pronouns: she/hers
   guid: elizabeth-lanyon
   email: elizabeth.lanyon@sfpride.org
   photo: https://cdn.sfpride.org/m/board/2020/el.jpg
 - name: Janelle Vinson
   title: Treasurer
-  pronouns: she/her/hers
+  pronouns: she/they
   guid: janelle-vinson
-  email: janelle.vinson@sfpride.org
-  photo: https://storage.googleapis.com/sfpride/m/election/2021/candidates/janelle-vinson.png
+  email: janell.vinson@sfpride.org
+  photo: https://cdn.sfpride.org/m/election/2021/candidates/janelle-vinson.png
 - name: Manuel Alejandro Pérez
   title:
-  pronouns: he/him/his/él
+  pronouns: he/his/él
   guid: manuel-perez
   email: manuel.perez@sfpride.org
-  photo: https://storage.googleapis.com/sfpride/m/election/2021/candidates/manuel-perez.jpg
+  photo: https://cdn.sfpride.org/m/election/2021/candidates/manuel-perez.jpg
 - name: Maceo Persson
   title:
-  pronouns: he/him/his
+  pronouns: he/his
   guid: maceo-persson
   email: maceo.persson@sfpride.org
-  photo: https://storage.googleapis.com/sfpride/m/election/2021/candidates/maceo-persson-2.jpg
+  photo: https://cdn.sfpride.org/m/election/2021/candidates/maceo-persson-2.jpg
 - name: Di'ara Reid
   title:
-  pronouns: she/her/hers
+  pronouns: she/hers
   guid: diara-reid
   email: diara.reid@asfpride.org
-  photo: https://storage.googleapis.com/sfpride/m/election/2021/candidates/diara-reid-2.jpg
+  photo: https://cdn.sfpride.org/m/election/2021/candidates/diara-reid-2.jpg
 - name: Spring Collins
   title:
-  pronouns: she/her/hers
+  pronouns: she/they
   guid: spring-collins
   email: spring.collins@sfpride.org
-  photo: https://storage.googleapis.com/sfpride/m/election/2021/candidates/spring-collins.jpg
+  photo: https://cdn.sfpride.org/m/election/2021/candidates/spring-collins.jpg
 - name: Anjali Rimi
   title:
-  pronouns: she/her/hers
+  pronouns: she/hers
   guid: anjali-rimi
   email: anjali.rimi@sfpride.org
   photo: https://cdn.sfpride.org/m/board/2020/ar.jpg
 - name: Joshua Smith
   title:
-  pronouns: he/him/his
+  pronouns: he/his
   guid: joshua-smith
   email: joshua.smith@sfpride.org
   photo: https://cdn.sfpride.org/m/board/2020/js.jpg
