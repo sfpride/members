@@ -9,7 +9,7 @@ METHOD:PUBLISH
 UID:{{ meeting.date | date: "%Y%m%d" }}@events.sfpride.org
 ORGANIZER;CN="San Francisco LGBT Pride":MAILTO:info@sfpride.org
 LOCATION:https://members.sfpride.org
-SUMMARY:{{ meeting.type }} Meeting
+SUMMARY:SF Pride {{ meeting.type }} Meeting
 CLASS:PUBLIC
 DTSTART:{{ meeting.date | date: "%Y%m%d" }}T19000Z
 DTEND:{{ meeting.date | date: "%Y%m%d" }}T200000Z
