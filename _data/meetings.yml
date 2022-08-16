@@ -1,30 +1,33 @@
+# meeting types: inperson, online, hybrid
 - title: "Regular Board of Directors Meeting"
-  active: false
-  type: "board"
-  date: "August 3, 2022"
+  active: true
+  type: "online"
+  scope: Board
+  date: "September 7, 2022"
   time: "7:00 p.m."
-  zoom-link: "https://us02web.zoom.us/j/83263360440?pwd=VXE3OG9IUzIvcmlYQVgvWWhnYTRMZz09"
-  zoom-id: "832 6336 0440"
+  zoom-link: "https://us02web.zoom.us/j/81644867118?pwd=MWQ4QkhNL2JwZzMwRnQ3R2dFVzZkQT09"
+  zoom-id: "816 448 67118"
   zoom-passcode: 895647
   #agenda: "https://cdn.sfpride.org/docs/meetings/20220803-sfpride-board-agenda.pdf"
-  packet: "https://cdn.sfpride.org/docs/meetings/20220803-sfpride-board-packet.pdf"
+  #packet: "https://cdn.sfpride.org/docs/meetings/20220803-sfpride-board-packet.pdf"
 - title: Regular Membership Meeting
-  active: true
-  type: membership
+  active: false
+  type: online
+  scope: Membership
   date: "August 10, 2022"
   time: "7:00 p.m."
-  #event-link: 
   zoom-link: https://us02web.zoom.us/j/83801507870?pwd=aXZEYkViYk5jUW1hRTlNM2pzNUx0Zz09
-  #location: "BEAUX, 2344 Market St, San Francisco, CA 94114"
   zoom-id: 838 0150 7870
   zoom-passcode: 854497
   agenda: https://cdn.sfpride.org/docs/meetings/20220810-sfpride-membership-agenda.pdf
-  # packet: https://cdn.sfpride.org/docs/meetings/20220713-sfpride-membership-packet.pdf
+  packet: https://cdn.sfpride.org/docs/meetings/20220713-sfpride-membership-packet.pdf
 - title: Annual General Meeting
-  active: false
-  type: membership
+  active: true
+  type: hybrid
+  scope: Plenary
   date: "Sept 10, 2022"
   time-special: "Room Opens at 11:30am, Called to Order at Noon"
-  zoom-link: https://us02web.zoom.us/j/84566184193
-  zoom-id: 845 6618 4193
+  location: "Rainbow Room, SF LGBT Center, 1800 Market St, San Francisco, CA 94102"
+  #zoom-link: https://us02web.zoom.us/j/84566184193
+  #zoom-id: 845 6618 4193
   #packet: https://cdn.sfpride.org/docs/meetings/20220910-sfpride-annualGeneralMeeting-agenda.pdf

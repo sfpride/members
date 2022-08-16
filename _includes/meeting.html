@@ -3,9 +3,12 @@
         <div class="col col-12 col-md-5 text-center rounded border border-primary bg-light p-3 mx-auto">
             <h2>{{meeting.title}}</h2>
             <p class="lead">{{meeting.date |date: '%a, %d %B %Y'}} {% if meeting.time != blank? %}at {{meeting.time}} {% else %} <br>{{meeting.time-special}}{%endif%}</p>
-            {% if meeting.location != blank? %}<p>{{meeting.location}}</p>{% endif %}
+            {% case meeting.type %}
+            {% when "inperson", "hybrid" %}
+            <p>{{meeting.location}}</p>
+            {% if meeting.event-link != blank? %}<p> <a class="btn btn-primary btn-lg  {% if meeting.event-link == blank? %}disabled{% endif %}" href="{{meeting.event-link}}" target="_blank" rel="noopener noreferrer nofollow" role="button">Event Link</a></p>{% endif %}
+            {% when "hybrid","online" %}
             {% if meeting.event-link != blank? %}<p> <a class="btn btn-primary btn-lg {% if meeting.event-link == blank? %}disabled{% endif %}" href="{{meeting.event-link}}" target="_blank" rel="noopener noreferrer nofollow" role="button">Event Link</a></p>{% endif %}
-            {% if meeting.location == blank? %}
             <div class="text-center btn-group mb-1">
                 <a class="btn btn-primary btn-lg {% if meeting.zoom-link == blank? %}disabled{% endif %}" href="{{meeting.zoom-link}}" target="_blank" rel="noopener noreferrer nofollow" role="button">Join Meeting</a>
                 {% if meeting.packet == blank? %}
@@ -15,13 +18,15 @@
                 <a class="btn btn-outline-secondary btn-lg" href="{{meeting.packet}}" target="_blank" rel="noopener noreferrer nofollow" role="button">View Packet</a>
                 {% endif %}
             </div>
-            {% endif %}
+            {% endcase %}
             <div id="meeting-info" class="text-muted small mb-n4">
                 <p class="m-0">
-                    {% if meeting.agenda == blank? and meeting.packet == blank? %}
+                    {% if meeting.agenda == blank? and meeting.packet == blank? and meeting.zoom-link != blank? %}
                     <em style="font-size: 0.85rem;">agenda is not ready</em><br>
                     {% elsif meeting.agenda == "party" %}
                     <em style="font-size: 0.85rem;">informal in-person gathering for members, open to the public</em><br>
+                    {% elsif meeting.agenda == blank? and meeting.packet == blank? and meeting.zoom-link == blank? %}
+                    <em style="font-size: 0.85rem;">zoom link and agenda are not ready</em><br>
                     {% endif %}
                     {% if meeting.zoom-id != blank? %}
                     Meeting ID: <span class="copy-me">{{meeting.zoom-id}}</span><br>
