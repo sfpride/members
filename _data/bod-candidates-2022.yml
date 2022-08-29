@@ -1,12 +1,3 @@
-- name: Robert Louie
-  id: robertlouie
-  image: https://storage.googleapis.com/sfpride/m/election/2022/robert_louie_2.png
-  pronouns: he/him
-  inc: 
-  bio: >-
-    <p>Robert is an Asian-American transman, artist, and Bay Area native. He has experience working with many different types of non-profit social justice organizations, including the Democratic Socialists of America, Gender Illumination, and the Bay Area Transmasc Calendar. He is passionate about building community through creative collaborations, which is what landed him in charge of a 50-person Burning Man camp that has produced multiple large-scale art installations over the past decade.</p>
-    <p>As a leader, Robert values listening and following through on strong ideas with hard work and consistent effort. With a wide breadth of professional experience at major tech companies and supporting multiple volunteer community groups, his focus is on operations, considering the cost-benefit of potential solutions, and executing a shared vision. He is a creator and a doer who appreciates that serving a community is an undertaking that requires time, energy, love, and persistent work.</p>
-
 - name: Anjali Rimi
   id: anjalirimi
   image: https://storage.googleapis.com/sfpride/m/election/2022/anjali_rimi.jpeg
@@ -29,17 +20,23 @@
   pronouns: she/her
   inc: 
   bio: >-
-    Let me introduce myself, I am Linda Martley-Jordan a African American lesbian who is the mother of 4 grown children, foster mother to one daughter and the grandmother to 7 awesome grand children.
-    I am an educator, thought partner, advocate, collaborator and lover of music.
-    My life for the last 20+ years has been to allow individuals, especially young people, to self-identify and live life as their best self. I believe that the support of all of the community is important regardless of race, creed, national origin, sexual identity, or gender identity. As a member of the Pride Board I will integrate the work I have had the privilege of doing with our youth and plan to continue supporting LGBTQIA+ youth in San Francisco County by lifting their voices on issues that have affected their lives and that they are concerned about in San Francisco and San Francisco County. I will support policies that provide the necessary protections to the LGBTQIA+ students, and their right to exist without harassment or physical attack.
-    Second, I have never, nor will I ever tolerate any discrimination within my control or presence. I believe all the citizens of San Francisco have the right to live free from intolerance and bigotry.
-    Vote for me to support moving the needle on issues for our LGBTQIA+ community.
-  
+    <p>Let me introduce myself, I am Linda Martley-Jordan a African American lesbian who is the mother of 4 grown children, foster mother to one daughter and the grandmother to 7 awesome grand children. I am an educator, thought partner, advocate, collaborator and lover of music.</p>
+    <p>My life for the last 20+ years has been to allow individuals, especially young people, to self-identify and live life as their best self. I believe that the support of all of the community is important regardless of race, creed, national origin, sexual identity, or gender identity. As a member of the Pride Board I will integrate the work I have had the privilege of doing with our youth and plan to continue supporting LGBTQIA+ youth in San Francisco County by lifting their voices on issues that have affected their lives and that they are concerned about in San Francisco and San Francisco County. I will support policies that provide the necessary protections to the LGBTQIA+ students, and their right to exist without harassment or physical attack.
+    Second, I have never, nor will I ever tolerate any discrimination within my control or presence. I believe all the citizens of San Francisco have the right to live free from intolerance and bigotry.</p>
+    <p>Vote for me to support moving the needle on issues for our LGBTQIA+ community.</p>
 
 - name: George Smith III
   id: georgesmith
   image:
   pronouns: 
   inc: 
-  bio:
-  
+  bio:  
+
+- name: Robert Louie
+  id: robertlouie
+  image: https://storage.googleapis.com/sfpride/m/election/2022/robert_louie_2.png
+  pronouns: he/him
+  inc: 
+  bio: >-
+    <p>Robert is an Asian-American transman, artist, and Bay Area native. He has experience working with many different types of non-profit social justice organizations, including the Democratic Socialists of America, Gender Illumination, and the Bay Area Transmasc Calendar. He is passionate about building community through creative collaborations, which is what landed him in charge of a 50-person Burning Man camp that has produced multiple large-scale art installations over the past decade.</p>
+    <p>As a leader, Robert values listening and following through on strong ideas with hard work and consistent effort. With a wide breadth of professional experience at major tech companies and supporting multiple volunteer community groups, his focus is on operations, considering the cost-benefit of potential solutions, and executing a shared vision. He is a creator and a doer who appreciates that serving a community is an undertaking that requires time, energy, love, and persistent work.</p>
