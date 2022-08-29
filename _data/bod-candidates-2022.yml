@@ -27,10 +27,11 @@
 
 - name: George Smith III
   id: georgesmith
-  image:
-  pronouns: 
+  image: https://storage.googleapis.com/sfpride/m/election/2022/george_smith.jpg
+  pronouns: he/him
   inc: 
-  bio:  
+  bio:  >
+    I love San Francisco. Born and raised in this City I love. I have dedicated over 30 years of my life as an advocate for people who are fighting for equality and self-fulfillment. Currently, I work as a San Francisco Public Servant with humility and pride, helping our most vulnerable citizens achieve self-sufficiency through employment and emotional support. My years of experience as a City Administrator, Public Relations strategist, Employment Specialist and Project Manager will help built a stronger Pride that will last for generations. With your vote, I promise to listen to the people, fight for equity and inclusion, and to produce a Pride for everyone!
 
 - name: Robert Louie
   id: robertlouie
