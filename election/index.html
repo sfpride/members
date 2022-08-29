@@ -238,7 +238,7 @@ image: https://cdn.sfpride.org/tmp/2022-Board-Nominations.png
             <li>a link to the election page</li>
         </ul>
         <p>See the example image provided.</p>
-        <!-- <p>You will receive an email invitation to vote that includes a <b>Voter ID</b>, <b>Voter Key</b>, and a link to click to take you to the election page.</p> -->
+        <p>You will receive an email invitation to vote that includes a <b>Voter ID</b>, <b>Voter Key</b>, and a link to click to take you to the election page.</p>
         <p>Once you have received your invitation to vote:</p>
         <ol>
             <li>Click the link in your invitation email.</li>
@@ -319,7 +319,7 @@ image: https://cdn.sfpride.org/tmp/2022-Board-Nominations.png
             <img class="w-100" src="{{candidate.image}}" alt="photo of {{candidate.name}}">
             {% endif %}
             {% if candidate.image == blank?%}
-            <img src="https://storage.googleapis.com/sfpride/m/election/nophotoprovided.png" alt="" class="img-fluid">
+            <img src="https://storage.googleapis.com/sfpride/m/election/nophotoprovided.png" alt="photo of {{candidate.name}}" class="img-fluid">
             {% endif %}
         </div>
         <div class="col col-9">
