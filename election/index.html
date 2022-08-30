@@ -323,7 +323,7 @@ image: https://cdn.sfpride.org/tmp/2022-Board-Nominations.png
             {% endif %}
         </div>
         <div class="col col-9">
-            <h5>{{candidate.name}}</h5>
+            <h5>{{candidate.name}}{% if candidate.inc != blank? %} {{candidate.inc}} {% endif %}</h5>
             <h6 class="text-muted">{{candidate.pronouns}}</h6>
             {{candidate.bio}}
             {% if candidate.bio == blank? %}
