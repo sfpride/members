@@ -15,7 +15,7 @@ title: Board of Directors
             </div>
             <div class="col">
                 <p class="">
-                    <strong class="text-danger">{{director.name}} <span class="text-muted small">{{director.pronouns}}</span><br>{{director.title}}</strong>
+                    <strong class="text-danger">{{director.name}} <span class="text-muted small"> {{director.pronouns}}</span><br><span class="text-dark">{{director.title}}</span></strong>
                 </p>
             </div>
         </div>
@@ -27,7 +27,7 @@ title: Board of Directors
         <div id="{{director.id}}" class="col col-4 col-lg-3 mx-auto">
             <img src="{{director.photo}}" alt="{{director.photo-alt}}" class="rounded-circle" style="width:100%;">
             <div class="figure-caption text-center">
-                <strong class="text-danger">{{director.name}}<br>{% if director.title != blank? %}{{director.title}};{%endif%}{{director.pronouns}}</strong>
+                <strong class="text-danger">{{director.name}}<br>{% if director.title != blank? %}{{director.title}}; {%endif%}{{director.pronouns}}</strong>
             </div>
         </div>
         {% endfor %}
