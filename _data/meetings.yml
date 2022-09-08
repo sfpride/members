@@ -5,11 +5,11 @@
   scope: Board
   date: "September 7, 2022"
   time: "7:00 p.m."
-  zoom-link: "https://us02web.zoom.us/j/81644867118?pwd=MWQ4QkhNL2JwZzMwRnQ3R2dFVzZkQT09"
-  zoom-id: "816 448 67118"
-  zoom-passcode: 895647
+  zoom-link: "https://us02web.zoom.us/j/83523847944?pwd=WWQxV3NmMm5lT1pDM2MxcXp0MzNodz09"
+  zoom-id: "835 2384 7944"
+  zoom-passcode: 857746
   #agenda: "https://cdn.sfpride.org/docs/meetings/20220803-sfpride-board-agenda.pdf"
-  #packet: "https://cdn.sfpride.org/docs/meetings/20220803-sfpride-board-packet.pdf"
+  packet: "https://cdn.sfpride.org/docs/meetings/20220907-sfpride-board-packet.pdf"
 - title: Regular Membership Meeting
   active: false
   type: online
