@@ -22,7 +22,7 @@
   agenda: https://cdn.sfpride.org/docs/meetings/20220810-sfpride-membership-agenda.pdf
   packet: https://cdn.sfpride.org/docs/meetings/20220713-sfpride-membership-packet.pdf
 - title: Annual General Meeting
-  active: true
+  active: false
   type: hybrid
   scope: Plenary
   date: "Sept 10, 2022"
