@@ -1,0 +1,9 @@
+---
+layout: null
+permalink: board/list
+---
+<ol>
+{% for director in site.data.board.twenty_twenty_two %}
+<li>{{director.name}}{%if director.title != blank? %}, {{director.title}}{% endif %}</li>
+{% endfor %}
+</ol>

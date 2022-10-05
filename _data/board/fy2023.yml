@@ -1,0 +1,60 @@
+- name: Carolyn Wysinger
+  title: President
+  pronouns: she/hers
+  guid: carolyn-wysinger
+  email: carolyn.wysinger@sfpride.org
+  photo: https://cdn.sfpride.org/m/board/2020/cw.jpg
+- name: Nguyen Pham
+  title: Vice President
+  pronouns: he/his
+  guid: nguyen-pham
+  email: nguyen.pham@sfpride.org
+  photo: https://cdn.sfpride.org/m/board/2022/np.jpg
+- name: Elizabeth Lanyon
+  title: Secretary
+  pronouns: she/hers
+  guid: elizabeth-lanyon
+  email: elizabeth.lanyon@sfpride.org
+  photo: https://cdn.sfpride.org/m/board/2022/el.jpg
+- name: Janelle Luster
+  title: Treasurer
+  pronouns: she/they
+  guid: janelle-luster
+  email: janell.luster@sfpride.org
+  photo: https://cdn.sfpride.org/m/board/2022/jl.png
+- name: Manuel Alejandro Pérez
+  title:
+  pronouns: he/his/él
+  guid: manuel-perez
+  email: manuel.perez@sfpride.org
+  photo: https://cdn.sfpride.org/m/board/2022/manp.jpg
+- name: Maceo Persson
+  title:
+  pronouns: he/his
+  guid: maceo-persson
+  email: maceo.persson@sfpride.org
+  photo: https://cdn.sfpride.org/m/board/2022/macp.jpg
+- name: Di'ara Reid
+  title:
+  pronouns: she/hers
+  guid: diara-reid
+  email: diara.reid@asfpride.org
+  photo: https://cdn.sfpride.org/m/board/2022/dr.jpg
+- name: Spring Collins
+  title:
+  pronouns: she/they
+  guid: spring-collins
+  email: spring.collins@sfpride.org
+  photo: https://cdn.sfpride.org/m/board/2022/sc.png
+- name: Anjali Rimi
+  title:
+  pronouns: she/they
+  guid: anjali-rimi
+  email: anjali.rimi@sfpride.org
+  photo: https://cdn.sfpride.org/m/board/2022/ar.jpg
+- name: Joshua Smith
+  title:
+  pronouns: he/his
+  guid: joshua-smith
+  email: joshua.smith@sfpride.org
+  photo: https://cdn.sfpride.org/m/board/2022/js.jpg
