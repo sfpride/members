@@ -61,6 +61,15 @@
   pronouns: he/him/él
   email: manuel.perez@sfpride.org
   photo: https://cdn.sfpride.org/m/board/2023/manp.jpg
+- guid: anjali-rimi
+  name: Anjali Rimi
+  title:
+  term: 2
+  cohort: 2023
+  committees: bf,ca
+  pronouns: she/they
+  email: anjali.rimi@sfpride.org
+  photo: https://cdn.sfpride.org/m/board/2023/ar.jpg
 - guid: maceo-persson
   name: Maceo Persson
   title:
@@ -79,15 +88,6 @@
   pronouns: she/her
   email: diara.reid@asfpride.org
   photo: https://cdn.sfpride.org/m/board/2023/dr.jpg
-- guid: anjali-rimi
-  name: Anjali Rimi
-  title:
-  term: 2
-  cohort: 2023
-  committees: bf,ca
-  pronouns: she/they
-  email: anjali.rimi@sfpride.org
-  photo: https://cdn.sfpride.org/m/board/2023/ar.jpg
 - guid: joshua-smith
   name: Joshua Smith
   title:

@@ -1,17 +1,47 @@
 ---
-layout: null
+layout: basic
 permalink: board/list
 ---
-<ol>
-{% for director in site.data.board.twenty_twenty_two %}
-<li>{{director.name}}{%if director.title != blank? %}, {{director.title}}{% endif %}</li>
-{% endfor %}
-</ol>
+<div class="container my-3">
 
+    <div class="row fixed-top">
+        <div class="col bg-dark">
+            <br>
+        </div>
+        <div class="col bg-primary"></div>
+        <div class="col bg-secondary"></div>
+    </div>
 
-<ol>
-    {% for director_hash in site.data.board.fy2023 %}
-    {% assign director = director_hash[1] %}
-    <li>{{director.name}}</li>
-    {% endfor%}
-</ol>
+    <div class="row mt-5">
+        <div class="col">
+            <h4>Current Board Members</h4>
+            <ol>
+                {% for director in site.data.board.fy2023 %}
+                <li>{{director.name}}{%if director.title != blank? %}, {{director.title}}{% endif %} {%if director.pronouns != blank? %}({{director.pronouns}}){% endif %} <span class="text-muted">{%if director.cohort != blank? %}[{{director.cohort}} - {{director.cohort | plus: 3}}]{% endif %}</span></li>
+                {% endfor %}
+            </ol>
+            <hr>
+            <h4>Committees</h4>
+            <span class="fw-bold">Budget and Finance:</span> {{site.data.board.committees.bf}}<br>
+            <span class="fw-bold">Policies and Procedures:</span> {{site.data.board.committees.pp}}<br>
+            <span class="fw-bold">Personnel:</span> {{site.data.board.committees.p}}<br>
+            <span class="fw-bold">Long Range Planning:</span> {{site.data.board.committees.lrp}}<br>
+            <span class="fw-bold">Nominating:</span> {{site.data.board.committees.n}}<br>
+            <span class="fw-bold">Development:</span> {{site.data.board.committees.d}}<br>
+            <span class="fw-bold">Audit:</span> {{site.data.board.committees.a}}<br>
+            <span class="fw-bold">Community Affairs:</span> {{site.data.board.committees.ca}}
+            <hr>      
+        </div>
+    </div>
+
+    <div class="row fixed-bottom">
+        <div class="col-12 text-center text-uppercase">
+            San Francisco Pride
+        </div>
+        <div class="col bg-secondary">
+            <br>
+        </div>
+        <div class="col bg-primary"></div>
+        <div class="col bg-dark"></div>
+    </div>
+</div>
