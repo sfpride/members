@@ -7,3 +7,11 @@ permalink: board/list
 <li>{{director.name}}{%if director.title != blank? %}, {{director.title}}{% endif %}</li>
 {% endfor %}
 </ol>
+
+
+<ol>
+    {% for director_hash in site.data.board.fy2023 %}
+    {% assign director = director_hash[1] %}
+    <li>{{director.name}}</li>
+    {% endfor%}
+</ol>
