@@ -3,14 +3,17 @@ layout: default
 shortname: board
 title: Board of Directors
 ---
+{% assign president = site.data.board.fy2023[0] %}
+{% assign vicepresident = site.data.board.fy2023[1] %}
+{% assign secretary = site.data.board.fy2023[2] %}
+{% assign treasurer = site.data.board.fy2023[3] %}
 <h1 id="san-francisco-lgbt-pride-board-of-directors">{{page.title}}</h1>
 <section id="board-of-directors" class="bg-light rounded p-2">
     <!-- <h2 class="">2022 Board Members</h2> -->
     <div class="d-lg-none">
-        {% assign ttdirectors = site.data.board.twenty_twenty_two %}
-        {% for director in ttdirectors %}
+        {% for director in site.data.board.fy2023 %}
         <div class="row mb-2">
-            <div id="{{director.id}}" class="col col-4">
+            <div id="{{director.guid}}" class="col col-4">
                 <img src="{{director.photo}}" alt="{{director.photo-alt}}" class="img-fluid rounded">
             </div>
             <div class="col">
@@ -21,11 +24,10 @@ title: Board of Directors
         </div>
         {% endfor %}
     </div>
-    <div class="row d-none d-lg-flex align-items-center justify-content-evenly text-center g-5">
-        {% assign ttdirectors = site.data.board.twenty_twenty_two %}
-        {% for director in ttdirectors %}
-        <div id="{{director.id}}" class="col col-4 col-lg-3 mx-auto">
-            <img src="{{director.photo}}" alt="{{director.photo-alt}}" class="rounded-circle" style="width:100%;">
+    <div class="row d-none d-lg-flex align-items-center justify-content-evenly text-center g-3">
+        {% for director in site.data.board.fy2023 %}
+        <div id="{{director.guid}}" class="col col-4 col-md-3 col-lg-2 mx-auto">
+            <img src="{{director.photo}}" alt="{{director.photo-alt}}" class="rounded rounded-3" style="width:100%;">
             <div class="figure-caption text-center">
                 <strong class="text-danger">{{director.name}}<br>{% if director.title != blank? %}{{director.title}}; {%endif%}{{director.pronouns}}</strong>
             </div>
@@ -33,21 +35,27 @@ title: Board of Directors
         {% endfor %}
     </div>
 </section>
-<div class="row bg-primary text-light m-0 py-4">
+<!-- <div class="row bg-primary text-light m-0 py-4">
     <div class="col col-12 col-md-9 mx-auto text-center">
         <img src="https://cdn.sfpride.org/tmp/2022-board-retreat-002.jpg" alt="" class="img-fluid rounded shadow">
         <p class="m-0 mt-2">Janelle, Spring, Nguyen, Carolyn, Suzanne, Maceo, Di'ara, Joshua, Elizabeth, Manuel, (not pictured: Anjali)<br><span class="fw-bold">San Francisco Pride Board of Directors at the 2022 Board Retreat</span></p>
     </div>
+</div> -->
+<div class="row">
+    <div class="col">
+        <hr class="bg-primary py-2 rounded">
+    </div>
 </div>
 <section class="p-2">
     <h2>2022 Board Committees</h2>
-    <p>President Wysinger and Vice President Pham are <dfn title="as a result of one's status or position">ex officio</dfn> members of all Board Committees, aside from the Audit Committee of which the President may not be a member. Additionally, as the chairperson of the Audit committee, Vice President Pham may not serve on the Budget & Finance Committee.</p>
+    <p>President Pham and Vice President Luster are <dfn title="as a result of one's status or position">ex officio</dfn> members of all Board Committees, aside from the Audit Committee of which the President may not be a member. <span class="d-none">Additionally, as the chairperson of the Audit committee, Vice President Pham may not serve on the Budget & Finance Committee.</span></p>
+    {% assign comms = site.data.board.committees %}
     <div class="row">
         <div class="col-12 col-md-4">
             <h3>Budget and Finance</h3>
             <p>
-                <b>Chair:</b> Treasurer (Janelle Luster)<br>
-                <b>Members:</b> Elizabeth Lanyon, Di'ara Reid, Spring Collins<br>
+                <b>Chair:</b> Treasurer ({{treasurer.name}})<br>
+                <b>Members:</b> {{comms.bf}}<br>
                 <b>Scope:</b> budget preparation and financial strategy and oversight of the corporation.
             </p>
         </div>
@@ -55,7 +63,7 @@ title: Board of Directors
             <h3>Policies and Procedures</h3>
             <p>
                 <b>Chair:</b> Manuel A. Pérez<br>
-                <b>Members:</b> Elizabeth Lanyon, Manuel A. Pérez, Joshua Smith<br>
+                <b>Members:</b> {{comms.pp}}<br>
                 <b>Schedule:</b> Fourth Thursdays<br>
                 <b>Scope:</b> keeping the structure of the corporation under review and the formulation, maintenance and
                 enforcement of policy.
@@ -64,8 +72,8 @@ title: Board of Directors
         <div class="col-12 col-md-4">
             <h3>Personnel</h3>
             <p>
-                <b>Chair:</b> President (Carolyn Wysinger)<br>
-                <b>Members:</b> Joshua Smith, Janelle Vinson<br>
+                <b>Chair:</b> President ({{president.name}})<br>
+                <b>Members:</b> {{comms.p}}<br>
                 <b>Scope:</b> monitoring the human resources strategy of the corporation.
             </p>
         </div>
@@ -74,15 +82,15 @@ title: Board of Directors
             <h3>Long Range Planning</h3>
             <p>
                 <b>Co-Chairs:</b> <em class="text-decoration-underline text-muted">to be determined</em> &amp; <em>Interim</em> Executive Director (Suzanne Ford)<br>
-                <b>Members:</b> Joshua Smith<br>
+                <b>Members:</b> {{comms.lrp}}<br>
                 <b>Scope:</b> developing, monitoring and reviewing strategies for the organization, including an organizational strategic plan.
             </p>
         </div>
         <div class="col-12 col-md-4">
             <h3>Nominating</h3>
             <p>
-                <b>Co-Chairs:</b> President (Carolyn Wysinger) &amp; Vice President (Nguyen Pham) <br>
-                <b>Members:</b> <i>Interim</i> Executive Director (Suzanne Ford) <br>
+                <b>Co-Chairs:</b> President ({{president.name}}) &amp; Vice President ({{vicepresident.name}}) <br>
+                <b>Members:</b> <i>Interim</i> Executive Director (Suzanne Ford), {{comms.n}} <br>
                 <b>Scope:</b> identifying qualified candidates for the Board by devising and implementing a plan for strategic Board recruitment.
             </p>
         </div>
@@ -90,7 +98,7 @@ title: Board of Directors
             <h3>Development</h3>
             <p>
                 <b>Co-Chair:</b> </b> Elizabeth Lanyon and Spring Collins<br>
-                <b>Members:</b> Manuel A. Pérez, Janelle Vinson, Maceo Persson<br>
+                <b>Members:</b> {{comms.d}}<br>
                 <b>Schedule:</b> First Thursdays<br>
                 <b>Scope:</b> identifying new funding opportunities for the corporation.
             </p>
@@ -99,9 +107,9 @@ title: Board of Directors
             <h3>Audit</h3>
             <p>
                 <b>Chair:</b> </b> Nguyen Pham<br>
-                <b>Members:</b> Elizabeth Lanyon<br>
+                <b>Members:</b> {{comms.a}}<br>
                 <b>Scope:</b> recommending to the Board of Directors the retention and termination of the independent
-                auditor and negotiating the independent auditor’s compensation.<br>
+                auditor and negotiating the independent auditor's compensation.<br>
                 <b>Note:</b> neither the President, Treasurer, nor any of the staff may serve on the Audit Committee, and the chairperson may not be a member of the Budget & Finance committee, nor shall members of the Budget & Finance committee constitute more than one half of the Audit committee.
 
             </p>
@@ -110,7 +118,7 @@ title: Board of Directors
             <h3>Community Affairs</h3>
             <p>
                 <b>Co-Chairs: </b>Joshua Smith and Janelle Vinson<br>
-                <b>Members: </b>Joshua Smith, Janelle Vinson, Di'ara Reid<br>
+                <b>Members: </b>{{comms.ca}}<br>
                 <b>Schedule: </b>third wednesdays, 6:15pm<br>
                 <b>Scope:</b>
                 <ul>
@@ -118,9 +126,9 @@ title: Board of Directors
                         acceptance/rejection of applications and for renewals.</li>
                     <li>oversees the membership program of the organization by creating and determining member benefits,
                         devising a membership card and conducting membership roadshows.</li>
-                    <li>developing the organization’s outreach strategy and conducting community rap sessions and
+                    <li>developing the organization's outreach strategy and conducting community rap sessions and
                         forums.</li>
-                    <li>organization’s newsletter.</li>
+                    <li>organization's newsletter.</li>
                 </ul>
             </p>
         </div>
