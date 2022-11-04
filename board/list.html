@@ -20,7 +20,7 @@ permalink: board/list
                 <li>{{director.name}}{%if director.title != blank? %}, {{director.title}}{% endif %} {%if director.pronouns != blank? %}({{director.pronouns}}){% endif %} 
                     <span class="text-muted">{%if director.cohort != blank? and director.term == 1 %}[{{director.cohort}} - {{director.cohort | plus: 3}}]{% endif %}{%if director.cohort != blank? and director.term == 2 %}[{{director.cohort}} - {{director.cohort | plus: 6}}]{% endif %}</span>
                     {% if director.term == 1 %}
-                    <span class="badge bg-dark text-light">{{director.term}}st term</span></li>
+                    <span class="badge bg-success text-light">{{director.term}}st term</span></li>
                     {% endif %}
                     {% if director.term == 2 %}
                     <span class="badge bg-danger text-light">{{director.term}}nd term</span></li>
