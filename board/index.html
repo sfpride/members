@@ -10,7 +10,7 @@ title: Board of Directors
 <h1 id="san-francisco-lgbt-pride-board-of-directors">{{page.title}}</h1>
 <section id="board-of-directors" class="bg-light rounded p-2">
     <!-- <h2 class="">2022 Board Members</h2> -->
-    <div class="d-lg-none">
+    <div class="d-md-none">
         {% for director in site.data.board.fy2023 %}
         <div class="row mb-2">
             <div id="{{director.guid}}" class="col col-4">
@@ -24,9 +24,9 @@ title: Board of Directors
         </div>
         {% endfor %}
     </div>
-    <div class="row d-none d-lg-flex align-items-center justify-content-evenly text-center g-3">
+    <div class="row d-none d-md-flex align-items-center justify-content-evenly text-center g-3">
         {% for director in site.data.board.fy2023 %}
-        <div id="{{director.guid}}" class="col col-4 col-md-3 col-lg-2 mx-auto">
+        <div id="{{director.guid}}" class="col col-4 col-md-3 col-xl-2 mx-auto">
             <img src="{{director.photo}}" alt="{{director.photo-alt}}" class="rounded rounded-3" style="width:100%;">
             <div class="figure-caption text-center">
                 <strong class="text-danger">{{director.name}}<br>{% if director.title != blank? %}{{director.title}}; {%endif%}{{director.pronouns}}</strong>
