@@ -3,7 +3,7 @@ layout: basic
 permalink: board/list
 ---
 <div class="container my-3">
-
+    
     <div class="row fixed-top">
         <div class="col bg-dark">
             <br>
@@ -13,6 +13,13 @@ permalink: board/list
     </div>
 
     <div class="row mt-5">
+        <div class="col mt-2">
+            <p class="text-center"><a href="/">members.sfpride.org</a></p>
+        </div>
+    </div>
+    
+
+    <div class="row">
         <div class="col">
             <h4>Current Board Members</h4>
             <ol>
@@ -36,9 +43,9 @@ permalink: board/list
             <span class="fw-bold">Nominating:</span> {{site.data.board.committees.n}}<br>
             <span class="fw-bold">Development:</span> {{site.data.board.committees.d}}<br>
             <span class="fw-bold">Audit:</span> {{site.data.board.committees.a}}<br>
-            <span class="fw-bold">Community Affairs:</span> {{site.data.board.committees.ca}}
+            <span class="fw-bold">Community Affairs:</span> {{site.data.board.committees.ca}}<br>
 
-            <h5>Ad-Hoc Committees</h5>
+            <h5 class="mt-3">Ad-Hoc Committees</h5>
             <span class="fw-bold">Executive Director Search:</span> Di'ara Reid, George Smith, Janelle Luster, Joshua Smith, Manuel Perez, Nguyen Pham, Spring Collins<br>
             <hr>      
         </div>
