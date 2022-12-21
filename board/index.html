@@ -27,7 +27,7 @@ title: Board of Directors
     <div class="row d-none d-md-flex align-items-center justify-content-evenly text-center g-3">
         {% for director in site.data.board.fy2023 %}
         <div id="{{director.guid}}" class="col col-4 col-md-3 col-xl-2 mx-auto">
-            <img src="{{director.photo}}" alt="{{director.photo-alt}}" class="rounded rounded-3" style="width:100%;">
+            <img src="{{director.photo}}" alt="{{director.photo-alt}}" class="rounded rounded-3 w-100">
             <div class="figure-caption text-center">
                 <strong class="text-danger">{{director.name}}<br>{% if director.title != blank? %}{{director.title}}; {%endif%}{{director.pronouns}}</strong>
             </div>
@@ -118,7 +118,7 @@ title: Board of Directors
         <div class="col-12 col-md-6">
             <h3>Community Affairs</h3>
             <p>
-                <b>Co-Chairs: Di'ara Reid &amp; Joshua Smith<br>
+                <b>Co-Chairs:</b> Di'ara Reid &amp; Joshua Smith<br>
                 <b>Members: </b>{{comms.ca}}<br>
                 <b>Schedule: </b>third wednesdays, 6:15pm<br>
                 <b>Scope:</b>
