@@ -33,7 +33,7 @@
   zoom-id: 875 1851 5276
   packet: https://cdn.sfpride.org/docs/meetings/20220910-sfpride-annualgeneralmeeting-packet.pdf
 - title: SF Pride Holiday Party
-  active: true
+  active: false
   type: inperson
   scope: Membership
   date: "Wed Dec 14th, 2022"
