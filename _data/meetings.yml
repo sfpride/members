@@ -1,6 +1,6 @@
 # meeting types: inperson, online, hybrid
 - title: "Regular Board of Directors Meeting"
-  active: true
+  active: false
   type: "online"
   scope: Board
   date: "January 4, 2023"
@@ -11,16 +11,16 @@
   agenda: "https://cdn.sfpride.org/docs/meetings/20230104-sfpride-board-agenda.pdf"
   packet: "https://cdn.sfpride.org/docs/meetings/20230104-sfpride-board-packet.pdf"
 - title: Regular Membership Meeting
-  active: false
+  active: true
   type: online
   scope: Membership
-  date: "November 9th, 2022"
+  date: "January 11th, 2023"
   time: "7:00 p.m."
   zoom-link: https://us02web.zoom.us/j/83801507870?pwd=aXZEYkViYk5jUW1hRTlNM2pzNUx0Zz09
   zoom-id: 838 0150 7870
   zoom-passcode: 854497
-  #agenda: https://cdn.sfpride.org/docs/meetings/20221012-sfpride-membership-agenda.pdf
-  packet: https://cdn.sfpride.org/docs/meetings/20221109-sfpride-membership-packet.pdf
+  #agenda: https://cdn.sfpride.org/docs/meetings/20230111-sfpride-membership-agenda.pdf
+  #packet: https://cdn.sfpride.org/docs/meetings/20230111-sfpride-membership-packet.pdf
 - title: Annual General Meeting
   active: false
   type: hybrid
