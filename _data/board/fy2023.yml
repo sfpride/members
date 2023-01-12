@@ -1,8 +1,9 @@
 - guid: nguyen-pham
   name: Nguyen Pham
   title: President
+  appointed: 2017
   term: 2
-  cohort: 2022
+  cohort: 2018
   committees:
   pronouns: he/him
   email: nguyen.pham@sfpride.org
@@ -10,6 +11,7 @@
 - guid: janelle-luster
   name: Janelle Luster
   title: Vice President
+  appointed:
   term: 1
   cohort: 2022
   committees: pp,n
@@ -19,6 +21,7 @@
 - guid: spring-collins
   name: Spring Collins
   title: Secretary
+  appointed:
   term: 1
   cohort: 2022
   committees:
@@ -28,6 +31,7 @@
 - guid: robert-louie
   name: Robert Louie
   title: Treasurer
+  appointed:
   term: 1
   cohort: 2023
   committees:
@@ -45,7 +49,8 @@
   photo: https://cdn.sfpride.org/m/board/2023/cw.png
 - guid: elizabeth-lanyon
   name: Elizabeth Lanyon
-  title: 
+  title:
+  appointed:
   term: 2
   cohort: 2021
   committees:
@@ -55,6 +60,7 @@
 - guid: manuel-perez
   name: Manuel Alejandro Pérez
   title:
+  appointed: 2017
   term: 2
   cohort:
   committees: pp,d

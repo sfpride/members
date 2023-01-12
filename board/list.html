@@ -24,7 +24,7 @@ permalink: board/list/
             <h4>Current Board Members</h4>
             <ol>
                 {% for director in site.data.board.fy2023 %}
-                <li>{{director.name}}{%if director.title != blank? %}, {{director.title}}{% endif %} {%if director.pronouns != blank? %}({{director.pronouns}}){% endif %} 
+                <li id="{{director.guid}}">{{director.name}}{%if director.title != blank? %}, {{director.title}}{% endif %} {%if director.pronouns != blank? %}({{director.pronouns}}){% endif %} 
                     <span class="text-muted">{%if director.cohort != blank? and director.term == 1 %}[{{director.cohort}} - {{director.cohort | plus: 3}}]{% endif %}{%if director.cohort != blank? and director.term == 2 %}[{{director.cohort}} - {{director.cohort | plus: 6}}]{% endif %}</span>
                     {% if director.term == 1 %}
                     <span class="badge bg-success text-light">{{director.term}}st term</span></li>
