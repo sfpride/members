@@ -1,11 +1,15 @@
 ---
 ---
-
-$primary: #A54399;
-$secondary: #939597;
-$info: #439AA5;
-$success: #43A54F;
-$danger: #A54F43;
+//set brand color overrides\
+$primary: #a54399; 
+$secondary:#f45d01;
+$secondary-2: #c5e6a6;
+$info: #39A0ED;
+$success: #26c485;
+$danger: #e03616;
+$warning: #Ffb20f;
+$light: #FAF3E3;  
+$dark: #222222;
 
 @import "bootstrap";
 
