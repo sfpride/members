@@ -11,7 +11,7 @@
   #agenda: "https://cdn.sfpride.org/docs/meetings/20230208-sfpride-board-agenda.pdf"
   packet: "https://cdn.sfpride.org/docs/meetings/20230308-sfpride-board-packet.pdf"
 - title: Regular Membership Meeting
-  active: true
+  active: false
   type: online
   scope: Membership
   date: "March 15th, 2023"
