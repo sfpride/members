@@ -1,15 +1,15 @@
 # meeting types: inperson, online, hybrid
 - title: "Regular Board of Directors Meeting"
-  active: false
-  type: "online"
+  active: true
+  type: hybrid
   scope: Board
-  date: "April 5, 2023"
+  date: "May 3, 2023"
   time: "7:00 p.m."
   zoom-link: "https://us02web.zoom.us/j/84247964605?pwd=WUIxT3FKUTcwQVQ0anZSYXRRSjZEdz09"
   zoom-id: "842 4796 4605"
   zoom-passcode: "075600"
-  agenda: "https://cdn.sfpride.org/docs/meetings/20230405-sfpride-board-agenda.pdf"
-  packet: "https://cdn.sfpride.org/docs/meetings/20230405-sfpride-board-packet.pdf"
+  #agenda: "https://cdn.sfpride.org/docs/meetings/20230405-sfpride-board-agenda.pdf"
+  packet: "https://cdn.sfpride.org/docs/meetings/20230503-sfpride-board-packet.pdf"
 - title: Regular Membership Meeting
   active: false
   type: online
