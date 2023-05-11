@@ -19,15 +19,15 @@ category: agenda
       1. Timekeeper 
       2. Stack Monitor 
       3. Vibe Watcher 
-2. Reading of the Mission Statement 
+   5. Reading of the Mission Statement 
 <!-- 7. Reading and Approval of Minutes  -->
-1. Unfinished Business 
+2. Unfinished Business 
    1. NONE
-2. New Business 
+3. New Business 
    1.  NONE
-3.  Agency Update (10 mins) 
-4.  Announcements (5 mins) 
+4.  Agency Update (10 mins) 
+5.  Announcements (5 mins) 
 <!-- 12. Program (20 mins)  -->
-1.  Public Comment (5 mins) 
-2.  In-Memoriam  
-3.  Adjournment 
+6.  Public Comment (5 mins) 
+7.  In-Memoriam  
+8.  Adjournment 
