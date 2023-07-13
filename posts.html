@@ -1,36 +1,41 @@
 ---
 layout: default
-title: SF Pride Bulletin
-description: Membership newsletters, posts, Board resolutions, notices, etc.
+title: List of All Posts to the Site
+description: Memoranda, newsletters, posts, agenda, resolutions, notices, etc.
 ---
 <div class="row">
-    <div class="col">
-        <h1>{{page.title}}</h1>
-        <p>{{page.description}}</p>
-    </div>
+  <div class="col">
+    <h1>{{page.title}}</h1>
+    <p>{{page.description}}</p>
+  </div>
 </div>
+
 <div class="row mb-5">
   <div class="col col-12 col-md-8">
-    <div class="row row-cols-2 g-2">
+    <div class="row row-cols-1 row-cols-md-2 p-1">
       {% for post in site.posts %}
       <div class="col">
-              <h5>{{post.title}}</h5>
-              <h6 class="mb-2 text-muted"><span class="badge bg-primary">{{post.category}}</span> {{post.date | date_to_string}}</h6>
-              <p>{{post.excerpt}}</p>
-              <a href="{{post.url}}" class="btn btn-sm btn-dark">read more</a>
-      </div>  
+       <div class="card m-1 p-1">
+        <h5 class="card-title">{{post.title}}</h5>
+        <h6 class="mb-2 text-muted"><span class="badge bg-primary">{{post.category}}</span> {{post.date |
+          date_to_string}}</h6>
+        <p class="card-body">{{post.excerpt}}</p>
+        <a href="{{post.url}}" class="btn btn-sm btn-dark">read more</a>
+       </div>
+      </div>
       {% endfor %}
     </div>
   </div>
-    <div class="col col-12 col-md-4 ms-auto float-end">
-        <ul class="list-group list-group-flush">
-            {% for post in site.posts %}
-              <li class="list-group-item">
-                  <span class="fw-bold">{{post.date | date: "%D"}}</span>
-                <a href="{{ post.url }}">{{ post.title }}</a>
-                <!-- {{ post.excerpt }} -->
-              </li>
-            {% endfor %}
-          </ul>
-    </div>
+  <div class="col col-12 col-md-4 ms-auto float-end">
+    <ul class="list-group list-group-flush">
+      {% for post in site.posts %}
+      <li class="list-group-item">
+        <span class="fw-bold">{{post.date | date: "%D"}}</span>
+        <span class="badge bg-primary">{{post.category}}</span>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        <!-- {{ post.excerpt }} -->
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
 </div>
