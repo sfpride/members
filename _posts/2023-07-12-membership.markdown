@@ -1,7 +1,7 @@
 ---
 title: July 2023 Membership Meeting Agenda
 layout: membership-agenda
-date: 2023-07-12 00:00:01 -0800
+published: true
 category: agenda
 ---
 
