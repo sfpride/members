@@ -1,7 +1,7 @@
 ---
 title: August 2023 Membership Meeting Agenda
 layout: membership-agenda
-date: 2023-08-09 00:00:01 -0800
+date: 2023-07-31 00:00:01 -0800
 category: agenda
 ---
 
