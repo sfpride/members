@@ -23,7 +23,7 @@ category: agenda
 2. Unfinished Business 
    1. NONE
 3. New Business 
-   1. NONE
+   1. CLOSE OF BOARD OF DIRECTORS NOMINATIONS
 4.  Agency Update (10 mins) 
 5.  Announcements (5 mins) 
 <!-- 12. Program (20 mins)  -->
