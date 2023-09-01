@@ -22,16 +22,17 @@
   agenda: /agenda/2023/08/09/membership
   #packet: https://cdn.sfpride.org/docs/meetings/20230315-sfpride-membership-packet.pdf
 - title: Annual General Meeting
-  active: false
-  type: hybrid
+  active: true
+  # type: hybrid
+  type: online
   scope: Plenary
-  date: "Sept 10, 2022"
+  date: "Sept 9, 2023"
   time-special: "Room Opens at Noon, Called to Order at 1pm"
-  location: "Rainbow Room, SF LGBT Center, 1800 Market St, San Francisco, CA 94102"
+  # location: "Rainbow Room, SF LGBT Center, 1800 Market St, San Francisco, CA 94102"
   zoom-link: https://us02web.zoom.us/j/87518515276?pwd=UnJNZzViUW13KzhhUWI4RjZaWWJIUT09
   zoom-passcode: 141191
   zoom-id: 875 1851 5276
-  packet: https://cdn.sfpride.org/docs/meetings/20220910-sfpride-annualgeneralmeeting-packet.pdf
+  # packet: https://cdn.sfpride.org/docs/meetings/20220910-sfpride-annualgeneralmeeting-packet.pdf
 - title: SF Pride Holiday Party
   active: false
   type: inperson
