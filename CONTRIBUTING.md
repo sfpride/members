@@ -1,3 +1,6 @@
+---
+published: false
+---
 # How to Contribute
 
 San Francisco Pride has long relied upon the volunteerism of our community members passionate about supporting LGBTQ+ causes. 

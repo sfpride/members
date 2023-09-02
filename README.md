@@ -1,3 +1,6 @@
+---
+published: false
+---
 # members.sfpride.org
 
 ![sfpride members webpage](https://cronitor.io/badges/4w6Gha/production/stIUWXhkcaT0pFcP8IpZQvgNQ5g.svg)
