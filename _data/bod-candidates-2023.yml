@@ -31,7 +31,7 @@
 - name: Michael Nguyen
   id: michaelnugyen
   image: michaelnugyen
-  pronouns:
+  pronouns: he/him
   inc:
   int: >-
     I feel honored to be nominated to join the San Francisco Pride Board. My life's journey has been marked by adaptability, diversity, and an unwavering commitment to fostering positive change. Hailing from the deep south and moving around the United States as the son of Vietnamese refugees, I quickly learned how to connect with individuals of diverse backgrounds. Graduating from a small, predominantly white college has given me a deep appreciation for the diverse perspectives we have in San Francisco. I've seen the profound impact of committed volunteers in the LGBTQ movement; it all starts with Pride.
@@ -47,13 +47,58 @@
     In conclusion, I am thrilled at the chance to join the San Francisco Pride Board. My commitment to foster positive change, amplify diverse voices, and demonstrate our people belong everywhere is how I interpret San Francisco Pride's Mission. Like Harvey Milk said, ya gotta give ‘em hope!
 - name: Dr. Nas Mohammed
   id: drnasmohammed
-  image:
-  pronouns:
+  image: drnasmohammed
+  pronouns: he/him
   inc:
+  int: >+
+   To the Board and Members of San Francisco Pride,
+   <br><br>
+   It is an honor to be considered for this vital role within an organization that has long been a beacon of hope and celebration for the LGBTQ+ community globally. With deep respect for the history and significance of San Francisco Pride, I am excited to offer my qualifications, experience, and unwavering dedication to the cause.
+   <br><br>
+   As a physician and a passionate advocate for LGBTQ+ rights, I have devoted both my life and career to advancing the health and well-being of our community. My medical practice, Osra Medical, is a testament to my commitment to providing LGBTQ+ individuals with comprehensive and compassionate healthcare services. Through Osra Medical, I have worked tirelessly to create a safe and inclusive space where all individuals can receive the care they deserve by navigating their lived challenges. 
+   <br><br>
+   I also have the privilege of supporting the LGBT community now through my nonprofit organization, the Alwan Foundation. This organization, the first in the world to focus on LGBT issues in the Gulf region in the Middle East, stands as an embodiment of my vision for a world where LGBTQ+ individuals can thrive without fear of discrimination or bias.
+   <br><br>
+   My journey has been inspired by a profound desire to foster understanding, acceptance, and equality for all. I grew up in Qatar and have experienced the challenges faced by LGBTQ+ individuals in restrictive environments. I know firsthand the importance of creating platforms for change. My coming-out journey and subsequent groundbreaking activism have been featured in reputable publications such as BBC News, NPR, CNN, TIME, and the San Francisco Chronicle, reflecting my dedication to raising awareness and driving meaningful conversations about LGBTQ+ rights.
+   <br><br>
+   If granted the privilege to serve on the board of directors, I aim to bring my unique blend of medical expertise, advocacy experience, and global perspective to further strengthen San Francisco Pride's impact. Being part of San Francisco Pride aligns naturally with my absolutely fierce drive to humanize our community despite all of our differences. I am committed to upholding the values of inclusivity, diversity, and resilience that define San Francisco Pride. I am also excited to add more diversity to it with my background from the Middle East.
+   <br><br>
+   I am deeply honored to be considered for this position and am excited about the prospect of collaborating with fellow board members and the broader community to continue advancing LGBTQ+ rights. 
+   <br><br>
+   Thank you for your time and consideration.
+   <br><br>
+   Sincerely,
+   <br><br>
+   Dr. Nas Mohamed<br>
+   Founder, Osra Medical<br>
+   Founder, Alwan Foundation
+  bio:
+- name: Joshua Smith
+  id: joshuasmith
+  image: joshuasmith
+  pronouns: he/him
+  inc: (incumbent)
   bio:
 - name: Austin Worden
   id: austinworden
-  image:
-  pronouns:
-  inc:
-  bio:
+  image: austinworden
+  pronouns: he/him
+  int: >- 
+   <strong>QUALIFICATIONS</strong><br /><br>
+   Austin is no stranger to Robert's Rules of Order and has served on many local boards, committees, and organizations, including the Gary Soto Foundation, Cheer San Francisco, and the San Francisco Bare Chest Calendar Organization.  Austin first joined San Francisco Pride as a member in 2012 and proudly received the Spirit Volunteer of the Year award for his help with that June's Pride celebration.  
+   <br><br>
+   <strong>PROFESSIONAL EXPERIENCE</strong><br>
+   Austin recently started his nineteenth year in education and is a high school director for a school district in San Mateo County and thoroughly enjoys the academic community in which he works for.  In hopefully joining the SF Pride Board, Austin looks forward to bringing his inclusive brand of community service to this esteemed organization.
+   <br><br>
+   <strong>COMMUNITY SERVICE</strong><br>
+   <ul>
+   <li>San Francisco Pride Volunteer, June 2012 and 2013</li>
+   <li>Oakland Pride Volunteer, June 2013</li>
+   <li>United States Peace Corps Volunteer, China, 2007-2029</li>
+   <li>Cheer San Francisco, 2013-2014</li>
+   <li>SF Bare Chest Organization, Mr. June 2021 & Leadership Team Member, 2022-2024</li>
+   </ul>
+
+   <strong>SF PRIDE BOARD</strong><br>
+   Along with possessing strong organizational and communication skills, Austin does his best to value all members and facets of communities found around him.  Through inclusion and equity, members of a community, including the LGBTQ+ community, Austin will work to ensure everyone has a place and space to be a part of decision-making conversation and action, along with positively promoting the mission of SF Pride throughout the region and beyond! 
+  bio: Though born and raised in California's Central Valley, Austin's love for San Francisco was born at a very young age, as his parents and sister would find themselves driving or BARTing into the city for a day of sightseeing and attending live theatre.  Austin has lived in the Bay Area since 2019 and calls the costalside town of Pacifica home.  Professionally, Austin is the Director of Communication and Staff Housing for the Jefferson Union High School District and holds a master's degree in education.  Personally, Austin enjoys anything theatre-related and has recently performed with San Francisco Playhouse and Pop Culture Immersives.

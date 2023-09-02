@@ -317,11 +317,12 @@ permalink: /election/
                 <div class="card-header">
                     <h5 class="card-title">{{candidate.name}}</h5>
                     <h6 class="card-subtitle text-muted">{{candidate.pronouns}}</h6>
+                    <div>{% if candidate.inc != blank? %} {{candidate.inc}} {% endif %}</div>
                 </div>
                 <div class="card-body">
-                    <div>{{candidate.int}}</div>
-                    <div>{{candidate.bio}}</div>
-                    {% if candidate.bio and candidate.int == blank? %}
+                    <div>{{candidate.int | textilize}}</div>
+                    {%if candidate.bio != blank?%}<div class="alert alert-secondary">{{candidate.bio | textilize}}</div>{% endif%}
+                    {% if candidate.bio == blank? and candidate.int == blank? %}
                     <!-- <p class="card-text text-center"><em>No Candidate Information Provided</em></p> -->
                     <p class="card-text text-center"><em>No Candidate Information Available</em></p>
                     {% endif %}
@@ -352,11 +353,11 @@ permalink: /election/
             {% endif %}
         </div>
         <div class="col col-9">
-            <h5>{{candidate.name}}{% if candidate.inc != blank? %} {{candidate.inc}} {% endif %}</h5>
-            <h6 class="text-muted">{{candidate.pronouns}}</h6>
-            <div>{{candidate.int}}</div>
+            <h5>{{candidate.name}}</h5>
+            <h6 class="text-muted">{{candidate.pronouns}} {% if candidate.inc != blank? %} {{candidate.inc}} {% endif %}</h6>
+            <div>{% if candidate.int != blank? %} {{candidate.int | textilize}} {% endif %}</div>
             {%if candidate.bio != blank?%}<div class="bg-info text-light p-4 mt-2 rounded">{{candidate.bio}}</div>{%endif%}
-            {% if candidate.bio and candidate.int == blank? %}
+            {% if candidate.bio == blank? and candidate.int == blank? %}
             <!-- <p class="card-text text-center"><em>No Candidate Information Provided</em></p> -->
             <p class="card-text text-center"><em>No Candidate Information Available</em></p>
             {% endif %}
