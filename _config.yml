@@ -6,12 +6,15 @@ image: https://cdn.sfpride.org/images/sfpride-in-space.png
 timezone: America/Los_Angeles
 port: 4001
 
+permalink: /:categories/:year/:month/:day/:title/
 future: true
 
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - github-pages
+  - jekyll-admin
+  - jekyll-feed
 
 sass:
   load_paths:
