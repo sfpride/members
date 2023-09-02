@@ -201,7 +201,7 @@ permalink: /election/
                             <ol>
                                 <li>Suzanne Ford, Executive Director</li>
                                 <li>Chris Grafton, Deputy Executive Director</li>
-                                <li>Marsha H. Levine, Community Relations Manager</li>
+                                <!-- <li>Marsha H. Levine, Community Relations Manager</li> -->
                             </ol>
                         </li>
                         <li>Election Observers
@@ -215,12 +215,13 @@ permalink: /election/
                             </ol>
                         </li>
                     </ul>
+                    <p>The election officers will meet on the morning of August 9th, 2023 to verify the <em>electionrunner.com</em> setup and launch the election. This meeting is  <a href="https://teams.microsoft.com/l/meetup-join/19%3ameeting_M2E1MTY1ZDYtZDZjNC00ZjRkLWE2YWQtZjAxMDNlZDM1M2Q3%40thread.v2/0?context=%7b%22Tid%22%3a%220e108091-b168-493b-a91e-0d10217528ef%22%2c%22Oid%22%3a%227efb18fe-d425-41f9-87b4-34edbf2efd3a%22%7d">open to the public</a>.</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
                     <h3 class="border-bottom">Accommodations</h3>
-                    <p>To request ASL interpretation for the AGM, please email us at <a href="mailto:membership@sfpride.org">membership@sfpride.org</a> by Wednesday, Sept. 6.</p>
+                    <p>To request ASL interpretation for the AGM, please email us at <a href="mailto:chris@sfpride.org">chris@sfpride.org</a> by Wednesday, Sept. 6.</p>
                     <p><em>Los materiales de la reunión se prepararán en español.</em></p>
                 </div>
             </div>
@@ -270,7 +271,11 @@ permalink: /election/
         </div>
     </div>
     <div class="col col-12 col-md-5">
-        <img class="img-fluid" src="https://storage.googleapis.com/sfpride/m/election/2023/board_attendance.png" alt="a chart showing board member attendance at board meetings for the past year" onclick="img_box(this)">
+        <picture>
+            <source type="image/webp" srcset="https://cdn.sfpride.org/m/election/2023/board_attendance.webp">
+            <source type="image/png" srcset="https://cdn.sfpride.org/m/election/2023/board_attendance.png">
+            <img class="img-fluid" src="https://cdn.sfpride.org/m/election/2023/board_attendance.png" alt="a chart showing board member attendance at board meetings for the past year" onclick="img_box(this)">
+        </picture>
     </div>
 </div>
 
@@ -295,16 +300,30 @@ permalink: /election/
         {% for candidate in site.data.bod-candidates-2023 %}
         <div class="col">
             <div id="{{candidate.id}}" class="card">
-                {% if candidate.image != blank?%}<img class="card-img-top" src="{{candidate.image}}" alt="photo of {{candidate.name}}">{% endif %}
-                {% if candidate.image == blank?%}<img src="https://storage.googleapis.com/sfpride/m/election/nophotoprovided.png" alt="" class="card-img-top">{% endif %}
+                {% if candidate.image != blank?%}
+                <picture>
+                    <source type="image/webp" srcset="https://cdn.sfpride.org/m/election/2023/{{candidate.id}}.webp">
+                    <source type="image/png" srcset="https://cdn.sfpride.org/m/election/2023/{{candidate.id}}.png">
+                    <img src="https://cdn.sfpride.org/m/election/2023/{{candidate.id}}.webp" alt="photo of {{candidate.name}}" class="img-fluid">
+                </picture>
+                {% endif %}
+                {% if candidate.image == blank?%}
+                <picture>
+                    <source type="image/webp" srcset="https://cdn.sfpride.org/m/election/nophotoprovided.webp">
+                    <source type="image/png" srcset="https://cdn.sfpride.org/m/election/nophotoprovided.png">
+                    <img src="https://cdn.sfpride.org/m/election/nophotoprovided.png" alt="photo of {{candidate.name}}" class="img-fluid">
+                </picture>
+                {% endif %}
                 <div class="card-header">
                     <h5 class="card-title">{{candidate.name}}</h5>
                     <h6 class="card-subtitle text-muted">{{candidate.pronouns}}</h6>
                 </div>
                 <div class="card-body">
-                    {{candidate.bio}}
-                    {% if candidate.bio == blank? %}
-                    <p class="card-text text-center"><em>No Candidate Information Provided</em></p>
+                    <div>{{candidate.int}}</div>
+                    <div>{{candidate.bio}}</div>
+                    {% if candidate.bio and candidate.int == blank? %}
+                    <!-- <p class="card-text text-center"><em>No Candidate Information Provided</em></p> -->
+                    <p class="card-text text-center"><em>No Candidate Information Available</em></p>
                     {% endif %}
                 </div>
             </div>
@@ -318,18 +337,28 @@ permalink: /election/
     <div id="{{candidate.id}}-2" class="row my-2">
         <div class="col col-2 align-content-center">
             {% if candidate.image != blank? %}
-            <img class="w-100" src="{{candidate.image}}" alt="photo of {{candidate.name}}">
+            <picture>
+                <source type="image/webp" srcset="https://cdn.sfpride.org/m/election/2023/{{candidate.id}}.webp">
+                <source type="image/png" srcset="https://cdn.sfpride.org/m/election/2023/{{candidate.id}}.png">
+                <img src="https://cdn.sfpride.org/m/election/2023/{{candidate.id}}.webp" alt="photo of {{candidate.name}}" class="img-fluid">
+            </picture>
             {% endif %}
             {% if candidate.image == blank?%}
-            <img src="https://storage.googleapis.com/sfpride/m/election/nophotoprovided.png" alt="photo of {{candidate.name}}" class="img-fluid">
+            <picture>
+                <source type="image/webp" srcset="https://cdn.sfpride.org/m/election/nophotoprovided.webp">
+                <source type="image/png" srcset="https://cdn.sfpride.org/m/election/nophotoprovided.png">
+                <img src="https://cdn.sfpride.org/m/election/nophotoprovided.png" alt="photo of {{candidate.name}}" class="img-fluid">
+            </picture>
             {% endif %}
         </div>
         <div class="col col-9">
             <h5>{{candidate.name}}{% if candidate.inc != blank? %} {{candidate.inc}} {% endif %}</h5>
             <h6 class="text-muted">{{candidate.pronouns}}</h6>
-            {{candidate.bio}}
-            {% if candidate.bio == blank? %}
-            <p class="card-text text-center"><em>No Candidate Information Provided</em></p>
+            <div>{{candidate.int}}</div>
+            {%if candidate.bio != blank?%}<div class="bg-info text-light p-4 mt-2 rounded">{{candidate.bio}}</div>{%endif%}
+            {% if candidate.bio and candidate.int == blank? %}
+            <!-- <p class="card-text text-center"><em>No Candidate Information Provided</em></p> -->
+            <p class="card-text text-center"><em>No Candidate Information Available</em></p>
             {% endif %}
         </div>
     </div>
