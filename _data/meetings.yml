@@ -9,7 +9,7 @@
   zoom-id: "842 4796 4605"
   zoom-passcode: "075600"
   agenda: "https://cdn.sfpride.org/docs/meetings/20230906-sfpride-board-agenda.pdf"
-  #packet: "https://cdn.sfpride.org/docs/meetings/20230802-sfpride-board-packet.pdf"
+  packet: "https://cdn.sfpride.org/docs/meetings/20230906-sfpride-board-packet.pdf"
 - title: Regular Membership Meeting
   active: false
   type: online
