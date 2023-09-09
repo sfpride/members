@@ -29,9 +29,9 @@
   date: "Sept 9, 2023"
   time-special: "Room Opens at 11:30am, Called to Order at 12:15pm"
   # location: "Rainbow Room, SF LGBT Center, 1800 Market St, San Francisco, CA 94102"
-  zoom-link: https://us02web.zoom.us/j/87518515276?pwd=UnJNZzViUW13KzhhUWI4RjZaWWJIUT09
-  zoom-passcode: 141191
-  zoom-id: 875 1851 5276
+  zoom-link: https://us02web.zoom.us/j/81630138889
+  #zoom-passcode: 141191
+  zoom-id: 816 3013 8889
   packet: https://cdn.sfpride.org/docs/meetings/20230909-sfpride-annualgeneralmeeting-agenda.pdf
 - title: SF Pride Holiday Party
   active: false
