@@ -12,7 +12,7 @@
   #agenda: "https://cdn.sfpride.org/docs/meetings/20231004-sfpride-board-agenda.pdf"
   packet: "https://cdn.sfpride.org/docs/meetings/20231004-sfpride-board-packet.pdf"
 - title: Regular Membership Meeting
-  active: true
+  active: false
   type: online
   scope: Membership
   date: "October 11th, 2023"

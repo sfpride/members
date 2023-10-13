@@ -2,15 +2,15 @@
 layout: default
 title: Board of Directors
 ---
-{% assign president = site.data.board.fy2023[0] %}
-{% assign vicepresident = site.data.board.fy2023[1] %}
-{% assign secretary = site.data.board.fy2023[2] %}
-{% assign treasurer = site.data.board.fy2023[3] %}
+{% assign president = site.data.board.fy2024[0] %}
+{% assign vicepresident = site.data.board.fy2024[1] %}
+{% assign secretary = site.data.board.fy2024[2] %}
+{% assign treasurer = site.data.board.fy2024[3] %}
 <h1 id="san-francisco-lgbt-pride-board-of-directors">{{page.title}}</h1>
 <section id="board-of-directors" class="bg-light rounded p-2">
     <!-- <h2 class="">2022 Board Members</h2> -->
     <div class="d-md-none">
-        {% for director in site.data.board.fy2023 %}
+        {% for director in site.data.board.fy2024 %}
         <div class="row mb-2">
             <div id="{{director.guid}}" class="col col-4">
                 <img src="{{director.photo}}" alt="{{director.photo-alt}}" class="img-fluid rounded">
@@ -24,7 +24,7 @@ title: Board of Directors
         {% endfor %}
     </div>
     <div class="row d-none d-md-flex align-items-center justify-content-evenly text-center g-3">
-        {% for director in site.data.board.fy2023 %}
+        {% for director in site.data.board.fy2024 %}
         <div id="{{director.guid}}" class="col col-4 col-md-3 col-xl-2 mx-auto">
             <img src="{{director.photo}}" alt="{{director.photo-alt}}" class="rounded rounded-3 w-100">
             <div class="figure-caption text-center">
@@ -46,7 +46,7 @@ title: Board of Directors
     </div>
 </div>
 <section class="p-2">
-    <h2>2022 Board Committees</h2>
+    <h2>2023 Board Committees</h2>
     <p>President Pham and Vice President Luster are <dfn title="as a result of one's status or position">ex officio</dfn> members of all Board Committees, aside from the Audit Committee of which the President may not be a member. <span class="d-none">Additionally, as the chairperson of the Audit committee, Vice President Pham may not serve on the Budget & Finance Committee.</span></p>
     {% assign comms = site.data.board.committees %}
     <div class="row">
@@ -54,15 +54,15 @@ title: Board of Directors
             <h3>Budget and Finance</h3>
             <p>
                 <b>Chair:</b> Treasurer ({{treasurer.name}})<br>
-                <b>Members:</b> {{comms.bf}}<br>
+                <b>Members:</b> {{comms.bf}} {%if comms.bf == blank?%}<em>to be determined</em>{%endif%}<br>
                 <b>Scope:</b> budget preparation and financial strategy and oversight of the corporation.
             </p>
         </div>
         <div class="col-12 col-md-4">
             <h3>Policies and Procedures</h3>
             <p>
-                <b>Chair:</b> Manuel Pérez<br>
-                <b>Members:</b> {{comms.pp}}<br>
+                <b>Chair:</b> {%if comms.pp == blank?%}<em>to be determined</em>{%endif%}<br>
+                <b>Members:</b> {{comms.pp}} {%if comms.pp == blank?%}<em>to be determined</em>{%endif%}<br>
                 <!-- <b>Schedule:</b> Fourth Thursdays<br> -->
                 <b>Scope:</b> keeping the structure of the corporation under review and the formulation, maintenance and
                 enforcement of policy.
@@ -72,7 +72,7 @@ title: Board of Directors
             <h3>Personnel</h3>
             <p>
                 <b>Chair:</b> President ({{president.name}})<br>
-                <b>Members:</b> {{comms.p}}<br>
+                <b>Members:</b> {{comms.p}}{%if comms.p == blank?%}<em>to be determined</em>{%endif%}<br>
                 <b>Scope:</b> monitoring the human resources strategy of the corporation.
             </p>
         </div>
@@ -81,7 +81,7 @@ title: Board of Directors
             <h3>Long Range Planning</h3>
             <p>
                 <b>Co-Chairs:</b> <em>to be determined</em> &amp; Executive Director (Suzanne Ford)<br>
-                <b>Members:</b> {{comms.lrp}}<br>
+                <b>Members:</b> {{comms.lrp}}{%if comms.lrp == blank?%}<em>to be determined</em>{%endif%}<br>
                 <b>Schedule:</b> Second Wednesdays, after Membership Meeting<br>
                 <b>Scope:</b> developing, monitoring and reviewing strategies for the organization, including an organizational strategic plan.
             </p>
@@ -90,7 +90,7 @@ title: Board of Directors
             <h3>Nominating</h3>
             <p>
                 <b>Co-Chairs:</b> President ({{president.name}}) &amp; Vice President ({{vicepresident.name}}) <br>
-                <b>Members:</b> Executive Director (Suzanne Ford), {{comms.n}} <br>
+                <b>Members:</b> Executive Director (Suzanne Ford), {{comms.n}} {%if comms.n == blank?%}<em>to be determined</em>{%endif%} <br>
                 <b>Scope:</b> identifying qualified candidates for the Board by devising and implementing a plan for strategic Board recruitment.
             </p>
         </div>
@@ -98,7 +98,7 @@ title: Board of Directors
             <h3>Development</h3>
             <p>
                 <b>Chair:</b> </b> <em>to be determined</em><br>
-                <b>Members:</b> {{comms.d}}<br>
+                <b>Members:</b> {{comms.d}}{%if comms.d == blank?%}<em>to be determined</em>{%endif%}<br>
                 <b>Schedule:</b> Third Tuesdays, 6pm<br>
                 <b>Scope:</b> identifying new funding opportunities for the corporation.
             </p>
@@ -106,8 +106,8 @@ title: Board of Directors
         <div class="col-12 col-md-6">
             <h3>Audit</h3>
             <p>
-                <b>Chair:</b> </b> <em class="text-decoration-underline text-muted">to be determined</em><br>
-                <b>Members:</b> {{comms.a}}<br>
+                <b>Chair:</b> {%if comms.a == blank?%}<em>to be determined</em>{%endif%}<br>
+                <b>Members:</b> {{comms.a}}{%if comms.a == blank?%}<em>to be determined</em>{%endif%}<br>
                 <b>Scope:</b> recommending to the Board of Directors the retention and termination of the independent
                 auditor and negotiating the independent auditor's compensation.<br>
                 <b>Note:</b> neither the President, Treasurer, nor any of the staff may serve on the Audit Committee, and the chairperson may not be a member of the Budget & Finance committee, nor shall members of the Budget & Finance committee constitute more than one half of the Audit committee.
@@ -117,8 +117,8 @@ title: Board of Directors
         <div class="col-12 col-md-6">
             <h3>Community Affairs</h3>
             <p>
-                <b>Co-Chairs</b> Joshua Smith<br>
-                <b>Members: </b>{{comms.ca}}<br>
+                <b>Co-Chairs</b> {%if comms.ca == blank?%}<em>to be determined</em>{%endif%}<br>
+                <b>Members: </b>{{comms.ca}}{%if comms.ca == blank?%}<em>to be determined</em>{%endif%}<br>
                 <b>Schedule: </b>third wednesdays, 6:15pm<br>
                 <b>Scope:</b>
                 <ul>
