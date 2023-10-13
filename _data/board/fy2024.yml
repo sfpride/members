@@ -1,0 +1,117 @@
+- guid: nguyen-pham
+  name: Nguyen Pham
+  title: President
+  term: 2
+  cohort: 2022
+  committees:
+  pronouns: he/him
+  email: nguyen.pham@sfpride.org
+  photo: https://cdn.sfpride.org/m/board/2023/np.jpg
+- guid: janelle-luster
+  name: Janelle Luster
+  title: Vice President
+  term: 1
+  cohort: 2022
+  committees: pp,n
+  pronouns: she/they
+  email: janell.luster@sfpride.org
+  photo: https://cdn.sfpride.org/m/board/2023/jl.png
+- guid: spring-collins
+  name: Spring Collins
+  title: Secretary
+  term: 1
+  cohort: 2022
+  committees:
+  pronouns: she/they
+  email: spring.collins@sfpride.org
+  photo: https://cdn.sfpride.org/m/board/2023/sc.png
+- guid: robert-louie
+  name: Robert Louie
+  title: Treasurer
+  term: 1
+  cohort: 2023
+  committees:
+  pronouns: he/him &#9895;
+  email: robert.louie@sfpride.org
+  photo: https://cdn.sfpride.org/m/board/2023/rl.png
+- guid: carolyn-wysinger
+  name: Carolyn Wysinger
+  title: 
+  term: 2
+  cohort: 2022
+  committees: pp,d
+  pronouns: she/her
+  email: carolyn.wysinger@sfpride.org
+  photo: https://cdn.sfpride.org/m/board/2023/cw.png
+- guid: manuel-perez
+  name: Manuel Alejandro Pérez
+  title:
+  term: 2
+  cohort:
+  committees: pp,d
+  pronouns: he/him/él
+  email: manuel.perez@sfpride.org
+  photo: https://cdn.sfpride.org/m/board/2023/manp.jpg
+- guid: anjali-rimi
+  name: Anjali Rimi
+  title:
+  term: 2
+  cohort: 2023
+  committees: bf,ca
+  pronouns: she/they
+  email: anjali.rimi@sfpride.org
+  photo: https://cdn.sfpride.org/m/board/2023/ar.jpg
+- guid: maceo-persson
+  name: Maceo Persson
+  title:
+  term: 1
+  cohort: 2022
+  committees: p,d
+  pronouns: he/him
+  email: maceo.persson@sfpride.org
+  photo: https://cdn.sfpride.org/m/board/2023/macp.jpg
+- guid: joshua-smith
+  name: Joshua Smith
+  title:
+  term: 2
+  cohort: 2020
+  committees: pp,ca,lrp
+  pronouns: he/him
+  email: joshua.smith@sfpride.org
+  photo: https://cdn.sfpride.org/m/board/2023/js.jpg
+- guid: linda-martley-jordan
+  name: Linda Martley-Jordan
+  title:
+  term: 1
+  cohort: 2023
+  committees: pp,ca,d
+  pronouns: she/her
+  email: linda.martley-jordan@sfpride.org
+  photo: https://cdn.sfpride.org/m/board/2023/lmj.png
+- guid: george-smith
+  name: George Smith III
+  title:
+  term: 1
+  cohort: 2023
+  committees: bf,p,d
+  pronouns:
+  email: george.smith@sfpride.org
+  photo: https://cdn.sfpride.org/m/board/2023/gs.jpg
+- guid: dr.-nas-mohamed
+  name: Dr. Nas Mohamed
+  title: 
+  term: 1
+  cohort: 2024
+  committees:
+  pronouns: he/him
+  email: nas.mohamed@sfpride.org
+  photo: https://cdn.sfpride.org/m/election/2023/drnasmohammed.png
+- guid: adell-hanson-kahn
+  name: Adell Hanson-Kahn
+  title: 
+  term: 1
+  cohort: 2024
+  committees:
+  pronouns: they/them
+  email: adell.hanson-kahn@sfpride.org
+  photo: https://cdn.sfpride.org/m/election/2023/adellhansonkahn.jpg
