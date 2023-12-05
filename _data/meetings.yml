@@ -3,14 +3,14 @@
   active: true
   type: online
   scope: Board
-  date: "November 15, 2023"
+  date: "December 06, 2023"
   time: "7:00 p.m."
   # location: "1663 Mission Street, Mezzanine Suite, San Francisco, CA 94103"
   zoom-link: "https://us02web.zoom.us/j/84247964605?pwd=WUIxT3FKUTcwQVQ0anZSYXRRSjZEdz09"
   zoom-id: "842 4796 4605"
   zoom-passcode: "075600"
-  #agenda: "https://cdn.sfpride.org/docs/meetings/20231004-sfpride-board-agenda.pdf"
-  packet: "https://cdn.sfpride.org/docs/meetings/20231115-sfpride-board-packet.pdf"
+  agenda: "/agenda/2023/12/06/board"
+  packet: "https://cdn.sfpride.org/docs/meetings/20231206-sfpride-board-packet.pdf"
 - title: Regular Membership Meeting
   active: false
   type: online
