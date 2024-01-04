@@ -1,6 +1,6 @@
 # meeting types: inperson, online, hybrid
 - title: "Regular Board of Directors Meeting"
-  active: true
+  active: false
   type: online
   scope: Board
   date: "January 3rd, 2024"
