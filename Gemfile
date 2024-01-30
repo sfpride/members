@@ -6,9 +6,9 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
  gem "jekyll"
  gem "bootstrap"
- 
- gem "webrick", "~> 1.7"
+ gem "csv", "~> 3.2"
  gem "kramdown", "~> 2.3"
+ gem "webrick", "~> 1.8"
 
  group :jekyll_plugins do
     gem 'jekyll-sitemap'
@@ -17,3 +17,5 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
     gem 'jekyll-admin'
     gem 'jekyll-feed'
  end
+
+
