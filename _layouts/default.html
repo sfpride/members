@@ -5,39 +5,58 @@
   <title>{{ page.title }}</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width initial-scale=1, shrink-to-fit=no" />
-  <meta name="description" content="membership information for san francisco lgbt pride parade and celebration committee" />
+  <meta name="description"
+    content="membership information for san francisco lgbt pride parade and celebration committee" />
   <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.xml" title="{{ site.title }}" />
   <link rel="stylesheet" href="{{ 'assets/css/bootstrap-icons.css' | relative_url }}" />
-  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}" />  
+  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}" />
   {% seo %}
   {% if jekyll.environment == "production" %}
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CK7YRVCWDJ"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'G-CK7YRVCWDJ');
   </script>
   {% endif %}
-	<!-- Cronitor RUM -->
-	<script async src="https://rum.cronitor.io/script.js"></script>
-	<script>
-    		window.cronitor = window.cronitor || function() { (window.cronitor.q = window.cronitor.q || []).push(arguments); };
-    		cronitor('config', { clientKey: '9cf7897a25a8daa810f80a0dd0bf5488' });
-	</script>
+  <!-- Cronitor RUM -->
+  <script async src="https://rum.cronitor.io/script.js"></script>
+  <script>
+    window.cronitor = window.cronitor || function () { (window.cronitor.q = window.cronitor.q || []).push(arguments); };
+    cronitor('config', { clientKey: '9cf7897a25a8daa810f80a0dd0bf5488' });
+  </script>
 </head>
 
 <body class="container-fluid w-100 h-100">
   {% include nav.html %}
 
-    {{ content }}
+  {{ content }}
 
   {% include footer.html %}
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
   <script src="{{ 'assets/main.js' | relative_url }}"></script>
-  <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "a4acfc41338a42afa11cb0c0c959b6ac"}'></script>
+  <script defer src='https://static.cloudflareinsights.com/beacon.min.js'
+    data-cf-beacon='{"token": "a4acfc41338a42afa11cb0c0c959b6ac"}'></script>
+
+  <div id='tawk_65aad8478d261e1b5f559206'></div>
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date(); Tawk_API.embedded = 'tawk_65aad8478d261e1b5f559206';
+    (function () {
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/65aad8478d261e1b5f559206/1hlu6j37p';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
 
 </body>
 
