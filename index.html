@@ -21,18 +21,27 @@ image: https://storage.googleapis.com/sfpride/tmp/og-members.png
 			</div>
 		</div>
 		<div class="row mb-1 align-center align-content-center justify-content-center">
-			<p class="col small text-start align-self-center"><b>Board Meetings</b>: monthly on <em>first</em> Wednesday.</p>
-			<p class="col small text-center align-self-center">Meeting <a href="/meetings">guidelines and protocols</a>.</p>
-			<p class="col small text-end align-self-center"><b>Membership Meetings</b>: monthly on <em>second</em> Wednesday.</p>
-			<p class="col-12 m-0" style="font-size: .85rem;">Meetings that would be on the 1st day of the month are instead held the 2nd Wednesday, membership meetings then held the 3rd Wednesday.</p>
+			<p class="col small text-start align-self-center"><b>Board Meetings</b>: monthly on <em>first</em>
+				Wednesday.</p>
+			<p class="col small text-center align-self-center">Meeting <a href="/meetings">guidelines and protocols</a>.
+			</p>
+			<p class="col small text-end align-self-center"><b>Membership Meetings</b>: monthly on <em>second</em>
+				Wednesday.</p>
+			<p class="col-12 m-0" style="font-size: .85rem;">Meetings that would be on the 1st day of the month are
+				instead held the 2nd Wednesday, membership meetings then held the 3rd Wednesday.</p>
 		</div>
 		<nav>
 			<div class="nav nav-pills nav-justified mb-2" id="meeting-dates-tabs" role="tablist">
-				<a class="nav-item nav-link" data-toggle="tab" href="#cal-2020" role="tab" aria-controls="cal-2020" aria-selected="true" data-bs-toggle="tab">2020</a>
-				<a class="nav-item nav-link" data-toggle="tab" href="#cal-2021" role="tab" aria-controls="cal-2021" aria-selected="false" data-bs-toggle="tab">2021</a>
-				<a class="nav-item nav-link" data-toggle="tab" href="#cal-2022" role="tab" aria-controls="cal-2022" aria-selected="false" data-bs-toggle="tab">2022</a>
-				<a class="nav-item nav-link" data-toggle="tab" href="#cal-2023" role="tab" aria-controls="cal-2023" aria-selected="false" data-bs-toggle="tab">2023</a>
-				<a class="nav-item nav-link active" data-toggle="tab" href="#cal-2024" role="tab" aria-controls="cal-2024" aria-selected="false" data-bs-toggle="tab">2024</a>
+				<a class="nav-item nav-link" data-toggle="tab" href="#cal-2020" role="tab" aria-controls="cal-2020"
+					aria-selected="true" data-bs-toggle="tab">2020</a>
+				<a class="nav-item nav-link" data-toggle="tab" href="#cal-2021" role="tab" aria-controls="cal-2021"
+					aria-selected="false" data-bs-toggle="tab">2021</a>
+				<a class="nav-item nav-link" data-toggle="tab" href="#cal-2022" role="tab" aria-controls="cal-2022"
+					aria-selected="false" data-bs-toggle="tab">2022</a>
+				<a class="nav-item nav-link" data-toggle="tab" href="#cal-2023" role="tab" aria-controls="cal-2023"
+					aria-selected="false" data-bs-toggle="tab">2023</a>
+				<a class="nav-item nav-link active" data-toggle="tab" href="#cal-2024" role="tab"
+					aria-controls="cal-2024" aria-selected="false" data-bs-toggle="tab">2024</a>
 			</div>
 		</nav>
 		<div class="tab-content">
@@ -49,16 +58,20 @@ image: https://storage.googleapis.com/sfpride/tmp/og-members.png
 						{% for meeting in site.data.calendar_2020 %}
 						{% assign today_date = 'today' | date: '%b %d, %Y' %}
 						{% assign meeting_today = meeting.date | date: '%b %d, %Y' %}
-						<tr class="{% if meeting_today == today_date %}fw-bold border border-2 border-primary{% endif %} border-bottom">
+						<tr
+							class="{% if meeting_today == today_date %}fw-bold border border-2 border-primary{% endif %} border-bottom">
 							{% if meeting.date == "c" %}
 							<td class="text-center" scope="row" colspan="4">{{ meeting.type }}</td>
 							{% else %}
 							<td class="text-nowrap" scope="row">{{ meeting.date | date: '%b %d, %Y' }}</td>
 							<td>{{ meeting.type }}</td>
 							<td class="row text-center">
-								{% if meeting.packet != blank? %}<a href="{{meeting.packet}}" target="_blank" class="col-4 mx-auto link-primary">Packet</a>
-								{% elsif meeting.agenda != blank? %}<a href="{{meeting.agenda}}" target="_blank" class="col-4 mx-auto link-secondary">Agenda</a>{% endif %}
-								{% if meeting.minutes != blank? %}<a href="{{meeting.minutes}}" target="_blank" class="col-4 mx-auto link-info">Minutes</a>{% endif %}
+								{% if meeting.packet != blank? %}<a href="{{meeting.packet}}" target="_blank"
+									class="col-4 mx-auto link-primary">Packet</a>
+								{% elsif meeting.agenda != blank? %}<a href="{{meeting.agenda}}" target="_blank"
+									class="col-4 mx-auto link-secondary">Agenda</a>{% endif %}
+								{% if meeting.minutes != blank? %}<a href="{{meeting.minutes}}" target="_blank"
+									class="col-4 mx-auto link-info">Minutes</a>{% endif %}
 							</td>
 							{% endif %}
 						</tr>
@@ -80,16 +93,20 @@ image: https://storage.googleapis.com/sfpride/tmp/og-members.png
 						{% for meeting in site.data.calendar_2021 %}
 						{% assign today_date = 'today' | date: '%b %d, %Y' %}
 						{% assign meeting_today = meeting.date | date: '%b %d, %Y' %}
-						<tr class="{% if meeting_today == today_date %}fw-bold border border-2 border-primary{% endif %} border-bottom">
+						<tr
+							class="{% if meeting_today == today_date %}fw-bold border border-2 border-primary{% endif %} border-bottom">
 							{% if meeting.date == "c" %}
 							<td class="text-center" scope="row" colspan="4">{{ meeting.type }}</td>
 							{% else %}
 							<td class="text-nowrap" scope="row">{{ meeting.date | date: '%b %d, %Y' }}</td>
 							<td>{{ meeting.type }}</td>
 							<td class="row text-center">
-								{% if meeting.packet != blank? %}<a href="{{meeting.packet}}" target="_blank" class="col-4 mx-auto link-primary">Packet</a>
-								{% elsif meeting.agenda != blank? %}<a href="{{meeting.agenda}}" target="_blank" class="col-4 mx-auto link-secondary">Agenda</a>{% endif %}
-								{% if meeting.minutes != blank? %}<a href="{{meeting.minutes}}" target="_blank" class="col-4 mx-auto link-info">Minutes</a>{% endif %}
+								{% if meeting.packet != blank? %}<a href="{{meeting.packet}}" target="_blank"
+									class="col-4 mx-auto link-primary">Packet</a>
+								{% elsif meeting.agenda != blank? %}<a href="{{meeting.agenda}}" target="_blank"
+									class="col-4 mx-auto link-secondary">Agenda</a>{% endif %}
+								{% if meeting.minutes != blank? %}<a href="{{meeting.minutes}}" target="_blank"
+									class="col-4 mx-auto link-info">Minutes</a>{% endif %}
 							</td>
 							{% endif %}
 						</tr>
@@ -111,23 +128,28 @@ image: https://storage.googleapis.com/sfpride/tmp/og-members.png
 						{% for meeting in site.data.calendar_2022 %}
 						{% assign today_date = 'today' | date: '%b %d, %Y' %}
 						{% assign meeting_today = meeting.date | date: '%b %d, %Y' %}
-						<tr class="{% if meeting_today == today_date %}fw-bold border border-2 border-primary{% endif %} border-bottom">
+						<tr
+							class="{% if meeting_today == today_date %}fw-bold border border-2 border-primary{% endif %} border-bottom">
 							{% if meeting.date == "c" %}
 							<td class="text-center" scope="row" colspan="4">{{ meeting.type }}</td>
 							{% else %}
 							<td class="text-nowrap" scope="row">{{ meeting.date | date: '%b %d, %Y' }}</td>
 							<td>{{ meeting.type }}</td>
 							<td class="row text-center">
-								{% if meeting.packet != blank? %}<a href="{{meeting.packet}}" target="_blank" class="col-4 mx-auto link-primary">Packet</a>
-								{% elsif meeting.agenda != blank? %}<a href="{{meeting.agenda}}" target="_blank" class="col-4 mx-auto link-secondary">Agenda</a>{% endif %}
-								{% if meeting.minutes != blank? %}<a href="{{meeting.minutes}}" target="_blank" class="col-4 mx-auto link-info">Minutes</a>{% endif %}
+								{% if meeting.packet != blank? %}<a href="{{meeting.packet}}" target="_blank"
+									class="col-4 mx-auto link-primary">Packet</a>
+								{% elsif meeting.agenda != blank? %}<a href="{{meeting.agenda}}" target="_blank"
+									class="col-4 mx-auto link-secondary">Agenda</a>{% endif %}
+								{% if meeting.minutes != blank? %}<a href="{{meeting.minutes}}" target="_blank"
+									class="col-4 mx-auto link-info">Minutes</a>{% endif %}
 							</td>
 							{% endif %}
 						</tr>
 						{% endfor %}
 					</tbody>
 				</table>
-				<p class="text-center"><a class="btn btn-outline-primary" href="/calendar.ics">Add these events to your calendar (iCal)</a></p>
+				<p class="text-center"><a class="btn btn-outline-primary" href="/calendar.ics">Add these events to your
+						calendar (iCal)</a></p>
 			</div>
 
 			<div class="tab-pane fade overflow-hidden" id="cal-2023" role="tabpanel" aria-labelledby="cal-2023-tab">
@@ -143,26 +165,32 @@ image: https://storage.googleapis.com/sfpride/tmp/og-members.png
 						{% for meeting in site.data.calendar_2023 %}
 						{% assign today_date = 'today' | date: '%b %d, %Y' %}
 						{% assign meeting_today = meeting.date | date: '%b %d, %Y' %}
-						<tr class="{% if meeting_today == today_date %}fw-bold border border-2 border-primary{% endif %} border-bottom">
+						<tr
+							class="{% if meeting_today == today_date %}fw-bold border border-2 border-primary{% endif %} border-bottom">
 							{% if meeting.date == "c" %}
 							<td class="text-center" scope="row" colspan="4">{{ meeting.type }}</td>
 							{% else %}
 							<td class="text-nowrap" scope="row">{{ meeting.date | date: '%b %d, %Y' }}</td>
 							<td>{{ meeting.type }}</td>
 							<td class="row text-center">
-								{% if meeting.packet != blank? %}<a href="{{meeting.packet}}" target="_blank" class="col-4 mx-auto link-primary">Packet</a>
-								{% elsif meeting.agenda != blank? %}<a href="{{meeting.agenda}}" target="_blank" class="col-4 mx-auto link-secondary">Agenda</a>{% endif %}
-								{% if meeting.minutes != blank? %}<a href="{{meeting.minutes}}" target="_blank" class="col-4 mx-auto link-info">Minutes</a>{% endif %}
+								{% if meeting.packet != blank? %}<a href="{{meeting.packet}}" target="_blank"
+									class="col-4 mx-auto link-primary">Packet</a>
+								{% elsif meeting.agenda != blank? %}<a href="{{meeting.agenda}}" target="_blank"
+									class="col-4 mx-auto link-secondary">Agenda</a>{% endif %}
+								{% if meeting.minutes != blank? %}<a href="{{meeting.minutes}}" target="_blank"
+									class="col-4 mx-auto link-info">Minutes</a>{% endif %}
 							</td>
 							{% endif %}
 						</tr>
 						{% endfor %}
 					</tbody>
 				</table>
-				<p class="text-center"><a class="btn btn-outline-primary" href="/calendar.ics">Add these events to your calendar (iCal)</a></p>
+				<p class="text-center"><a class="btn btn-outline-primary" href="/calendar.ics">Add these events to your
+						calendar (iCal)</a></p>
 			</div>
 
-			<div class="tab-pane fade show active overflow-hidden" id="cal-2024" role="tabpanel" aria-labelledby="cal-2024-tab">
+			<div class="tab-pane fade show active overflow-hidden" id="cal-2024" role="tabpanel"
+				aria-labelledby="cal-2024-tab">
 				<table class="table table-sm table-borderless align-middle">
 					<thead class="table-dark">
 						<tr>
@@ -175,23 +203,28 @@ image: https://storage.googleapis.com/sfpride/tmp/og-members.png
 						{% for meeting in site.data.calendar %}
 						{% assign today_date = 'today' | date: '%b %d, %Y' %}
 						{% assign meeting_today = meeting.date | date: '%b %d, %Y' %}
-						<tr class="{% if meeting_today == today_date %}fw-bold border border-2 border-primary{% endif %} border-bottom">
+						<tr
+							class="{% if meeting_today == today_date %}fw-bold border border-2 border-primary{% endif %} border-bottom">
 							{% if meeting.date == "c" %}
 							<td class="text-center" scope="row" colspan="4">{{ meeting.type }}</td>
 							{% else %}
 							<td class="text-nowrap" scope="row">{{ meeting.date | date: '%b %d, %Y' }}</td>
 							<td>{{ meeting.type }}</td>
 							<td class="row text-center">
-								{% if meeting.packet != blank? %}<a href="{{meeting.packet}}" target="_blank" class="col-4 mx-auto link-primary">Packet</a>
-								{% elsif meeting.agenda != blank? %}<a href="{{meeting.agenda}}" target="_blank" class="col-4 mx-auto link-secondary">Agenda</a>{% endif %}
-								{% if meeting.minutes != blank? %}<a href="{{meeting.minutes}}" target="_blank" class="col-4 mx-auto link-info">Minutes</a>{% endif %}
+								{% if meeting.packet != blank? %}<a href="{{meeting.packet}}" target="_blank"
+									class="col-4 mx-auto link-primary">Packet</a>
+								{% elsif meeting.agenda != blank? %}<a href="{{meeting.agenda}}" target="_blank"
+									class="col-4 mx-auto link-secondary">Agenda</a>{% endif %}
+								{% if meeting.minutes != blank? %}<a href="{{meeting.minutes}}" target="_blank"
+									class="col-4 mx-auto link-info">Minutes</a>{% endif %}
 							</td>
 							{% endif %}
 						</tr>
 						{% endfor %}
 					</tbody>
 				</table>
-				<p class="text-center"><a class="btn btn-outline-primary" href="/calendar.ics">Add these events to your calendar (iCal)</a></p>
+				<p class="text-center"><a class="btn btn-outline-primary" href="/calendar.ics">Add these events to your
+						calendar (iCal)</a></p>
 			</div>
 
 		</div>
@@ -200,7 +233,8 @@ image: https://storage.googleapis.com/sfpride/tmp/og-members.png
 		<div class="row">
 			<div class="col">
 				<h2>Become a Member Today!</h2>
-				<p>The <span class="text-primary fw-bolder">San Francisco Lesbian Gay Bisexual Transgender Pride Celebration Committee</span> is an ever-evolving
+				<p>The <span class="text-primary fw-bolder">San Francisco Lesbian Gay Bisexual Transgender Pride
+						Celebration Committee</span> is an ever-evolving
 					member and community based organization. Our membership assists the organization in setting the
 					vision for the organization and the annual Celebration and Parade in addition to raising funds and
 					conducting outreach for the organization. By becoming a member of San Francisco Pride you will have
@@ -224,28 +258,32 @@ image: https://storage.googleapis.com/sfpride/tmp/og-members.png
 		<div class="row row-cols-1 row-cols-md-2">
 			<div class="col">
 				<dl>
-					<dt class="py-1 pe-2 text-primary"><span class="alert alert-primary rounded d-inline p-1">General Membership</span> ($15)</dt>
+					<dt class="py-1 pe-2 text-primary"><span class="alert alert-primary rounded d-inline p-1">General
+							Membership</span> ($15)</dt>
 					<dd>1-year of membership with full voting rights and privileges.</dd>
 					<dd>Tax deductible value: $15.00</dd>
 				</dl>
 			</div>
 			<div class="col">
 				<dl>
-					<dt class="py-1 pe-2 text-primary"><span class="alert alert-primary rounded d-inline p-1">Pride Enthusiast</span> ($50)</dt>
+					<dt class="py-1 pe-2 text-primary"><span class="alert alert-primary rounded d-inline p-1">Pride
+							Enthusiast</span> ($50)</dt>
 					<dd>Includes all of the above plus an enamel SF Pride lapel pin.</dd>
 					<dd>Tax deductible value: $45.00</dd>
 				</dl>
 			</div>
 			<div class="col">
 				<dl>
-					<dt class="py-1 pe-2 text-primary"><span class="alert alert-primary rounded d-inline p-1">Pride Defender</span> ($100)</dt>
+					<dt class="py-1 pe-2 text-primary"><span class="alert alert-primary rounded d-inline p-1">Pride
+							Defender</span> ($100)</dt>
 					<dd>Includes all of the above.</dd>
 					<dd>Tax deductible value: $95.00</dd>
 				</dl>
 			</div>
 			<div class="col">
 				<dl>
-					<dt class="py-1 pe-2 text-primary"><span class="alert alert-primary rounded d-inline p-1">Pride Sustainer</span> ($500)</dt>
+					<dt class="py-1 pe-2 text-primary"><span class="alert alert-primary rounded d-inline p-1">Pride
+							Sustainer</span> ($500)</dt>
 					<dd>Includes all of the above.</dd>
 					<dd>Tax deductible value: $495.00</dd>
 				</dl>
@@ -254,31 +292,30 @@ image: https://storage.googleapis.com/sfpride/tmp/og-members.png
 		<div class="row">
 			<div class="col">
 				<dl>
-					<dt class="py-1 pe-2 text-primary"><span class="alert alert-primary rounded d-inline p-1">Pride Champion</span> ($1,000)</dt>
+					<dt class="py-1 pe-2 text-primary"><span class="alert alert-primary rounded d-inline p-1">Pride
+							Champion</span> ($1,000)</dt>
 					<dd>Includes all of the above.</dd>
 					<dd>Tax deductible value: $995.00</dd>
 				</dl>
 			</div>
 		</div>
-		<p class="m-0 p-0 text-center text-muted">Joining and renewal are the same process.<br>Click the link below and fill out the form to join or renew your membership.</p>
-		<div class="row m-0">
-			<div class="col col-md-8 mx-auto">
-				<div class="btn-group text-center w-100">
-					<a href="https://sfpride.networkforgood.com/projects/123822-san-francisco-pride-membership" class="btn btn-primary text-white w-50">Join or Renew</a>
-					<a href="https://sfpride.networkforgood.com/" class="btn btn-success text-white w-50">Donate</a>
-				</div>
+		<div class="row row-cols-1">
+			<div class="col text-center">
+				<script async src="https://js.stripe.com/v3/buy-button.js"></script>
+				<stripe-buy-button 
+					buy-button-id="buy_btn_1Op1VXAw9xW0ltUREuw2bo8A"
+					publishable-key="pk_live_51LSyreAw9xW0ltURO2NAWK0zBMtrbELVxZfBoJ9XREdl2jKQqd9VxbQRvauPWq7EVB6X99bCJ7ilwzgQDkRExaSG00IywD6QYL">
+				</stripe-buy-button>
 			</div>
-			<div class="col col-12">
+			<div class="col">
 				<p class="text-center small">
-					Dues may be waived by request to the <span class="fw-bold">Board of Directors</span> via <a href="mailto:membership@sfpride.org">membership@sfpride.org</a>.
-					<div id="dues-waiver" class="alert alert-dark mx-auto"> This <a class="link-primary fw-bold" href="https://form.jotform.com/230292107176047">form</a> may be used to apply for membership without paying dues.</div>
+					Dues may be waived by request to the <span class="fw-bold">Board of Directors</span> via <a
+						href="mailto:membership@sfpride.org">membership@sfpride.org</a>.
+				<div id="dues-waiver" class="alert alert-dark mx-auto"> This <a class="link-primary fw-bold"
+						href="https://form.jotform.com/230292107176047">form</a> may be used to apply for membership
+					without paying dues.</div>
 				</p>
 				<hr class="my-3">
-				<div class="alert alert-warning text-center border border-warning border-4 d-none">
-					<h3 class="alert-heading">New <strong>Commerce</strong> Membership</h3>
-					<p class="alert-body">For Non-Profits and Small Businesses</p>
-					<a href="https://sfpride.org/commerce" class="btn btn-warning">Join Now!</a>
-				</div>
 				<!-- <div class="alert alert-primary border border-2 border-primary">
 					<h3 class="alert-heading">Join SF Pride Member's Discord Server</h3>
 					<p>We're excited to invite you to join our official San Francisco Pride Discord server! It's a virtual space where our community can connect, share ideas, and engage in conversations. Join us on Discord to stay connected and be a part of the vibrant Pride community throughout the year. Click here to join:</p>
@@ -286,8 +323,11 @@ image: https://storage.googleapis.com/sfpride/tmp/og-members.png
 				</div> -->
 				<hr class="my-3">
 				<div class="d-none d-md-block">
-					<img class="img-fluid rounded" src="https://storage.googleapis.com/sfpride/images/HarveyMilk_Duo.jpg" alt="Harvey Milk riding in a car, holding a sign that reads im from woodshire new york, the car a part of the sf pride parade">
-					<p class="text-muted text-end" style="font-size:smaller;">"Hope will never be silent." -Harvey Milk</p>
+					<img class="img-fluid rounded"
+						src="https://storage.googleapis.com/sfpride/images/HarveyMilk_Duo.jpg"
+						alt="Harvey Milk riding in a car, holding a sign that reads im from woodshire new york, the car a part of the sf pride parade">
+					<p class="text-muted text-end" style="font-size:smaller;">"Hope will never be silent." -Harvey Milk
+					</p>
 				</div>
 			</div>
 		</div>
@@ -295,6 +335,7 @@ image: https://storage.googleapis.com/sfpride/tmp/og-members.png
 </div>
 <section class="row">
 	<div class="col text-end">
-		<p class="text-muted">Collaborate on this page on <a href="https://github.com/sfpride/members.sfpride.org"><i class="bi bi-github"></i> github</a>!</p>
+		<p class="text-muted">Collaborate on this page on <a href="https://github.com/sfpride/members.sfpride.org"><i
+					class="bi bi-github"></i> github</a>!</p>
 	</div>
 </section>

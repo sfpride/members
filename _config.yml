@@ -13,7 +13,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - github-pages
-  - jekyll-admin
   - jekyll-feed
 
 sass:
