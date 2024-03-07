@@ -11,7 +11,7 @@
   # zoom-passcode: "467546"
   agenda: "https://cdn.sfpride.org/docs/meetings/20240306-sfpride-board-agenda.pdf"
   # agenda: /agenda/2024/03/06/board
-  # packet: "https://cdn.sfpride.org/docs/meetings/20240207-sfpride-board-packet.pdf"
+  packet: "https://cdn.sfpride.org/docs/meetings/20240306-sfpride-board-packet.pdf"
 - title: Regular Membership Meeting
   active: false
   type: online
